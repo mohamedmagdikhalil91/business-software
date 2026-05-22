@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aura Motion — Company Portfolio | Business Software</title>
+  <link href="../style.css" rel="stylesheet" />
+  <style>
+    /* Portfolio-specific overrides */
+    .port-meta {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 0;
+      border: 1px solid #e0e0e0;
+      border-radius: var(--radius);
+      overflow: hidden;
+      margin-bottom: 28px;
+    }
+
+    .port-meta-cell {
+      padding: 14px 18px;
+      background: #E8EAF6;
+      border-right: 1px solid #e0e0e0;
+    }
+
+    .port-meta-cell:last-child {
+      border-right: none;
+    }
+
+    .port-meta-label {
+      font-size: 0.68rem;
+      font-weight: 800;
+      letter-spacing: 0.10em;
+      text-transform: uppercase;
+      color: #888;
+      margin-bottom: 4px;
+    }
+
+    .port-meta-value {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: #1A237E;
+    }
+
+    .port-section {
+      margin-bottom: 36px;
+    }
+
+    .port-section h2 {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: #1A237E;
+      border-bottom: 3px solid #1A237E;
+      padding-bottom: 6px;
+      margin-bottom: 16px;
+    }
+
+    .port-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.9rem;
+    }
+
+    .port-table th {
+      background: #1A237E;
+      color: #fff;
+      padding: 10px 14px;
+      text-align: left;
+      font-size: 0.82rem;
+      letter-spacing: 0.04em;
+    }
+
+    .challenge-box {
+      background: #fffde7;
+      border-top: 4px solid #1A237E;
+      border-bottom: 4px solid #1A237E;
+      border-radius: var(--radius);
+      padding: 20px 24px;
+      font-size: 0.95rem;
+      line-height: 1.7;
+    }
+
+    .challenge-box .ch-label {
+      font-size: 0.72rem;
+      font-weight: 800;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #1A237E;
+      margin-bottom: 8px;
+    }
+
+    .data-download {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      background: #E8EAF6;
+      border: 2px solid #1A237E;
+      border-radius: var(--radius);
+      padding: 16px 22px;
+      text-decoration: none;
+      color: #1A237E;
+      font-weight: 700;
+      font-size: 0.95rem;
+      transition: all 0.2s;
+      margin-top: 8px;
+    }
+
+    .data-download:hover {
+      background: #1A237E;
+      color: #fff;
+    }
+
+    .data-download .dl-icon {
+      font-size: 1.5rem;
+      flex-shrink: 0;
+    }
+
+    .data-download .dl-meta {
+      font-size: 0.8rem;
+      font-weight: 400;
+      opacity: 0.8;
+    }
+
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      color: #1A237E;
+      font-size: 0.88rem;
+      font-weight: 600;
+      text-decoration: none;
+      margin-bottom: 24px;
+    }
+
+    .back-link:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      .port-meta {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAV -->
+  <nav class="site-nav">
+    <div class="nav-brand">
+      <div class="brand-dot"></div>Business Software · IBA
+    </div>
+    <ul class="nav-days">
+      <li><a class="home-link" href="../index.html">🏠</a></li>
+      <li><a href="../content/day1.html">Day 1</a></li>
+      <li><a href="../content/day2.html">Day 2</a></li>
+      <li><a href="../content/day3.html">Day 3</a></li>
+      <li><a href="../content/day4.html">Day 4</a></li>
+      <li><a href="../content/day5.html">Day 5</a></li>
+      <li><a href="../content/day6.html">Day 6</a></li>
+      <li><a href="../content/day7.html">Day 7 🎤</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <header class="page-hero" style="background: linear-gradient(135deg, #1A237E 0%, #1A237Ecc 100%);">
+    <div class="day-label">Company Portfolio</div>
+    <h1>🎬 Aura Motion</h1>
+    <p class="hero-sub">Motion design that makes brands impossible to ignore</p>
+    <div class="hero-meta">
+      <span><span class="icon">🏭</span> Creative Services · Video Production</span>
+      <span><span class="icon">📍</span> Berlin, Germany</span>
+      <span><span class="icon">🌐</span> auramotion.studio</span>
+    </div>
+  </header>
+
+  <!-- CONTENT -->
+  <main>
+    <div class="container" style="padding-top: 36px; padding-bottom: 48px;">
+
+      <a href="../index.html" class="back-link">← Back to Company Selection</a>
+
+      <!-- Meta strip -->
+      <div class="port-meta">
+        <div class="port-meta-cell">
+          <div class="port-meta-label">Founded</div>
+          <div class="port-meta-value">2021</div>
+        </div>
+        <div class="port-meta-cell">
+          <div class="port-meta-label">Location</div>
+          <div class="port-meta-value">Berlin, Germany</div>
+        </div>
+        <div class="port-meta-cell">
+          <div class="port-meta-label">Industry</div>
+          <div class="port-meta-value" style="font-size:0.85rem;">Creative Services · Video Production</div>
+        </div>
+        <div class="port-meta-cell">
+          <div class="port-meta-label">Website</div>
+          <div class="port-meta-value">auramotion.studio</div>
+        </div>
+      </div>
+
+      <!-- Overview -->
+      <div class="port-section">
+        <h2>Company Overview</h2>
+        <p style="font-size:0.95rem;line-height:1.75;color:#444;">Aura Motion is a boutique motion graphics and video
+          production agency serving tech scale-ups, D2C brands, and non-profits. They produce brand animations,
+          explainer videos, and social media content that combine aesthetic precision with measurable engagement
+          outcomes.</p>
+      </div>
+
+      <!-- Founding Story -->
+      <div class="port-section">
+        <h2>Founding Story</h2>
+        <div class="story-block">
+          <span class="story-label">Origin</span>
+          <p style="margin:0;font-size:0.95rem;">Priya Kapoor left Publicis after realising that great motion design was
+            being buried under agency bureaucracy and bloated timelines. Sam Adler had been directing independent films
+            and felt the same frustration from the creative side. They launched Aura Motion to be the studio they always
+            wished existed — fast, collaborative, and obsessed with craft. Their first client was a Berlin fintech;
+            within a year they had a 3-person team and a waiting list.</p>
+        </div>
+      </div>
+
+      <!-- Products -->
+      <div class="port-section">
+        <h2>Products &amp; Services</h2>
+        <ul style="font-size:0.93rem;line-height:1.8;padding-left:22px;color:#444;">
+          <li style="margin-bottom:8px;">Brand Animation Packages — logo reveals, brand style guides brought to life
+          </li>
+          <li style="margin-bottom:8px;">Explainer Videos — 60–90 second animated product/service explainers</li>
+          <li style="margin-bottom:8px;">Social Media Content Packages — monthly retainer, 8–12 short-form videos</li>
+          <li style="margin-bottom:8px;">Event Highlight Reels — post-event edited films (same-day turnaround)</li>
+          <li style="margin-bottom:8px;">Corporate Training Videos — L&amp;D content for internal use</li>
+        </ul>
+      </div>
+
+      <!-- Market -->
+      <div class="port-section">
+        <h2>Market &amp; Competitive Landscape</h2>
+        <p style="font-size:0.95rem;line-height:1.75;color:#444;margin-bottom:16px;">The global video marketing industry
+          is valued at €12 billion and growing at 15% annually. Short-form video consumption is at an all-time high, and
+          brands are under pressure to produce professional animated content at speed.</p>
+        <table class="port-table">
+          <thead>
+            <tr>
+              <th style="width:30%;">Competitor</th>
+              <th>Position</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td style="padding:8px 12px;font-weight:600;border-bottom:1px solid #e0e0e0;">Motionographer Studios (UK)
+              </td>
+              <td style="padding:8px 12px;color:#555;border-bottom:1px solid #e0e0e0;">Premium brand animation, high
+                price</td>
+            </tr>
+            <tr>
+              <td style="padding:8px 12px;font-weight:600;border-bottom:1px solid #e0e0e0;">Fiverr / Upwork freelancers
+              </td>
+              <td style="padding:8px 12px;color:#555;border-bottom:1px solid #e0e0e0;">Low cost, variable quality</td>
+            </tr>
+            <tr>
+              <td style="padding:8px 12px;font-weight:600;border-bottom:1px solid #e0e0e0;">Internal agency teams</td>
+              <td style="padding:8px 12px;color:#555;border-bottom:1px solid #e0e0e0;">Growing trend at large corporates
+              </td>
+            </tr>
+            <tr>
+              <td style="padding:8px 12px;font-weight:600;border-bottom:1px solid #e0e0e0;">Buck Design (NYC)</td>
+              <td style="padding:8px 12px;color:#555;border-bottom:1px solid #e0e0e0;">Global tier 1 agency,
+                out-of-reach for SMEs</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Team -->
+      <div class="port-section">
+        <h2>The Team</h2>
+        <table class="port-table">
+          <thead>
+            <tr>
+              <th style="width:22%;">Name</th>
+              <th style="width:26%;">Role</th>
+              <th>Background</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="background:#fff;">
+              <td style="padding:10px 14px;font-weight:700;border-bottom:1px solid #e0e0e0;">Priya Kapoor</td>
+              <td style="padding:10px 14px;color:#1A237E;font-weight:600;border-bottom:1px solid #e0e0e0;">Co-Founder
+                &amp; Creative Director</td>
+              <td style="padding:10px 14px;color:#555;font-size:0.9rem;border-bottom:1px solid #e0e0e0;">10 years motion
+                design; ex-Publicis; Adobe Certified</td>
+            </tr>
+            <tr style="background:#E8EAF6;">
+              <td style="padding:10px 14px;font-weight:700;border-bottom:1px solid #e0e0e0;">Sam Adler</td>
+              <td style="padding:10px 14px;color:#1A237E;font-weight:600;border-bottom:1px solid #e0e0e0;">Co-Founder
+                &amp; Director/Editor</td>
+              <td style="padding:10px 14px;color:#555;font-size:0.9rem;border-bottom:1px solid #e0e0e0;">Independent
+                film background; After Effects &amp; DaVinci Resolve</td>
+            </tr>
+            <tr style="background:#fff;">
+              <td style="padding:10px 14px;font-weight:700;border-bottom:1px solid #e0e0e0;">Yuki Tanaka</td>
+              <td style="padding:10px 14px;color:#1A237E;font-weight:600;border-bottom:1px solid #e0e0e0;">Junior
+                Animator</td>
+              <td style="padding:10px 14px;color:#555;font-size:0.9rem;border-bottom:1px solid #e0e0e0;">Graduated
+                Weissensee Academy 2023; specialises in 2D character animation</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Financials -->
+      <div class="port-section">
+        <h2>Financial Snapshot (FY 2024)</h2>
+        <table class="port-table" style="max-width:520px;">
+          <thead>
+            <tr>
+              <th>Metric</th>
+              <th style="width:36%;">Value</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="background:#fff;">
+              <td style="padding:9px 14px;border-bottom:1px solid #e0e0e0;">Annual Revenue (2024)</td>
+              <td style="padding:9px 14px;font-weight:700;color:#1A237E;border-bottom:1px solid #e0e0e0;">€ 210,000</td>
+            </tr>
+            <tr style="background:#E8EAF6;">
+              <td style="padding:9px 14px;border-bottom:1px solid #e0e0e0;">Active Client Accounts</td>
+              <td style="padding:9px 14px;font-weight:700;color:#1A237E;border-bottom:1px solid #e0e0e0;">18</td>
+            </tr>
+            <tr style="background:#fff;">
+              <td style="padding:9px 14px;border-bottom:1px solid #e0e0e0;">Average Project Value</td>
+              <td style="padding:9px 14px;font-weight:700;color:#1A237E;border-bottom:1px solid #e0e0e0;">€ 4,200</td>
+            </tr>
+            <tr style="background:#E8EAF6;">
+              <td style="padding:9px 14px;border-bottom:1px solid #e0e0e0;">Average Project Delay</td>
+              <td style="padding:9px 14px;font-weight:700;color:#1A237E;border-bottom:1px solid #e0e0e0;">3.2 weeks</td>
+            </tr>
+            <tr style="background:#fff;">
+              <td style="padding:9px 14px;border-bottom:1px solid #e0e0e0;">Gross Margin (services)</td>
+              <td style="padding:9px 14px;font-weight:700;color:#1A237E;border-bottom:1px solid #e0e0e0;">65%</td>
+            </tr>
+            <tr style="background:#E8EAF6;">
+              <td style="padding:9px 14px;border-bottom:1px solid #e0e0e0;">Client Retention Rate</td>
+              <td style="padding:9px 14px;font-weight:700;color:#1A237E;border-bottom:1px solid #e0e0e0;">72%</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Challenge -->
+      <div class="port-section">
+        <h2>Business Challenge</h2>
+        <div class="challenge-box">
+          <div class="ch-label">⚠️ Current Challenge</div>
+          <p style="margin:0;font-size:0.95rem;">Aura Motion has a recurring project management problem: timelines slip,
+            client feedback loops go untracked, and the founders have no single view of what is in progress. Three
+            projects have missed deadlines this quarter, one client nearly churned. They need a structured task
+            management setup, a standardised project tracker, and a professional proposal template.</p>
+        </div>
+      </div>
+
+      <!-- Project Brief -->
+      <div class="port-section">
+        <h2>Your Project Brief</h2>
+        <p style="font-size:0.93rem;color:#555;margin-bottom:16px;">As a team, you will work with this company
+          throughout the 6-day course. Each day builds on the last. Below is a summary of the four deliverables that
+          form your final submission on Day 7.</p>
+        <table class="port-table">
+          <thead>
+            <tr>
+              <th style="width:30%;">Task</th>
+              <th>Deliverable / Description</th>
+              <th style="width:16%;">Tool</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="background:#fff;">
+              <td style="padding:10px 14px;font-weight:600;border-bottom:1px solid #e0e0e0;">Set up a project Kanban
+                board in Planner</td>
+              <td style="padding:10px 14px;color:#555;font-size:0.9rem;border-bottom:1px solid #e0e0e0;">3 active
+                projects, swimlanes by status, tasks with owners and due dates</td>
+              <td style="padding:10px 14px;border-bottom:1px solid #e0e0e0;"><span
+                  style="display:inline-block;background:#6264A7;color:#fff;font-size:0.72rem;font-weight:700;padding:2px 9px;border-radius:10px;letter-spacing:0.04em;">MS
+                  Planner / Teams</span></td>
+            </tr>
+            <tr style="background:#E8EAF6;">
+              <td style="padding:10px 14px;font-weight:600;border-bottom:1px solid #e0e0e0;">Build a client project
+                tracker in Excel</td>
+              <td style="padding:10px 14px;color:#555;font-size:0.9rem;border-bottom:1px solid #e0e0e0;">Timeline,
+                budget vs. actual, status dashboard per client</td>
+              <td style="padding:10px 14px;border-bottom:1px solid #e0e0e0;"><span
+                  style="display:inline-block;background:#107C41;color:#fff;font-size:0.72rem;font-weight:700;padding:2px 9px;border-radius:10px;letter-spacing:0.04em;">Excel</span>
+              </td>
+            </tr>
+            <tr style="background:#fff;">
+              <td style="padding:10px 14px;font-weight:600;border-bottom:1px solid #e0e0e0;">Create a retainer proposal
+                template</td>
+              <td style="padding:10px 14px;color:#555;font-size:0.9rem;border-bottom:1px solid #e0e0e0;">Scope,
+                deliverables, timeline, pricing — branded Word document</td>
+              <td style="padding:10px 14px;border-bottom:1px solid #e0e0e0;"><span
+                  style="display:inline-block;background:#185ABD;color:#fff;font-size:0.72rem;font-weight:700;padding:2px 9px;border-radius:10px;letter-spacing:0.04em;">Word</span>
+              </td>
+            </tr>
+            <tr style="background:#E8EAF6;">
+              <td style="padding:10px 14px;font-weight:600;border-bottom:1px solid #e0e0e0;">Clean and analyse project
+                time data</td>
+              <td style="padding:10px 14px;color:#555;font-size:0.9rem;border-bottom:1px solid #e0e0e0;">Fix raw data
+                export, compute average delivery time per project type</td>
+              <td style="padding:10px 14px;border-bottom:1px solid #e0e0e0;"><span
+                  style="display:inline-block;background:#107C41;color:#fff;font-size:0.72rem;font-weight:700;padding:2px 9px;border-radius:10px;letter-spacing:0.04em;">Excel</span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Data Download -->
+      <div class="port-section">
+        <h2>Your Datasets</h2>
+        <p style="font-size:0.93rem;color:#555;margin-bottom:16px;">Two files for your coursework. Download both and
+          keep the originals untouched — always work on a copy.</p>
+
+        <p
+          style="font-size:0.82rem;font-weight:700;letter-spacing:0.05em;color:#888;margin-bottom:8px;text-transform:uppercase;">
+          Day 4 — Data Cleaning &amp; Visualisation</p>
+        <a href="../data/aura_motion_visualization.xlsx" class="data-download" download>
+          <span class="dl-icon">📊</span>
+          <div>
+            <div>aura_motion_visualization.xlsx</div>
+            <div class="dl-meta">Operations data — project tracker, client records</div>
+          </div>
+          <span style="margin-left:auto;font-size:1.1rem;">⬇</span>
+        </a>
+
+        <p
+          style="font-size:0.82rem;font-weight:700;letter-spacing:0.05em;color:#888;margin:16px 0 8px;text-transform:uppercase;">
+          Day 3 — Financial Modelling</p>
+        <a href="../data/aura_motion_financial.xlsx" class="data-download" download>
+          <span class="dl-icon">💰</span>
+          <div>
+            <div>aura_motion_financial.xlsx</div>
+            <div class="dl-meta">P&L template — fill in the revenue &amp; cost formulas</div>
+          </div>
+          <span style="margin-left:auto;font-size:1.1rem;">⬇</span>
+        </a>
+      </div>
+
+      <!-- Back link -->
+      <a href="../index.html" class="back-link" style="margin-top:16px;display:inline-flex;">← Back to Company
+        Selection</a>
+
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-nav">
+      <a href="../index.html">Home</a>
+      <a href="../content/day1.html">Day 1</a>
+      <a href="../content/day2.html">Day 2</a>
+      <a href="../content/day3.html">Day 3</a>
+      <a href="../content/day4.html">Day 4</a>
+      <a href="../content/day5.html">Day 5</a>
+      <a href="../content/day6.html">Day 6</a>
+      <a href="../content/day7.html">Day 7</a>
+    </div>
+    <div>Aura Motion · Company Portfolio · Business Software Course · SRH Hochschule</div>
+  </footer>
+
+</body>
+
+</html>

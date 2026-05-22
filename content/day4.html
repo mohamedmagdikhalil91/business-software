@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <title>Day 4 — Business Math II | Business Software</title>
+        <link href="../style.css" rel="stylesheet" />
+</head>
+
+<body>
+        <!-- NAV -->
+        <nav class="site-nav">
+                <div class="nav-brand">
+                        <div class="brand-dot"></div>Business Software · IBA
+                </div>
+                <ul class="nav-days">
+                        <li><a class="home-link" href="../index.html">🏠</a></li>
+                        <li><a href="day1.html">Day 1</a></li>
+                        <li><a href="day2.html">Day 2</a></li>
+                        <li><a href="day3.html">Day 3</a></li>
+                        <li><a class="active" href="day4.html">Day 4</a></li>
+                        <li><a href="day5.html">Day 5</a></li>
+                        <li><a href="day6.html">Day 6</a></li>
+                        <li><a href="day7.html">Day 7 🎤</a></li>
+                </ul>
+        </nav>
+        <!-- HERO -->
+        <header class="page-hero" style="background: linear-gradient(135deg, #0a2e0a 0%, #1e4d1e 100%);">
+                <div class="day-label">Day 4 of 6</div>
+                <h1>Business Math II</h1>
+                <p class="hero-sub">Your data is a mess. Dates in three different formats. Numbers stored as text. Empty
+                        rows everywhere. Today you'll clean it, visualise it, and turn it into a story.</p>
+                <div class="hero-meta">
+                        <span><span class="icon">🕘</span> 09:30 – 17:00</span>
+                        <span><span class="icon">🔧</span> Tool: MS Excel</span>
+                        <span><span class="icon">🎯</span> Outcome: 2-Chart Performance Dashboard</span>
+                </div>
+        </header>
+        <!-- AGENDA -->
+        <div class="agenda-strip">
+                <div class="container">
+                        <table class="agenda-table">
+                                <tbody>
+                                        <tr>
+                                                <td class="ag-time">09:30</td>
+                                                <td class="ag-topic">Day 3 Recap + P&amp;L Showcase</td>
+                                                <td class="ag-tag"><span
+                                                                class="agenda-tag tag-discuss">Discussion</span></td>
+                                        </tr>
+                                        <tr>
+                                                <td class="ag-time">10:00</td>
+                                                <td class="ag-topic">Why Data Quality Matters</td>
+                                                <td class="ag-tag"><span class="agenda-tag tag-theory">Theory</span>
+                                                </td>
+                                        </tr>
+                                        <tr>
+                                                <td class="ag-time">10:45</td>
+                                                <td class="ag-topic">Cleaning Techniques — Live Demo</td>
+                                                <td class="ag-tag"><span class="agenda-tag tag-theory">Theory</span>
+                                                </td>
+                                        </tr>
+                                        <tr>
+                                                <td class="ag-time">11:30</td>
+                                                <td class="ag-topic">Clean Your Company's Dataset</td>
+                                                <td class="ag-tag"><span class="agenda-tag tag-handson">Hands-On</span>
+                                                </td>
+                                        </tr>
+                                        <tr>
+                                                <td class="ag-time">13:00</td>
+                                                <td class="ag-topic">Lunch Break</td>
+                                                <td class="ag-tag"><span class="agenda-tag tag-discuss">Break</span>
+                                                </td>
+                                        </tr>
+                                        <tr>
+                                                <td class="ag-time">14:00</td>
+                                                <td class="ag-topic">Chart Types + When to Use Which</td>
+                                                <td class="ag-tag"><span class="agenda-tag tag-theory">Theory</span>
+                                                </td>
+                                        </tr>
+                                        <tr>
+                                                <td class="ag-time">14:45</td>
+                                                <td class="ag-topic">Build Your Dashboard</td>
+                                                <td class="ag-tag"><span class="agenda-tag tag-handson">Hands-On</span>
+                                                </td>
+                                        </tr>
+                                        <tr>
+                                                <td class="ag-time">15:45</td>
+                                                <td class="ag-topic">Assignment: Dashboard Deliverable</td>
+                                                <td class="ag-tag"><span class="agenda-tag tag-assign">Assignment</span>
+                                                </td>
+                                        </tr>
+                                </tbody>
+                        </table>
+                </div>
+        </div>
+        <!-- MAIN -->
+        <main>
+                <!-- STORY -->
+                <section class="course-section">
+                        <div class="container">
+                                <div class="section-header">
+                                        <div class="section-icon icon-story">📖</div>
+                                        <div class="section-header-text">
+                                                <h2>The Story</h2>
+                                                <p>Day 4 — when reality meets spreadsheets</p>
+                                        </div>
+                                </div>
+                                <div class="story-block">
+                                        <div class="story-label">📍 Day 4 Context</div>
+                                        <ul class="story-bullets">
+                                                <li><span class="story-tag sit">📍 Situation</span> <span>Your team has
+                                                                been tracking operational data for two months. Dates
+                                                                entered as "15 Jan", "January 15", and "01/15". Some
+                                                                costs stored as text. Three blank rows nobody can
+                                                                explain.</span></li>
+                                                <li><span class="story-tag chal">⚠️ Challenge</span> <span>An investor
+                                                                asks: "Can you show me a chart of your monthly revenue
+                                                                growth?" You say "just a minute" — and 40 minutes later
+                                                                you're still cleaning the data.</span></li>
+                                                <li><span class="story-tag impact">📉 Business Impact</span> <span>IBM
+                                                                estimates poor data quality costs the US economy $3.1
+                                                                trillion per year. At startup level: wrong data in =
+                                                                wrong decisions out. A SUM formula on text-formatted
+                                                                numbers silently returns zero.</span></li>
+                                                <li><span class="story-tag sol">💡 Today's Focus</span> <span><b>Clean
+                                                                        data is not the accountant's job. It's
+                                                                        everyone's job. And today you'll learn to do it
+                                                                        in under 10 minutes.</b></span></li>
+                                        </ul>
+
+
+
+                                </div>
+                                <div class="problem-card">
+                                        <div class="problem-label">💡 The Business Problem</div>
+                                        <h3>The true cost of dirty data</h3>
+                                        <p>IBM estimates that poor data quality costs the US economy $3.1 trillion per
+                                                year. At a startup level: wrong data in = wrong decisions out. A formula
+                                                based on numbers stored as text will silently return zero — and you
+                                                might not notice until it's too late.</p>
+                                </div>
+                        </div>
+                </section>
+                <!-- THEORY -->
+                <section class="course-section">
+                        <div class="container">
+                                <div class="section-header">
+                                        <div class="section-icon icon-theory">📚</div>
+                                        <div class="section-header-text">
+                                                <h2>Theory: Data Cleaning &amp; Visualisation</h2>
+                                                <p>The skills that turn raw data into business intelligence</p>
+                                        </div>
+                                </div>
+                                <div class="grid-2">
+                                        <div class="card card-orange">
+                                                <h3>🧹 The 5 Most Common Dirty Data Problems</h3>
+                                                <ol style="padding-left:18px; font-size:0.93rem;">
+                                                        <li style="margin-bottom:8px;"><strong>Numbers stored as
+                                                                        text</strong> — SUM returns 0. Fix: Data → Text
+                                                                to Columns, or VALUE() function.</li>
+                                                        <li style="margin-bottom:8px;"><strong>Inconsistent date
+                                                                        formats</strong> — sorting fails. Fix:
+                                                                DATEVALUE(), or reformat all as DD/MM/YYYY.</li>
+                                                        <li style="margin-bottom:8px;"><strong>Leading/trailing
+                                                                        spaces</strong> — lookups fail silently. Fix:
+                                                                =TRIM(A2)</li>
+                                                        <li style="margin-bottom:8px;"><strong>Mixed case text</strong>
+                                                                — "COFFEE" ≠ "coffee". Fix: =PROPER(A2) or =UPPER(A2)
+                                                        </li>
+                                                        <li style="margin-bottom:8px;"><strong>Blank rows &amp; merged
+                                                                        cells</strong> — pivot tables break. Fix: Find
+                                                                &amp; Select → Go To Special → Blanks.</li>
+                                                </ol>
+                                        </div>
+                                        <div class="card card-green">
+                                                <h3>📊 Chart Types — Pick the Right One</h3>
+                                                <ul>
+                                                        <li><strong>Column / Bar Chart</strong> — compare categories
+                                                                (sales by product)</li>
+                                                        <li><strong>Line Chart</strong> — show trends over time (monthly
+                                                                revenue)</li>
+                                                        <li><strong>Pie / Doughnut</strong> — show parts of a whole (%
+                                                                of revenue by service) — use sparingly</li>
+                                                        <li><strong>Scatter Plot</strong> — show correlation (hours
+                                                                worked vs. revenue)</li>
+                                                        <li><strong>Combo Chart</strong> — two metrics on one chart
+                                                                (revenue bars + margin % line)</li>
+                                                </ul>
+                                        </div>
+                                </div>
+                                <div class="card card-light">
+                                        <h3>🔧 Essential Cleaning Functions</h3>
+                                        <div class="formula-block">
+                                                <span class="f-comment"># Remove extra spaces from text in cell
+                                                        A2</span><br />
+                                                =<span class="f-func">TRIM</span>(A2)<br /><br />
+                                                <span class="f-comment"># Convert text "1,234" to number
+                                                        1234</span><br />
+                                                =<span class="f-func">VALUE</span>(<span
+                                                        class="f-func">SUBSTITUTE</span>(A2,",",""))<br /><br />
+                                                <span class="f-comment"># Standardise text to Title Case</span><br />
+                                                =<span class="f-func">PROPER</span>(A2)<br /><br />
+                                                <span class="f-comment"># Convert text date "Jan 15 2024" to Excel
+                                                        date</span><br />
+                                                =<span class="f-func">DATEVALUE</span>(A2) <span class="f-comment">←
+                                                        then format as date</span><br /><br />
+                                                <span class="f-comment"># Check if cell is empty</span><br />
+                                                =<span class="f-func">ISBLANK</span>(A2) <span class="f-comment">←
+                                                        returns TRUE if blank</span>
+                                        </div>
+                                </div>
+                                <div class="concept-grid">
+                                        <div class="concept-card">
+                                                <div class="concept-icon">🔍</div>
+                                                <h4>Find &amp; Replace</h4>
+                                                <p>Ctrl+H — bulk-fix inconsistent entries (e.g., "EUR" → "€")</p>
+                                        </div>
+                                        <div class="concept-card">
+                                                <div class="concept-icon">🔢</div>
+                                                <h4>Text to Columns</h4>
+                                                <p>Data → Text to Columns — split "First Last" into two cells, or force
+                                                        numeric conversion</p>
+                                        </div>
+                                        <div class="concept-card">
+                                                <div class="concept-icon">📌</div>
+                                                <h4>Freeze Panes</h4>
+                                                <p>View → Freeze Panes → Freeze Top Row — keeps headers visible when
+                                                        scrolling</p>
+                                        </div>
+                                        <div class="concept-card">
+                                                <div class="concept-icon">🎨</div>
+                                                <h4>Conditional Formatting</h4>
+                                                <p>Home → Conditional Formatting — highlight cells above/below threshold
+                                                        automatically</p>
+                                        </div>
+                                </div>
+                                <div class="callout callout-orange">
+                                        <span class="callout-icon">🤖</span>
+                                        <div class="callout-body">
+                                                <strong>Gemini Co-pilot for Cleaning</strong>
+                                                If you find a cleaning problem you don't know how to solve, describe it
+                                                to Gemini: <em>"In Excel, column B has dates in mixed formats like
+                                                        '15-Jan-24', '01/15/2024', and 'January 15'. How do I
+                                                        standardise them all to DD/MM/YYYY?"</em>
+                                        </div>
+                                </div>
+                        </div>
+                </section>
+
+                <!-- EXAMPLE: Data Cleaning -->
+                <details class="example-block">
+                        <summary>👁️ See Example: Data Cleaning — Before vs. After <span class="ex-label">Example</span>
+                        </summary>
+                        <div class="example-content">
+                                <p style="font-size:0.9rem;color:#666;margin-bottom:20px;">Raw data from ByteBite's
+                                        order export — exactly what you'll work with today. Spot all the issues in the
+                                        "Before" table, then see how clean data enables real analysis.</p>
+                                <div class="example-cols">
+                                        <div class="ex-bad">
+                                                <span class="ex-verdict">❌ Raw / Dirty Data</span>
+                                                <h4>ByteBite Orders — Raw Export</h4>
+                                                <table class="ex-table">
+                                                        <thead>
+                                                                <tr>
+                                                                        <th>Order ID</th>
+                                                                        <th>Customer</th>
+                                                                        <th>Date</th>
+                                                                        <th>Amount</th>
+                                                                        <th>Status</th>
+                                                                </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                                <tr>
+                                                                        <td>1001</td>
+                                                                        <td>Anna M.</td>
+                                                                        <td>01/03/2025</td>
+                                                                        <td class="cell-bad">€12,50</td>
+                                                                        <td>delivered</td>
+                                                                </tr>
+                                                                <tr>
+                                                                        <td>1002</td>
+                                                                        <td class="cell-bad">anna m.</td>
+                                                                        <td>2025-03-02</td>
+                                                                        <td class="cell-bad">12.50 EUR</td>
+                                                                        <td class="cell-bad">DELIVERED</td>
+                                                                </tr>
+                                                                <tr>
+                                                                        <td>1003</td>
+                                                                        <td>Raj S.</td>
+                                                                        <td class="cell-bad">March 3</td>
+                                                                        <td>9.99</td>
+                                                                        <td class="cell-bad">shiped</td>
+                                                                </tr>
+                                                                <tr>
+                                                                        <td class="cell-bad"></td>
+                                                                        <td>Priya K.</td>
+                                                                        <td>03/04/2025</td>
+                                                                        <td class="cell-bad">-</td>
+                                                                        <td>pending</td>
+                                                                </tr>
+                                                                <tr>
+                                                                        <td>1005</td>
+                                                                        <td>Lena W.</td>
+                                                                        <td>2025-03-05</td>
+                                                                        <td>14.99</td>
+                                                                        <td>delivered</td>
+                                                                </tr>
+                                                        </tbody>
+                                                </table>
+                                                <ul style="margin-top:12px;font-size:0.83rem;">
+                                                        <li class="cell-bad" style="background:none;padding:2px 0;">
+                                                                Mixed date formats (DD/MM, YYYY-MM-DD, "March 3")</li>
+                                                        <li class="cell-bad" style="background:none;padding:2px 0;">
+                                                                Currency symbols + text mixed into number column</li>
+                                                        <li class="cell-bad" style="background:none;padding:2px 0;">
+                                                                Duplicate customer, different casing ("Anna M." vs "anna
+                                                                m.")</li>
+                                                        <li class="cell-bad" style="background:none;padding:2px 0;">
+                                                                Missing Order ID in row 4</li>
+                                                        <li class="cell-bad" style="background:none;padding:2px 0;">Typo
+                                                                in Status: "shiped" instead of "shipped"</li>
+                                                        <li class="cell-bad" style="background:none;padding:2px 0;">
+                                                                Inconsistent status capitalisation</li>
+                                                </ul>
+                                        </div>
+                                        <div class="ex-good">
+                                                <span class="ex-verdict">✅ Cleaned Data</span>
+                                                <h4>ByteBite Orders — After Cleaning</h4>
+                                                <table class="ex-table">
+                                                        <thead>
+                                                                <tr>
+                                                                        <th>Order ID</th>
+                                                                        <th>Customer</th>
+                                                                        <th>Date</th>
+                                                                        <th>Amount (€)</th>
+                                                                        <th>Status</th>
+                                                                </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                                <tr>
+                                                                        <td class="cell-good">1001</td>
+                                                                        <td>Anna M.</td>
+                                                                        <td>2025-03-01</td>
+                                                                        <td class="cell-good">12.50</td>
+                                                                        <td>Delivered</td>
+                                                                </tr>
+                                                                <tr>
+                                                                        <td class="cell-good">1002</td>
+                                                                        <td>Anna M.</td>
+                                                                        <td>2025-03-02</td>
+                                                                        <td class="cell-good">12.50</td>
+                                                                        <td>Delivered</td>
+                                                                </tr>
+                                                                <tr>
+                                                                        <td class="cell-good">1003</td>
+                                                                        <td>Raj S.</td>
+                                                                        <td>2025-03-03</td>
+                                                                        <td>9.99</td>
+                                                                        <td>Shipped</td>
+                                                                </tr>
+                                                                <tr>
+                                                                        <td class="cell-good">1004</td>
+                                                                        <td>Priya K.</td>
+                                                                        <td>2025-03-04</td>
+                                                                        <td class="cell-good">N/A</td>
+                                                                        <td>Pending</td>
+                                                                </tr>
+                                                                <tr>
+                                                                        <td>1005</td>
+                                                                        <td>Lena W.</td>
+                                                                        <td>2025-03-05</td>
+                                                                        <td>14.99</td>
+                                                                        <td>Delivered</td>
+                                                                </tr>
+                                                        </tbody>
+                                                </table>
+                                                <ul style="margin-top:12px;font-size:0.83rem;">
+                                                        <li>All dates → ISO format YYYY-MM-DD</li>
+                                                        <li>Amounts → pure numbers, currency in column header</li>
+                                                        <li>Customer names → Title Case, deduplicated</li>
+                                                        <li>Missing ID filled; missing amount = N/A (not a blank)</li>
+                                                        <li>Status → consistent Title Case vocabulary</li>
+                                                </ul>
+                                        </div>
+                                </div>
+                                <p
+                                        style="margin-top:18px;font-size:0.85rem;background:#fff8ee;padding:10px 14px;border-left:3px solid var(--srh-orange);border-radius:4px;">
+                                        <strong>Takeaway:</strong> A dirty dataset makes every downstream formula,
+                                        chart, and pivot table wrong — silently. Clean first, analyse second. In Excel:
+                                        <em>Text to Columns</em>, <em>Find &amp; Replace</em>, and <em>TRIM / PROPER /
+                                                VALUE</em> functions handle 90% of this.
+                                </p>
+                        </div>
+                </details>
+
+
+                <!-- EXAMPLE: Chart Type Selection -->
+                <details class="example-block">
+                        <summary>👁️ See Example: Chart Types — Right Tool for the Right Story <span
+                                        class="ex-label">Example</span></summary>
+                        <div class="example-content">
+                                <p style="font-size:0.9rem;color:#666;margin-bottom:20px;">Same ByteBite revenue data.
+                                        Two chart types. One tells the story clearly — the other actively misleads.</p>
+                                <div class="example-cols">
+                                        <div class="ex-good">
+                                                <span class="ex-verdict">✅ Line Chart — Shows Trend Over Time</span>
+                                                <h4>Monthly Revenue Jan–Jun 2025</h4>
+                                                <div class="chart-mock">
+                                                        <div class="chart-title">ByteBite Monthly Revenue (€)</div>
+                                                        <!-- SVG line chart mockup -->
+                                                        <svg viewBox="0 0 320 160" width="100%"
+                                                                style="overflow:visible;">
+                                                                <!-- Grid lines -->
+                                                                <line x1="40" y1="20" x2="40" y2="130" stroke="#e0e0e0"
+                                                                        stroke-width="1" />
+                                                                <line x1="40" y1="130" x2="300" y2="130"
+                                                                        stroke="#e0e0e0" stroke-width="1" />
+                                                                <line x1="40" y1="100" x2="300" y2="100"
+                                                                        stroke="#e0e0e0" stroke-width="0.5"
+                                                                        stroke-dasharray="4" />
+                                                                <line x1="40" y1="70" x2="300" y2="70" stroke="#e0e0e0"
+                                                                        stroke-width="0.5" stroke-dasharray="4" />
+                                                                <line x1="40" y1="40" x2="300" y2="40" stroke="#e0e0e0"
+                                                                        stroke-width="0.5" stroke-dasharray="4" />
+                                                                <!-- Y-axis labels -->
+                                                                <text x="35" y="133" text-anchor="end" font-size="9"
+                                                                        fill="#999">0</text>
+                                                                <text x="35" y="103" text-anchor="end" font-size="9"
+                                                                        fill="#999">5k</text>
+                                                                <text x="35" y="73" text-anchor="end" font-size="9"
+                                                                        fill="#999">10k</text>
+                                                                <text x="35" y="43" text-anchor="end" font-size="9"
+                                                                        fill="#999">15k</text>
+                                                                <!-- Data points: Jan=4k, Feb=5.5k, Mar=7k, Apr=9k, May=11k, Jun=13.5k -->
+                                                                <!-- Map: 0→130, 15000→40. Scale = 90/15000 = 0.006 per € -->
+                                                                <!-- x positions: 40,88,136,184,232,280 -->
+                                                                <polyline points="88,106 136,97 184,88 232,76 280,64"
+                                                                        fill="none" stroke="#F39200" stroke-width="2.5"
+                                                                        stroke-linejoin="round" />
+                                                                <!-- Dots -->
+                                                                <circle cx="88" cy="106" r="4" fill="#F39200" />
+                                                                <circle cx="136" cy="97" r="4" fill="#F39200" />
+                                                                <circle cx="184" cy="88" r="4" fill="#F39200" />
+                                                                <circle cx="232" cy="76" r="4" fill="#F39200" />
+                                                                <circle cx="280" cy="64" r="4" fill="#F39200" />
+                                                                <!-- X labels -->
+                                                                <text x="88" y="144" text-anchor="middle" font-size="9"
+                                                                        fill="#999">Feb</text>
+                                                                <text x="136" y="144" text-anchor="middle" font-size="9"
+                                                                        fill="#999">Mar</text>
+                                                                <text x="184" y="144" text-anchor="middle" font-size="9"
+                                                                        fill="#999">Apr</text>
+                                                                <text x="232" y="144" text-anchor="middle" font-size="9"
+                                                                        fill="#999">May</text>
+                                                                <text x="280" y="144" text-anchor="middle" font-size="9"
+                                                                        fill="#999">Jun</text>
+                                                                <!-- Trend label -->
+                                                                <text x="284" y="59" font-size="8" fill="#1b7a3e"
+                                                                        font-weight="bold">+240%</text>
+                                                        </svg>
+                                                </div>
+                                                <p style="font-size:0.82rem;margin-top:8px;color:#555;">The upward slope
+                                                        is <strong>instantly readable</strong>. Investors, managers, and
+                                                        customers all understand "growth over time" from this shape in
+                                                        under 1 second.</p>
+                                        </div>
+                                        <div class="ex-bad">
+                                                <span class="ex-verdict">❌ Pie Chart — Wrong Tool for Time-Series</span>
+                                                <h4>Monthly Revenue Jan–Jun 2025</h4>
+                                                <div class="chart-mock">
+                                                        <div class="chart-title">ByteBite Monthly Revenue (€)</div>
+                                                        <!-- SVG pie chart mockup -->
+                                                        <svg viewBox="0 0 320 160" width="100%">
+                                                                <!-- Rough pie slices - each month as roughly equal-ish slices since they're similar-ish -->
+                                                                <!-- Total: 4+5.5+7+9+11+13.5 = 50k -->
+                                                                <!-- Percentages: 8%, 11%, 14%, 18%, 22%, 27% -->
+                                                                <g transform="translate(120,80)">
+                                                                        <!-- Slice 1: 8% = 28.8deg -->
+                                                                        <path d="M0,0 L60,0 A60,60 0 0,1 56.7,18.7 Z"
+                                                                                fill="#e74c3c" />
+                                                                        <!-- Slice 2: 11% = 39.6deg -->
+                                                                        <path d="M0,0 L56.7,18.7 A60,60 0 0,1 43.7,41.6 Z"
+                                                                                fill="#e67e22" />
+                                                                        <!-- Slice 3: 14% = 50.4deg -->
+                                                                        <path d="M0,0 L43.7,41.6 A60,60 0 0,1 18.5,57.1 Z"
+                                                                                fill="#f1c40f" />
+                                                                        <!-- Slice 4: 18% = 64.8deg -->
+                                                                        <path d="M0,0 L18.5,57.1 A60,60 0 0,1 -27.3,53.7 Z"
+                                                                                fill="#2ecc71" />
+                                                                        <!-- Slice 5: 22% = 79.2deg -->
+                                                                        <path d="M0,0 L-27.3,53.7 A60,60 0 0,1 -58.6,10.5 Z"
+                                                                                fill="#3498db" />
+                                                                        <!-- Slice 6: 27% = 97.2deg -->
+                                                                        <path d="M0,0 L-58.6,10.5 A60,60 0 1,1 60,0 Z"
+                                                                                fill="#9b59b6" />
+                                                                </g>
+                                                                <!-- Legend -->
+                                                                <g font-size="8" fill="#555">
+                                                                        <rect x="195" y="30" width="8" height="8"
+                                                                                fill="#e74c3c" /><text x="206"
+                                                                                y="38">Jan (8%)</text>
+                                                                        <rect x="195" y="44" width="8" height="8"
+                                                                                fill="#e67e22" /><text x="206"
+                                                                                y="52">Feb (11%)</text>
+                                                                        <rect x="195" y="58" width="8" height="8"
+                                                                                fill="#f1c40f" /><text x="206"
+                                                                                y="66">Mar (14%)</text>
+                                                                        <rect x="195" y="72" width="8" height="8"
+                                                                                fill="#2ecc71" /><text x="206"
+                                                                                y="80">Apr (18%)</text>
+                                                                        <rect x="195" y="86" width="8" height="8"
+                                                                                fill="#3498db" /><text x="206"
+                                                                                y="94">May (22%)</text>
+                                                                        <rect x="195" y="100" width="8" height="8"
+                                                                                fill="#9b59b6" /><text x="206"
+                                                                                y="108">Jun (27%)</text>
+                                                                </g>
+                                                        </svg>
+                                                </div>
+                                                <p style="font-size:0.82rem;margin-top:8px;color:#555;">Can you see that
+                                                        revenue <em>grew</em>? No — all you see is that June was the
+                                                        biggest month. The trend is <strong>completely
+                                                                invisible</strong>. Pie charts show part-of-whole, not
+                                                        change over time.</p>
+                                        </div>
+                                </div>
+                                <div
+                                        style="margin-top:20px;background:#fff;border:1px solid #e0e0e0;border-radius:8px;padding:14px;font-size:0.85rem;">
+                                        <strong style="color:var(--srh-orange);">Quick Reference: Which Chart for Which
+                                                Question?</strong>
+                                        <table class="ex-table" style="margin-top:8px;">
+                                                <thead>
+                                                        <tr>
+                                                                <th>Question</th>
+                                                                <th>Use This Chart</th>
+                                                                <th>Not This</th>
+                                                        </tr>
+                                                </thead>
+                                                <tbody>
+                                                        <tr>
+                                                                <td>How did X change over time?</td>
+                                                                <td class="cell-good">Line / Area</td>
+                                                                <td class="cell-bad">Pie</td>
+                                                        </tr>
+                                                        <tr>
+                                                                <td>What share does each part hold?</td>
+                                                                <td class="cell-good">Pie / Donut</td>
+                                                                <td class="cell-bad">Line</td>
+                                                        </tr>
+                                                        <tr>
+                                                                <td>Compare categories side by side</td>
+                                                                <td class="cell-good">Bar (clustered)</td>
+                                                                <td class="cell-bad">Pie</td>
+                                                        </tr>
+                                                        <tr>
+                                                                <td>Rank items from most to least</td>
+                                                                <td class="cell-good">Bar (sorted)</td>
+                                                                <td class="cell-bad">Scatter</td>
+                                                        </tr>
+                                                </tbody>
+                                        </table>
+                                </div>
+                                <p
+                                        style="margin-top:18px;font-size:0.85rem;background:#fff8ee;padding:10px 14px;border-left:3px solid var(--srh-orange);border-radius:4px;">
+                                        <strong>Takeaway:</strong> Before inserting a chart in Excel, ask yourself:
+                                        <em>"What question am I answering?"</em> The answer tells you the chart type.
+                                        Picking the wrong type doesn't just look bad — it tells a false story.
+                                </p>
+                        </div>
+                </details>
+
+                <!-- HANDS-ON -->
+                <section class="course-section">
+                        <div class="container">
+                                <div class="section-header">
+                                        <div class="section-icon icon-hands">🛠️</div>
+                                        <div class="section-header-text">
+                                                <h2>Hands-On: Clean + Visualise</h2>
+                                                <p>~90 minutes total · Part 1: Clean (45 min) · Part 2: Visualise (45
+                                                        min)</p>
+                                        </div>
+                                </div>
+                                <div class="callout callout-blue" style="margin-bottom:20px;">
+                                        <span class="callout-icon">📁</span>
+                                        <div class="callout-body">
+                                                <strong>Your File: <code>[company_slug]_visualization.xlsx</code></strong>
+                                                Open your company's operations dataset (e.g.
+                                                <code>bytebite_visualization.xlsx</code>). This file contains real-looking
+                                                but fictional operational data — orders, bookings, surveys, or project
+                                                records depending on your company. It is intentionally messy: your job
+                                                today is to clean it and then visualise it.
+                                        </div>
+                                </div>
+                                <div class="">
+                                        <div class="card">
+                                                <h3>Part 1: Clean Your Dataset</h3>
+                                                <ol class="steps">
+                                                        <li>Open <b>[company_slug]_visualization.xlsx</b>. Make a
+                                                                <b>copy of the raw data sheet</b> (right-click tab →
+                                                                Move or Copy) — never clean the original!
+                                                        </li>
+                                                        <li>Scan each column: identify all inconsistencies. Write them
+                                                                down in a notes cell.</li>
+                                                        <li>Fix <b>blank rows</b>: Home → Find &amp; Select → Go to
+                                                                Special → Blanks → Delete rows.</li>
+                                                        <li>Fix <b>number-as-text</b> columns: Use VALUE() or Text to
+                                                                Columns method.</li>
+                                                        <li>Fix <b>date inconsistencies</b>: Standardise to one format
+                                                                using DATEVALUE() or manual Find &amp; Replace.</li>
+                                                        <li>Fix <b>text inconsistencies</b>: Apply TRIM() and PROPER()
+                                                                where needed.</li>
+                                                        <li>Add a column called <b>"Data Quality Check"</b>: use
+                                                                ISBLANK() or IF() to flag any remaining issues.</li>
+                                                </ol>
+                                        </div>
+                                        <div class="card">
+                                                <h3>Part 2: Build Your Charts</h3>
+                                                <ol class="steps">
+                                                        <li>Select your clean data. Go to <b>Insert → Recommended
+                                                                        Charts</b> — see what Excel suggests.</li>
+                                                        <li>Build a <b>Column Chart</b> showing your primary metric over
+                                                                time (e.g., revenue by month, units by product).</li>
+                                                        <li>Click the chart → <b>Chart Design → Change Colors</b> →
+                                                                apply your brand colours.</li>
+                                                        <li>Add proper <b>axis labels and a chart title</b> that tells a
+                                                                story (e.g., "Revenue Growth — Q1 2024").</li>
+                                                        <li>Build a second chart — a <b>Line Chart or Combo Chart</b>
+                                                                showing a different insight (e.g., margin trend).</li>
+                                                        <li>Create a <b>new sheet called "Dashboard"</b>. Move/copy both
+                                                                charts here. Arrange them neatly.</li>
+                                                        <li>Add a text box with a 1-sentence <b>key insight</b> for each
+                                                                chart. What is the data telling you?</li>
+                                                </ol>
+                                        </div>
+                                </div>
+                                <div class="callout callout-green">
+                                        <span class="callout-icon">✅</span>
+                                        <div class="callout-body">
+                                                <strong>Quality Check</strong>
+                                                Change one data value in your cleaned dataset. Both charts should update
+                                                automatically. If they do — your charts are linked to the live data. If
+                                                not — you may have pasted values instead of using cell references.
+                                        </div>
+                                </div>
+                        </div>
+                </section>
+                <!-- ASSIGNMENT -->
+                <section class="course-section" style="border-bottom:none;">
+                        <div class="container">
+                                <div class="section-header">
+                                        <div class="section-icon icon-assign">📋</div>
+                                        <div class="section-header-text">
+                                                <h2>Assignment</h2>
+                                                <p>Due: End of Day 4 · Submit as .xlsx (one file, two sheets: Clean Data
+                                                        + Dashboard)</p>
+                                        </div>
+                                </div>
+                                <div class="assignment-box">
+                                        <div class="assign-label">📌 Day 4 Deliverable</div>
+                                        <h3>Performance Dashboard</h3>
+                                        <p>Submit an Excel workbook with a cleaned dataset and a professional 2-chart
+                                                dashboard that tells the story of your company's performance.</p>
+                                        <ul class="deliverable-list">
+                                                <li>
+                                                        <div class="check"></div><strong>Sheet 1 "Raw Data"</strong> —
+                                                        original untouched data (never edit this)
+                                                </li>
+                                                <li>
+                                                        <div class="check"></div><strong>Sheet 2 "Clean Data"</strong> —
+                                                        documented cleaning steps in a notes column
+                                                </li>
+                                                <li>
+                                                        <div class="check"></div><strong>Sheet 3 "Dashboard"</strong> —
+                                                        2 charts, branded colours, axis labels, chart titles
+                                                </li>
+                                                <li>
+                                                        <div class="check"></div><strong>Key Insight
+                                                                annotations</strong> — 1 sentence per chart explaining
+                                                        what it means
+                                                </li>
+                                                <li>
+                                                        <div class="check"></div><strong>No manual value-typing</strong>
+                                                        in dashboard — all values sourced from Clean Data sheet
+                                                </li>
+                                        </ul>
+                                        <div
+                                                style="margin-top:20px; padding:14px 16px; background:rgba(243,146,0,0.15); border-radius:var(--radius); font-size:0.85rem; color:#ffcc80;">
+                                                <strong>⭐ Bonus:</strong> Add Conditional Formatting to your Clean Data
+                                                sheet — highlight the top 3 values in green and the bottom 3 in red for
+                                                your key metric column.
+                                        </div>
+                                </div>
+                        </div>
+                </section>
+        </main>
+        <!-- DAY NAV -->
+        <div class="day-nav">
+                <div class="day-nav-inner">
+                        <a class="day-nav-btn" href="day3.html">← Day 3: Business Math I</a>
+                        <div style="font-size:0.82rem; color:var(--srh-mid); font-weight:600;">Day 4 of 6</div>
+                        <a class="day-nav-btn primary" href="day5.html">Day 5: The Virtual Office →</a>
+                </div>
+        </div>
+        <footer class="site-footer">
+                <div class="footer-nav">
+                        <a href="../index.html">Home</a>
+                        <a href="day3.html">← Day 3</a>
+                        <a href="day5.html">Day 5 →</a>
+                </div>
+                <p>Business Software · International Business Administration · SRH Hochschule</p>
+        </footer>
+</body>
+
+</html>

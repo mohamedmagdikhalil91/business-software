@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Urban Canopy — Company Portfolio | Business Software</title>
+  <link href="../style.css" rel="stylesheet" />
+  <style>
+    /* Portfolio-specific overrides */
+    .port-meta {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 0;
+      border: 1px solid #e0e0e0;
+      border-radius: var(--radius);
+      overflow: hidden;
+      margin-bottom: 28px;
+    }
+
+    .port-meta-cell {
+      padding: 14px 18px;
+      background: #E8F5E9;
+      border-right: 1px solid #e0e0e0;
+    }
+
+    .port-meta-cell:last-child {
+      border-right: none;
+    }
+
+    .port-meta-label {
+      font-size: 0.68rem;
+      font-weight: 800;
+      letter-spacing: 0.10em;
+      text-transform: uppercase;
+      color: #888;
+      margin-bottom: 4px;
+    }
+
+    .port-meta-value {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: #1A5C2A;
+    }
+
+    .port-section {
+      margin-bottom: 36px;
+    }
+
+    .port-section h2 {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: #1A5C2A;
+      border-bottom: 3px solid #1A5C2A;
+      padding-bottom: 6px;
+      margin-bottom: 16px;
+    }
+
+    .port-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.9rem;
+    }
+
+    .port-table th {
+      background: #1A5C2A;
+      color: #fff;
+      padding: 10px 14px;
+      text-align: left;
+      font-size: 0.82rem;
+      letter-spacing: 0.04em;
+    }
+
+    .challenge-box {
+      background: #fffde7;
+      border-top: 4px solid #1A5C2A;
+      border-bottom: 4px solid #1A5C2A;
+      border-radius: var(--radius);
+      padding: 20px 24px;
+      font-size: 0.95rem;
+      line-height: 1.7;
+    }
+
+    .challenge-box .ch-label {
+      font-size: 0.72rem;
+      font-weight: 800;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #1A5C2A;
+      margin-bottom: 8px;
+    }
+
+    .data-download {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      background: #E8F5E9;
+      border: 2px solid #1A5C2A;
+      border-radius: var(--radius);
+      padding: 16px 22px;
+      text-decoration: none;
+      color: #1A5C2A;
+      font-weight: 700;
+      font-size: 0.95rem;
+      transition: all 0.2s;
+      margin-top: 8px;
+    }
+
+    .data-download:hover {
+      background: #1A5C2A;
+      color: #fff;
+    }
+
+    .data-download .dl-icon {
+      font-size: 1.5rem;
+      flex-shrink: 0;
+    }
+
+    .data-download .dl-meta {
+      font-size: 0.8rem;
+      font-weight: 400;
+      opacity: 0.8;
+    }
+
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      color: #1A5C2A;
+      font-size: 0.88rem;
+      font-weight: 600;
+      text-decoration: none;
+      margin-bottom: 24px;
+    }
+
+    .back-link:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      .port-meta {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAV -->
+  <nav class="site-nav">
+    <div class="nav-brand">
+      <div class="brand-dot"></div>Business Software · IBA
+    </div>
+    <ul class="nav-days">
+      <li><a class="home-link" href="../index.html">🏠</a></li>
+      <li><a href="../content/day1.html">Day 1</a></li>
+      <li><a href="../content/day2.html">Day 2</a></li>
+      <li><a href="../content/day3.html">Day 3</a></li>
+      <li><a href="../content/day4.html">Day 4</a></li>
+      <li><a href="../content/day5.html">Day 5</a></li>
+      <li><a href="../content/day6.html">Day 6</a></li>
+      <li><a href="../content/day7.html">Day 7 🎤</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <header class="page-hero" style="background: linear-gradient(135deg, #1A5C2A 0%, #1A5C2Acc 100%);">
+    <div class="day-label">Company Portfolio</div>
+    <h1>🌿 Urban Canopy</h1>
+    <p class="hero-sub">AI-powered urban growing — from seed to harvest, guided</p>
+    <div class="hero-meta">
+      <span><span class="icon">🏭</span> AgriTech · IoT · Subscription</span>
+      <span><span class="icon">📍</span> Cologne, Germany</span>
+      <span><span class="icon">🌐</span> urbancanopy.io</span>
+    </div>
+  </header>
+
+  <!-- CONTENT -->
+  <main>
+    <div class="container" style="padding-top: 36px; padding-bottom: 48px;">
+
+      <a href="../index.html" class="back-link">← Back to Company Selection</a>
+
+      <!-- Meta strip -->
+      <div class="port-meta">
+        <div class="port-meta-cell">
+          <div class="port-meta-label">Founded</div>
+          <div class="port-meta-value">2023</div>
+        </div>
+        <div class="port-meta-cell">
+          <div class="port-meta-label">Location</div>
+          <div class="port-meta-value">Cologne, Germany</div>
+        </div>
+        <div class="port-meta-cell">
+          <div class="port-meta-label">Industry</div>
+          <div class="port-meta-value" style="font-size:0.85rem;">AgriTech · IoT · Subscription</div>
+        </div>
+        <div class="port-meta-cell">
+          <div class="port-meta-label">Website</div>
+          <div class="port-meta-value">urbancanopy.io</div>
+        </div>
+      </div>
+
+      <!-- Overview -->
+      <div class="port-section">
+        <h2>Company Overview</h2>
+        <p style="font-size:0.95rem;line-height:1.75;color:#444;">Urban Canopy sells smart indoor planters equipped with
+          IoT sensors that monitor soil moisture, light, and temperature. A companion app — powered by a machine
+          learning model trained on plant biology data — guides users through the entire growing cycle and auto-orders
+          monthly seed and nutrient kits. The result: fresh herbs and microgreens on your kitchen counter, with zero
+          guesswork.</p>
+      </div>
+
+      <!-- Founding Story -->
+      <div class="port-section">
+        <h2>Founding Story</h2>
+        <div class="story-block">
+          <span class="story-label">Origin</span>
+          <p style="margin:0;font-size:0.95rem;">Divya Nair was a botanist turned AI researcher who spent three years at
+            Bayer CropScience training models to predict plant health from sensor data. Felix Braun was a hardware
+            engineer at Bosch who had spent too many weekends watching his partner's herb garden die. They met at a
+            climate tech hackathon in 2022, built a prototype overnight, won the hardware prize, and launched Urban
+            Canopy in early 2023. Their first batch of 200 Starter Kits sold out in four days.</p>
+        </div>
+      </div>
+
+      <!-- Products -->
+      <div class="port-section">
+        <h2>Products &amp; Services</h2>
+        <ul style="font-size:0.93rem;line-height:1.8;padding-left:22px;color:#444;">
+          <li style="margin-bottom:8px;">Starter Kit (€149) — smart planter with built-in sensors, grow light, and
+            companion app</li>
+          <li style="margin-bottom:8px;">Monthly Subscription (€29.99) — seed pack + nutrients + growing guides,
+            auto-curated by the app</li>
+          <li style="margin-bottom:8px;">B2B Office Installation — sensor array + maintenance service for offices and
+            co-working spaces</li>
+          <li style="margin-bottom:8px;">Grow Coaching Add-on (€9.99/month) — live video consultations with a botanist
+          </li>
+          <li style="margin-bottom:8px;">Urban Canopy App — iOS and Android; free tier + premium subscription</li>
+        </ul>
+      </div>
+
+      <!-- Market -->
+      <div class="port-section">
+        <h2>Market &amp; Competitive Landscape</h2>
+        <p style="font-size:0.95rem;line-height:1.75;color:#444;margin-bottom:16px;">The global indoor gardening and
+          urban farming market is valued at €3.1 billion and projected to grow at 24% annually. The convergence of IoT,
+          AI, and sustainability consciousness makes this space increasingly attractive.</p>
+        <table class="port-table">
+          <thead>
+            <tr>
+              <th style="width:30%;">Competitor</th>
+              <th>Position</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td style="padding:8px 12px;font-weight:600;border-bottom:1px solid #e0e0e0;">Click and Grow (EE)</td>
+              <td style="padding:8px 12px;color:#555;border-bottom:1px solid #e0e0e0;">Similar smart planter concept, no
+                AI layer</td>
+            </tr>
+            <tr>
+              <td style="padding:8px 12px;font-weight:600;border-bottom:1px solid #e0e0e0;">AeroGarden (US)</td>
+              <td style="padding:8px 12px;color:#555;border-bottom:1px solid #e0e0e0;">Hydroponics-first, strong US
+                market</td>
+            </tr>
+            <tr>
+              <td style="padding:8px 12px;font-weight:600;border-bottom:1px solid #e0e0e0;">Lechuza (DE)</td>
+              <td style="padding:8px 12px;color:#555;border-bottom:1px solid #e0e0e0;">Premium planters, no tech
+                integration</td>
+            </tr>
+            <tr>
+              <td style="padding:8px 12px;font-weight:600;border-bottom:1px solid #e0e0e0;">Gardena Smart System</td>
+              <td style="padding:8px 12px;color:#555;border-bottom:1px solid #e0e0e0;">Smart watering only, no growing
+                guidance</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Team -->
+      <div class="port-section">
+        <h2>The Team</h2>
+        <table class="port-table">
+          <thead>
+            <tr>
+              <th style="width:22%;">Name</th>
+              <th style="width:26%;">Role</th>
+              <th>Background</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="background:#fff;">
+              <td style="padding:10px 14px;font-weight:700;border-bottom:1px solid #e0e0e0;">Divya Nair</td>
+              <td style="padding:10px 14px;color:#1A5C2A;font-weight:600;border-bottom:1px solid #e0e0e0;">Co-Founder
+                &amp; CEO</td>
+              <td style="padding:10px 14px;color:#555;font-size:0.9rem;border-bottom:1px solid #e0e0e0;">PhD Plant
+                Biology + 3 years ML at Bayer CropScience; Forbes 30 Under 30</td>
+            </tr>
+            <tr style="background:#E8F5E9;">
+              <td style="padding:10px 14px;font-weight:700;border-bottom:1px solid #e0e0e0;">Felix Braun</td>
+              <td style="padding:10px 14px;color:#1A5C2A;font-weight:600;border-bottom:1px solid #e0e0e0;">Co-Founder
+                &amp; CTO</td>
+              <td style="padding:10px 14px;color:#555;font-size:0.9rem;border-bottom:1px solid #e0e0e0;">Hardware
+                engineering at Bosch; PCB design and embedded systems</td>
+            </tr>
+            <tr style="background:#fff;">
+              <td style="padding:10px 14px;font-weight:700;border-bottom:1px solid #e0e0e0;">Nkechi Osei</td>
+              <td style="padding:10px 14px;color:#1A5C2A;font-weight:600;border-bottom:1px solid #e0e0e0;">App Developer
+              </td>
+              <td style="padding:10px 14px;color:#555;font-size:0.9rem;border-bottom:1px solid #e0e0e0;">React Native;
+                iOS/Android; part-time remote</td>
+            </tr>
+            <tr style="background:#E8F5E9;">
+              <td style="padding:10px 14px;font-weight:700;border-bottom:1px solid #e0e0e0;">Dr. Imani Okafor</td>
+              <td style="padding:10px 14px;color:#1A5C2A;font-weight:600;border-bottom:1px solid #e0e0e0;">Botanist
+                &amp; Content Lead</td>
+              <td style="padding:10px 14px;color:#555;font-size:0.9rem;border-bottom:1px solid #e0e0e0;">Plant health
+                database; grow guides; in-app recommendations</td>
+            </tr>
+            <tr style="background:#fff;">
+              <td style="padding:10px 14px;font-weight:700;border-bottom:1px solid #e0e0e0;">Clara van der Berg</td>
+              <td style="padding:10px 14px;color:#1A5C2A;font-weight:600;border-bottom:1px solid #e0e0e0;">Customer
+                Success</td>
+              <td style="padding:10px 14px;color:#555;font-size:0.9rem;border-bottom:1px solid #e0e0e0;">Onboarding,
+                churn reduction, community management</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Financials -->
+      <div class="port-section">
+        <h2>Financial Snapshot (FY 2024)</h2>
+        <table class="port-table" style="max-width:520px;">
+          <thead>
+            <tr>
+              <th>Metric</th>
+              <th style="width:36%;">Value</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="background:#fff;">
+              <td style="padding:9px 14px;border-bottom:1px solid #e0e0e0;">Annual Revenue (2024)</td>
+              <td style="padding:9px 14px;font-weight:700;color:#1A5C2A;border-bottom:1px solid #e0e0e0;">€ 195,000</td>
+            </tr>
+            <tr style="background:#E8F5E9;">
+              <td style="padding:9px 14px;border-bottom:1px solid #e0e0e0;">Active Subscribers</td>
+              <td style="padding:9px 14px;font-weight:700;color:#1A5C2A;border-bottom:1px solid #e0e0e0;">650</td>
+            </tr>
+            <tr style="background:#fff;">
+              <td style="padding:9px 14px;border-bottom:1px solid #e0e0e0;">B2C / B2B Revenue Split</td>
+              <td style="padding:9px 14px;font-weight:700;color:#1A5C2A;border-bottom:1px solid #e0e0e0;">66% / 34%</td>
+            </tr>
+            <tr style="background:#E8F5E9;">
+              <td style="padding:9px 14px;border-bottom:1px solid #e0e0e0;">Hardware Gross Margin</td>
+              <td style="padding:9px 14px;font-weight:700;color:#1A5C2A;border-bottom:1px solid #e0e0e0;">28%</td>
+            </tr>
+            <tr style="background:#fff;">
+              <td style="padding:9px 14px;border-bottom:1px solid #e0e0e0;">Subscription Gross Margin</td>
+              <td style="padding:9px 14px;font-weight:700;color:#1A5C2A;border-bottom:1px solid #e0e0e0;">71%</td>
+            </tr>
+            <tr style="background:#E8F5E9;">
+              <td style="padding:9px 14px;border-bottom:1px solid #e0e0e0;">App NPS Score</td>
+              <td style="padding:9px 14px;font-weight:700;color:#1A5C2A;border-bottom:1px solid #e0e0e0;">34 (target:
+                50+)</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Challenge -->
+      <div class="port-section">
+        <h2>Business Challenge</h2>
+        <div class="challenge-box">
+          <div class="ch-label">⚠️ Current Challenge</div>
+          <p style="margin:0;font-size:0.95rem;">Urban Canopy has a growing app satisfaction problem: their NPS is 34 —
+            below category average and dragging on word-of-mouth growth. Additionally, Divya and Felix have never built
+            a formal financial model; investors are asking for a path to profitability. They need an NPS analysis of the
+            raw survey data, a 3-year financial model with unit economics and break-even analysis, and a professional
+            investor summary document.</p>
+        </div>
+      </div>
+
+      <!-- Project Brief -->
+      <div class="port-section">
+        <h2>Your Project Brief</h2>
+        <p style="font-size:0.93rem;color:#555;margin-bottom:16px;">As a team, you will work with this company
+          throughout the 6-day course. Each day builds on the last. Below is a summary of the four deliverables that
+          form your final submission on Day 7.</p>
+        <table class="port-table">
+          <thead>
+            <tr>
+              <th style="width:30%;">Task</th>
+              <th>Deliverable / Description</th>
+              <th style="width:16%;">Tool</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="background:#fff;">
+              <td style="padding:10px 14px;font-weight:600;border-bottom:1px solid #e0e0e0;">Build a 3-year financial
+                model</td>
+              <td style="padding:10px 14px;color:#555;font-size:0.9rem;border-bottom:1px solid #e0e0e0;">Hardware unit
+                economics, subscription MRR, break-even analysis, funding requirement</td>
+              <td style="padding:10px 14px;border-bottom:1px solid #e0e0e0;"><span
+                  style="display:inline-block;background:#107C41;color:#fff;font-size:0.72rem;font-weight:700;padding:2px 9px;border-radius:10px;letter-spacing:0.04em;">Excel</span>
+              </td>
+            </tr>
+            <tr style="background:#E8F5E9;">
+              <td style="padding:10px 14px;font-weight:600;border-bottom:1px solid #e0e0e0;">Clean and analyse the NPS
+                survey data</td>
+              <td style="padding:10px 14px;color:#555;font-size:0.9rem;border-bottom:1px solid #e0e0e0;">Fix messy
+                export, calculate NPS by segment, identify top detractor themes</td>
+              <td style="padding:10px 14px;border-bottom:1px solid #e0e0e0;"><span
+                  style="display:inline-block;background:#107C41;color:#fff;font-size:0.72rem;font-weight:700;padding:2px 9px;border-radius:10px;letter-spacing:0.04em;">Excel</span>
+              </td>
+            </tr>
+            <tr style="background:#fff;">
+              <td style="padding:10px 14px;font-weight:600;border-bottom:1px solid #e0e0e0;">Write an investor executive
+                summary</td>
+              <td style="padding:10px 14px;color:#555;font-size:0.9rem;border-bottom:1px solid #e0e0e0;">2-page
+                document: problem, solution, traction, financials snapshot, ask</td>
+              <td style="padding:10px 14px;border-bottom:1px solid #e0e0e0;"><span
+                  style="display:inline-block;background:#185ABD;color:#fff;font-size:0.72rem;font-weight:700;padding:2px 9px;border-radius:10px;letter-spacing:0.04em;">Word</span>
+              </td>
+            </tr>
+            <tr style="background:#E8F5E9;">
+              <td style="padding:10px 14px;font-weight:600;border-bottom:1px solid #e0e0e0;">Create a product roadmap
+                slide deck</td>
+              <td style="padding:10px 14px;color:#555;font-size:0.9rem;border-bottom:1px solid #e0e0e0;">6-slide deck:
+                current state, pain points, roadmap milestones, resources needed</td>
+              <td style="padding:10px 14px;border-bottom:1px solid #e0e0e0;"><span
+                  style="display:inline-block;background:#C43E1C;color:#fff;font-size:0.72rem;font-weight:700;padding:2px 9px;border-radius:10px;letter-spacing:0.04em;">PowerPoint</span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Data Download -->
+      <div class="port-section">
+        <h2>Your Datasets</h2>
+        <p style="font-size:0.93rem;color:#555;margin-bottom:16px;">Two files for your coursework. Download both and
+          keep the originals untouched — always work on a copy.</p>
+
+        <p
+          style="font-size:0.82rem;font-weight:700;letter-spacing:0.05em;color:#888;margin-bottom:8px;text-transform:uppercase;">
+          Day 4 — Data Cleaning &amp; Visualisation</p>
+        <a href="../data/urban_canopy_visualization.xlsx" class="data-download" download>
+          <span class="dl-icon">📊</span>
+          <div>
+            <div>urban_canopy_visualization.xlsx</div>
+            <div class="dl-meta">Operations data — NPS survey results, customer feedback</div>
+          </div>
+          <span style="margin-left:auto;font-size:1.1rem;">⬇</span>
+        </a>
+
+        <p
+          style="font-size:0.82rem;font-weight:700;letter-spacing:0.05em;color:#888;margin:16px 0 8px;text-transform:uppercase;">
+          Day 3 — Financial Modelling</p>
+        <a href="../data/urban_canopy_financial.xlsx" class="data-download" download>
+          <span class="dl-icon">💰</span>
+          <div>
+            <div>urban_canopy_financial.xlsx</div>
+            <div class="dl-meta">P&L template — fill in the revenue &amp; cost formulas</div>
+          </div>
+          <span style="margin-left:auto;font-size:1.1rem;">⬇</span>
+        </a>
+      </div>
+
+      <!-- Back link -->
+      <a href="../index.html" class="back-link" style="margin-top:16px;display:inline-flex;">← Back to Company
+        Selection</a>
+
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-nav">
+      <a href="../index.html">Home</a>
+      <a href="../content/day1.html">Day 1</a>
+      <a href="../content/day2.html">Day 2</a>
+      <a href="../content/day3.html">Day 3</a>
+      <a href="../content/day4.html">Day 4</a>
+      <a href="../content/day5.html">Day 5</a>
+      <a href="../content/day6.html">Day 6</a>
+      <a href="../content/day7.html">Day 7</a>
+    </div>
+    <div>Urban Canopy · Company Portfolio · Business Software Course · SRH Hochschule</div>
+  </footer>
+
+</body>
+
+</html>

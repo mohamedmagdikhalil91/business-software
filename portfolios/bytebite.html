@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ByteBite — Company Portfolio | Business Software</title>
+  <link href="../style.css" rel="stylesheet" />
+  <style>
+    /* Portfolio-specific overrides */
+    .port-meta {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 0;
+      border: 1px solid #e0e0e0;
+      border-radius: var(--radius);
+      overflow: hidden;
+      margin-bottom: 28px;
+    }
+
+    .port-meta-cell {
+      padding: 14px 18px;
+      background: #FBE9E7;
+      border-right: 1px solid #e0e0e0;
+    }
+
+    .port-meta-cell:last-child {
+      border-right: none;
+    }
+
+    .port-meta-label {
+      font-size: 0.68rem;
+      font-weight: 800;
+      letter-spacing: 0.10em;
+      text-transform: uppercase;
+      color: #888;
+      margin-bottom: 4px;
+    }
+
+    .port-meta-value {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: #BF360C;
+    }
+
+    .port-section {
+      margin-bottom: 36px;
+    }
+
+    .port-section h2 {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: #BF360C;
+      border-bottom: 3px solid #BF360C;
+      padding-bottom: 6px;
+      margin-bottom: 16px;
+    }
+
+    .port-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.9rem;
+    }
+
+    .port-table th {
+      background: #BF360C;
+      color: #fff;
+      padding: 10px 14px;
+      text-align: left;
+      font-size: 0.82rem;
+      letter-spacing: 0.04em;
+    }
+
+    .challenge-box {
+      background: #fffde7;
+      border-top: 4px solid #BF360C;
+      border-bottom: 4px solid #BF360C;
+      border-radius: var(--radius);
+      padding: 20px 24px;
+      font-size: 0.95rem;
+      line-height: 1.7;
+    }
+
+    .challenge-box .ch-label {
+      font-size: 0.72rem;
+      font-weight: 800;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #BF360C;
+      margin-bottom: 8px;
+    }
+
+    .data-download {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      background: #FBE9E7;
+      border: 2px solid #BF360C;
+      border-radius: var(--radius);
+      padding: 16px 22px;
+      text-decoration: none;
+      color: #BF360C;
+      font-weight: 700;
+      font-size: 0.95rem;
+      transition: all 0.2s;
+      margin-top: 8px;
+    }
+
+    .data-download:hover {
+      background: #BF360C;
+      color: #fff;
+    }
+
+    .data-download .dl-icon {
+      font-size: 1.5rem;
+      flex-shrink: 0;
+    }
+
+    .data-download .dl-meta {
+      font-size: 0.8rem;
+      font-weight: 400;
+      opacity: 0.8;
+    }
+
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      color: #BF360C;
+      font-size: 0.88rem;
+      font-weight: 600;
+      text-decoration: none;
+      margin-bottom: 24px;
+    }
+
+    .back-link:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      .port-meta {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAV -->
+  <nav class="site-nav">
+    <div class="nav-brand">
+      <div class="brand-dot"></div>Business Software · IBA
+    </div>
+    <ul class="nav-days">
+      <li><a class="home-link" href="../index.html">🏠</a></li>
+      <li><a href="../content/day1.html">Day 1</a></li>
+      <li><a href="../content/day2.html">Day 2</a></li>
+      <li><a href="../content/day3.html">Day 3</a></li>
+      <li><a href="../content/day4.html">Day 4</a></li>
+      <li><a href="../content/day5.html">Day 5</a></li>
+      <li><a href="../content/day6.html">Day 6</a></li>
+      <li><a href="../content/day7.html">Day 7 🎤</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <header class="page-hero" style="background: linear-gradient(135deg, #BF360C 0%, #BF360Ccc 100%);">
+    <div class="day-label">Company Portfolio</div>
+    <h1>🍱 ByteBite</h1>
+    <p class="hero-sub">Healthy meal prep, perfectly portioned, delivered fresh</p>
+    <div class="hero-meta">
+      <span><span class="icon">🏭</span> FoodTech · D2C Subscription</span>
+      <span><span class="icon">📍</span> Frankfurt, Germany</span>
+      <span><span class="icon">🌐</span> bytebite.de</span>
+    </div>
+  </header>
+
+  <!-- CONTENT -->
+  <main>
+    <div class="container" style="padding-top: 36px; padding-bottom: 48px;">
+
+      <a href="../index.html" class="back-link">← Back to Company Selection</a>
+
+      <!-- Meta strip -->
+      <div class="port-meta">
+        <div class="port-meta-cell">
+          <div class="port-meta-label">Founded</div>
+          <div class="port-meta-value">2022</div>
+        </div>
+        <div class="port-meta-cell">
+          <div class="port-meta-label">Location</div>
+          <div class="port-meta-value">Frankfurt, Germany</div>
+        </div>
+        <div class="port-meta-cell">
+          <div class="port-meta-label">Industry</div>
+          <div class="port-meta-value" style="font-size:0.85rem;">FoodTech · D2C Subscription</div>
+        </div>
+        <div class="port-meta-cell">
+          <div class="port-meta-label">Website</div>
+          <div class="port-meta-value">bytebite.de</div>
+        </div>
+      </div>
+
+      <!-- Overview -->
+      <div class="port-section">
+        <h2>Company Overview</h2>
+        <p style="font-size:0.95rem;line-height:1.75;color:#444;">ByteBite delivers fresh, chef-prepared meal prep boxes
+          to busy professionals in Frankfurt, Cologne, and Düsseldorf. Subscribers choose from four plans (Classic,
+          Keto, Vegan, High-Protein) and receive 3 or 5 delivery days per week. All meals are portioned, labelled with
+          macros, and require zero preparation.</p>
+      </div>
+
+      <!-- Founding Story -->
+      <div class="port-section">
+        <h2>Founding Story</h2>
+        <div class="story-block">
+          <span class="story-label">Origin</span>
+          <p style="margin:0;font-size:0.95rem;">Raj Sharma cooked in hotel kitchens for eight years before growing
+            tired of wasted food and one-size-fits-all catering. Sofia Klein had run last-mile logistics for a
+            pharmaceutical company and knew exactly how to make cold-chain delivery reliable. They tested their first 20
+            boxes with colleagues in 2022. Within three months they had 80 subscribers. Within a year, 1,100.</p>
+        </div>
+      </div>
+
+      <!-- Products -->
+      <div class="port-section">
+        <h2>Products &amp; Services</h2>
+        <ul style="font-size:0.93rem;line-height:1.8;padding-left:22px;color:#444;">
+          <li style="margin-bottom:8px;">Classic Plan — balanced meals, Mediterranean-inspired, 2,000 kcal/day</li>
+          <li style="margin-bottom:8px;">Keto Plan — high-fat, low-carb; 5% carbs, 70% fat, 25% protein</li>
+          <li style="margin-bottom:8px;">Vegan Plan — 100% plant-based, fortified with B12 and iron</li>
+          <li style="margin-bottom:8px;">High-Protein Plan — 160g+ protein/day for athletes and gym-goers</li>
+          <li style="margin-bottom:8px;">3-Day Pack (Mon/Wed/Fri) and 5-Day Pack (weekday delivery)</li>
+        </ul>
+      </div>
+
+      <!-- Market -->
+      <div class="port-section">
+        <h2>Market &amp; Competitive Landscape</h2>
+        <p style="font-size:0.95rem;line-height:1.75;color:#444;margin-bottom:16px;">The meal-kit and meal prep market
+          in the DACH region is valued at €4.5 billion and growing at 11% annually. HelloFresh dominates the kit
+          segment; ByteBite competes on the fully-prepared (no cooking required) segment — which lacks a clear market
+          leader.</p>
+        <table class="port-table">
+          <thead>
+            <tr>
+              <th style="width:30%;">Competitor</th>
+              <th>Position</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td style="padding:8px 12px;font-weight:600;border-bottom:1px solid #e0e0e0;">HelloFresh</td>
+              <td style="padding:8px 12px;color:#555;border-bottom:1px solid #e0e0e0;">Meal kits (cooking required),
+                stronger brand, larger scale</td>
+            </tr>
+            <tr>
+              <td style="padding:8px 12px;font-weight:600;border-bottom:1px solid #e0e0e0;">Foodspring</td>
+              <td style="padding:8px 12px;color:#555;border-bottom:1px solid #e0e0e0;">Protein-focused, supplement
+                crossover audience</td>
+            </tr>
+            <tr>
+              <td style="padding:8px 12px;font-weight:600;border-bottom:1px solid #e0e0e0;">Lieferando partner kitchens
+              </td>
+              <td style="padding:8px 12px;color:#555;border-bottom:1px solid #e0e0e0;">Convenience, no meal plan
+                structure</td>
+            </tr>
+            <tr>
+              <td style="padding:8px 12px;font-weight:600;border-bottom:1px solid #e0e0e0;">Local meal prep businesses
+              </td>
+              <td style="padding:8px 12px;color:#555;border-bottom:1px solid #e0e0e0;">Highly local, inconsistent
+                quality</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Team -->
+      <div class="port-section">
+        <h2>The Team</h2>
+        <table class="port-table">
+          <thead>
+            <tr>
+              <th style="width:22%;">Name</th>
+              <th style="width:26%;">Role</th>
+              <th>Background</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="background:#fff;">
+              <td style="padding:10px 14px;font-weight:700;border-bottom:1px solid #e0e0e0;">Raj Sharma</td>
+              <td style="padding:10px 14px;color:#BF360C;font-weight:600;border-bottom:1px solid #e0e0e0;">Co-Founder
+                &amp; Head of Kitchen</td>
+              <td style="padding:10px 14px;color:#555;font-size:0.9rem;border-bottom:1px solid #e0e0e0;">8 years hotel
+                chef (Hilton, Marriott); nutritional science diploma</td>
+            </tr>
+            <tr style="background:#FBE9E7;">
+              <td style="padding:10px 14px;font-weight:700;border-bottom:1px solid #e0e0e0;">Sofia Klein</td>
+              <td style="padding:10px 14px;color:#BF360C;font-weight:600;border-bottom:1px solid #e0e0e0;">Co-Founder
+                &amp; COO</td>
+              <td style="padding:10px 14px;color:#555;font-size:0.9rem;border-bottom:1px solid #e0e0e0;">Logistics &amp;
+                supply chain (pharma cold chain); University of Cologne MBA</td>
+            </tr>
+            <tr style="background:#fff;">
+              <td style="padding:10px 14px;font-weight:700;border-bottom:1px solid #e0e0e0;">Tomás Navarro</td>
+              <td style="padding:10px 14px;color:#BF360C;font-weight:600;border-bottom:1px solid #e0e0e0;">Head of
+                Marketing</td>
+              <td style="padding:10px 14px;color:#555;font-size:0.9rem;border-bottom:1px solid #e0e0e0;">Growth
+                marketing; ex-Delivery Hero; CAC reduction specialist</td>
+            </tr>
+            <tr style="background:#FBE9E7;">
+              <td style="padding:10px 14px;font-weight:700;border-bottom:1px solid #e0e0e0;">Farah Idrissi</td>
+              <td style="padding:10px 14px;color:#BF360C;font-weight:600;border-bottom:1px solid #e0e0e0;">Customer
+                Success Lead</td>
+              <td style="padding:10px 14px;color:#555;font-size:0.9rem;border-bottom:1px solid #e0e0e0;">Retention, NPS,
+                and churn reduction; bilingual DE/FR</td>
+            </tr>
+            <tr style="background:#fff;">
+              <td style="padding:10px 14px;font-weight:700;border-bottom:1px solid #e0e0e0;">Klaus Bauer</td>
+              <td style="padding:10px 14px;color:#BF360C;font-weight:600;border-bottom:1px solid #e0e0e0;">Head of
+                Delivery</td>
+              <td style="padding:10px 14px;color:#555;font-size:0.9rem;border-bottom:1px solid #e0e0e0;">Route
+                optimisation; manages 3 drivers and cold-chain logistics</td>
+            </tr>
+            <tr style="background:#FBE9E7;">
+              <td style="padding:10px 14px;font-weight:700;border-bottom:1px solid #e0e0e0;">Annika Wolff</td>
+              <td style="padding:10px 14px;color:#BF360C;font-weight:600;border-bottom:1px solid #e0e0e0;">Junior
+                Kitchen Team</td>
+              <td style="padding:10px 14px;color:#555;font-size:0.9rem;border-bottom:1px solid #e0e0e0;">Batch prep,
+                portioning, quality control</td>
+            </tr>
+            <tr style="background:#fff;">
+              <td style="padding:10px 14px;font-weight:700;border-bottom:1px solid #e0e0e0;">Deepak Verma</td>
+              <td style="padding:10px 14px;color:#BF360C;font-weight:600;border-bottom:1px solid #e0e0e0;">Finance &amp;
+                Admin</td>
+              <td style="padding:10px 14px;color:#555;font-size:0.9rem;border-bottom:1px solid #e0e0e0;">Bookkeeping,
+                invoicing, and financial reporting</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Financials -->
+      <div class="port-section">
+        <h2>Financial Snapshot (FY 2024)</h2>
+        <table class="port-table" style="max-width:520px;">
+          <thead>
+            <tr>
+              <th>Metric</th>
+              <th style="width:36%;">Value</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="background:#fff;">
+              <td style="padding:9px 14px;border-bottom:1px solid #e0e0e0;">Annual Revenue (2024)</td>
+              <td style="padding:9px 14px;font-weight:700;color:#BF360C;border-bottom:1px solid #e0e0e0;">€ 520,000</td>
+            </tr>
+            <tr style="background:#FBE9E7;">
+              <td style="padding:9px 14px;border-bottom:1px solid #e0e0e0;">Active Subscribers</td>
+              <td style="padding:9px 14px;font-weight:700;color:#BF360C;border-bottom:1px solid #e0e0e0;">1,100</td>
+            </tr>
+            <tr style="background:#fff;">
+              <td style="padding:9px 14px;border-bottom:1px solid #e0e0e0;">Average Price per Box</td>
+              <td style="padding:9px 14px;font-weight:700;color:#BF360C;border-bottom:1px solid #e0e0e0;">€ 14.99</td>
+            </tr>
+            <tr style="background:#FBE9E7;">
+              <td style="padding:9px 14px;border-bottom:1px solid #e0e0e0;">Contribution Margin</td>
+              <td style="padding:9px 14px;font-weight:700;color:#BF360C;border-bottom:1px solid #e0e0e0;">47%</td>
+            </tr>
+            <tr style="background:#fff;">
+              <td style="padding:9px 14px;border-bottom:1px solid #e0e0e0;">Customer Acquisition Cost</td>
+              <td style="padding:9px 14px;font-weight:700;color:#BF360C;border-bottom:1px solid #e0e0e0;">€ 45</td>
+            </tr>
+            <tr style="background:#FBE9E7;">
+              <td style="padding:9px 14px;border-bottom:1px solid #e0e0e0;">Customer Lifetime Value</td>
+              <td style="padding:9px 14px;font-weight:700;color:#BF360C;border-bottom:1px solid #e0e0e0;">€ 180</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Challenge -->
+      <div class="port-section">
+        <h2>Business Challenge</h2>
+        <div class="challenge-box">
+          <div class="ch-label">⚠️ Current Challenge</div>
+          <p style="margin:0;font-size:0.95rem;">ByteBite's customer acquisition cost (€45) versus lifetime value (€180)
+            gives a payback period of roughly 4 months — manageable, but not if churn stays above 6% per month. The team
+            has 6 months of raw order data but no clean dataset and no KPI dashboard.</p>
+        </div>
+      </div>
+
+      <!-- Project Brief -->
+      <div class="port-section">
+        <h2>Your Project Brief</h2>
+        <p style="font-size:0.93rem;color:#555;margin-bottom:16px;">As a team, you will work with this company
+          throughout the 6-day course. Each day builds on the last. Below is a summary of the four deliverables that
+          form your final submission on Day 7.</p>
+        <table class="port-table">
+          <thead>
+            <tr>
+              <th style="width:30%;">Task</th>
+              <th>Deliverable / Description</th>
+              <th style="width:16%;">Tool</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="background:#fff;">
+              <td style="padding:10px 14px;font-weight:600;border-bottom:1px solid #e0e0e0;">Clean the 6-month order
+                dataset</td>
+              <td style="padding:10px 14px;color:#555;font-size:0.9rem;border-bottom:1px solid #e0e0e0;">Standardise
+                dates, fix currency fields, remove duplicates, flag missing values</td>
+              <td style="padding:10px 14px;border-bottom:1px solid #e0e0e0;"><span
+                  style="display:inline-block;background:#107C41;color:#fff;font-size:0.72rem;font-weight:700;padding:2px 9px;border-radius:10px;letter-spacing:0.04em;">Excel</span>
+              </td>
+            </tr>
+            <tr style="background:#FBE9E7;">
+              <td style="padding:10px 14px;font-weight:600;border-bottom:1px solid #e0e0e0;">Build a KPI dashboard</td>
+              <td style="padding:10px 14px;color:#555;font-size:0.9rem;border-bottom:1px solid #e0e0e0;">Churn rate,
+                LTV, AOV, monthly revenue — auto-updating from clean data</td>
+              <td style="padding:10px 14px;border-bottom:1px solid #e0e0e0;"><span
+                  style="display:inline-block;background:#107C41;color:#fff;font-size:0.72rem;font-weight:700;padding:2px 9px;border-radius:10px;letter-spacing:0.04em;">Excel</span>
+              </td>
+            </tr>
+            <tr style="background:#fff;">
+              <td style="padding:10px 14px;font-weight:600;border-bottom:1px solid #e0e0e0;">Write a subscriber
+                retention strategy report</td>
+              <td style="padding:10px 14px;color:#555;font-size:0.9rem;border-bottom:1px solid #e0e0e0;">Data-backed,
+                max 3 pages, with recommendations and action plan</td>
+              <td style="padding:10px 14px;border-bottom:1px solid #e0e0e0;"><span
+                  style="display:inline-block;background:#185ABD;color:#fff;font-size:0.72rem;font-weight:700;padding:2px 9px;border-radius:10px;letter-spacing:0.04em;">Word</span>
+              </td>
+            </tr>
+            <tr style="background:#FBE9E7;">
+              <td style="padding:10px 14px;font-weight:600;border-bottom:1px solid #e0e0e0;">Build a unit economics
+                model</td>
+              <td style="padding:10px 14px;color:#555;font-size:0.9rem;border-bottom:1px solid #e0e0e0;">Variable cost
+                breakdown, contribution margin, break-even subscriber count</td>
+              <td style="padding:10px 14px;border-bottom:1px solid #e0e0e0;"><span
+                  style="display:inline-block;background:#107C41;color:#fff;font-size:0.72rem;font-weight:700;padding:2px 9px;border-radius:10px;letter-spacing:0.04em;">Excel</span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Data Download -->
+      <div class="port-section">
+        <h2>Your Datasets</h2>
+        <p style="font-size:0.93rem;color:#555;margin-bottom:16px;">Two files for your coursework. Download both and
+          keep the originals untouched — always work on a copy.</p>
+
+        <p
+          style="font-size:0.82rem;font-weight:700;letter-spacing:0.05em;color:#888;margin-bottom:8px;text-transform:uppercase;">
+          Day 4 — Data Cleaning &amp; Visualisation</p>
+        <a href="../data/bytebite_visualization.xlsx" class="data-download" download>
+          <span class="dl-icon">📊</span>
+          <div>
+            <div>bytebite_visualization.xlsx</div>
+            <div class="dl-meta">Operations data — meal box orders, delivery records</div>
+          </div>
+          <span style="margin-left:auto;font-size:1.1rem;">⬇</span>
+        </a>
+
+        <p
+          style="font-size:0.82rem;font-weight:700;letter-spacing:0.05em;color:#888;margin:16px 0 8px;text-transform:uppercase;">
+          Day 3 — Financial Modelling</p>
+        <a href="../data/bytebite_financial.xlsx" class="data-download" download>
+          <span class="dl-icon">💰</span>
+          <div>
+            <div>bytebite_financial.xlsx</div>
+            <div class="dl-meta">P&L template — fill in the revenue &amp; cost formulas</div>
+          </div>
+          <span style="margin-left:auto;font-size:1.1rem;">⬇</span>
+        </a>
+      </div>
+
+      <!-- Back link -->
+      <a href="../index.html" class="back-link" style="margin-top:16px;display:inline-flex;">← Back to Company
+        Selection</a>
+
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-nav">
+      <a href="../index.html">Home</a>
+      <a href="../content/day1.html">Day 1</a>
+      <a href="../content/day2.html">Day 2</a>
+      <a href="../content/day3.html">Day 3</a>
+      <a href="../content/day4.html">Day 4</a>
+      <a href="../content/day5.html">Day 5</a>
+      <a href="../content/day6.html">Day 6</a>
+      <a href="../content/day7.html">Day 7</a>
+    </div>
+    <div>ByteBite · Company Portfolio · Business Software Course · SRH Hochschule</div>
+  </footer>
+
+</body>
+
+</html>

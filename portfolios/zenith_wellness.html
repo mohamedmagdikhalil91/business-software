@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zenith Wellness — Company Portfolio | Business Software</title>
+  <link href="../style.css" rel="stylesheet" />
+  <style>
+    /* Portfolio-specific overrides */
+    .port-meta {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 0;
+      border: 1px solid #e0e0e0;
+      border-radius: var(--radius);
+      overflow: hidden;
+      margin-bottom: 28px;
+    }
+
+    .port-meta-cell {
+      padding: 14px 18px;
+      background: #F3E5F5;
+      border-right: 1px solid #e0e0e0;
+    }
+
+    .port-meta-cell:last-child {
+      border-right: none;
+    }
+
+    .port-meta-label {
+      font-size: 0.68rem;
+      font-weight: 800;
+      letter-spacing: 0.10em;
+      text-transform: uppercase;
+      color: #888;
+      margin-bottom: 4px;
+    }
+
+    .port-meta-value {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: #4A148C;
+    }
+
+    .port-section {
+      margin-bottom: 36px;
+    }
+
+    .port-section h2 {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: #4A148C;
+      border-bottom: 3px solid #4A148C;
+      padding-bottom: 6px;
+      margin-bottom: 16px;
+    }
+
+    .port-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.9rem;
+    }
+
+    .port-table th {
+      background: #4A148C;
+      color: #fff;
+      padding: 10px 14px;
+      text-align: left;
+      font-size: 0.82rem;
+      letter-spacing: 0.04em;
+    }
+
+    .challenge-box {
+      background: #fffde7;
+      border-top: 4px solid #4A148C;
+      border-bottom: 4px solid #4A148C;
+      border-radius: var(--radius);
+      padding: 20px 24px;
+      font-size: 0.95rem;
+      line-height: 1.7;
+    }
+
+    .challenge-box .ch-label {
+      font-size: 0.72rem;
+      font-weight: 800;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #4A148C;
+      margin-bottom: 8px;
+    }
+
+    .data-download {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      background: #F3E5F5;
+      border: 2px solid #4A148C;
+      border-radius: var(--radius);
+      padding: 16px 22px;
+      text-decoration: none;
+      color: #4A148C;
+      font-weight: 700;
+      font-size: 0.95rem;
+      transition: all 0.2s;
+      margin-top: 8px;
+    }
+
+    .data-download:hover {
+      background: #4A148C;
+      color: #fff;
+    }
+
+    .data-download .dl-icon {
+      font-size: 1.5rem;
+      flex-shrink: 0;
+    }
+
+    .data-download .dl-meta {
+      font-size: 0.8rem;
+      font-weight: 400;
+      opacity: 0.8;
+    }
+
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      color: #4A148C;
+      font-size: 0.88rem;
+      font-weight: 600;
+      text-decoration: none;
+      margin-bottom: 24px;
+    }
+
+    .back-link:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      .port-meta {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAV -->
+  <nav class="site-nav">
+    <div class="nav-brand">
+      <div class="brand-dot"></div>Business Software · IBA
+    </div>
+    <ul class="nav-days">
+      <li><a class="home-link" href="../index.html">🏠</a></li>
+      <li><a href="../content/day1.html">Day 1</a></li>
+      <li><a href="../content/day2.html">Day 2</a></li>
+      <li><a href="../content/day3.html">Day 3</a></li>
+      <li><a href="../content/day4.html">Day 4</a></li>
+      <li><a href="../content/day5.html">Day 5</a></li>
+      <li><a href="../content/day6.html">Day 6</a></li>
+      <li><a href="../content/day7.html">Day 7 🎤</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <header class="page-hero" style="background: linear-gradient(135deg, #4A148C 0%, #4A148Ccc 100%);">
+    <div class="day-label">Company Portfolio</div>
+    <h1>🧘 Zenith Wellness</h1>
+    <p class="hero-sub">Mind, body, and business — find your peak</p>
+    <div class="hero-meta">
+      <span><span class="icon">🏭</span> Health &amp; Wellness · SaaS</span>
+      <span><span class="icon">📍</span> Munich, Germany</span>
+      <span><span class="icon">🌐</span> zenithwellness.de</span>
+    </div>
+  </header>
+
+  <!-- CONTENT -->
+  <main>
+    <div class="container" style="padding-top: 36px; padding-bottom: 48px;">
+
+      <a href="../index.html" class="back-link">← Back to Company Selection</a>
+
+      <!-- Meta strip -->
+      <div class="port-meta">
+        <div class="port-meta-cell">
+          <div class="port-meta-label">Founded</div>
+          <div class="port-meta-value">2021</div>
+        </div>
+        <div class="port-meta-cell">
+          <div class="port-meta-label">Location</div>
+          <div class="port-meta-value">Munich, Germany</div>
+        </div>
+        <div class="port-meta-cell">
+          <div class="port-meta-label">Industry</div>
+          <div class="port-meta-value" style="font-size:0.85rem;">Health &amp; Wellness · SaaS</div>
+        </div>
+        <div class="port-meta-cell">
+          <div class="port-meta-label">Website</div>
+          <div class="port-meta-value">zenithwellness.de</div>
+        </div>
+      </div>
+
+      <!-- Overview -->
+      <div class="port-section">
+        <h2>Company Overview</h2>
+        <p style="font-size:0.95rem;line-height:1.75;color:#444;">Zenith Wellness operates a premium yoga and pilates
+          studio in Munich alongside an online wellness platform offering live and on-demand classes. Corporate wellness
+          packages are a growing revenue stream, with clients including two tech companies and a healthcare provider.
+        </p>
+      </div>
+
+      <!-- Founding Story -->
+      <div class="port-section">
+        <h2>Founding Story</h2>
+        <div class="story-block">
+          <span class="story-label">Origin</span>
+          <p style="margin:0;font-size:0.95rem;">Ananya Sharma had been teaching yoga in Munich for 15 years and had
+            built a loyal following, but her studio was perpetually full with a waiting list and no digital presence.
+            Marcus Weber, a product manager at a fitness tech startup, saw a clear digital opportunity. They combined
+            Ananya's teaching reputation and community with Marcus's tech experience to launch Zenith Wellness in 2021 —
+            a hybrid studio-platform now serving members across 14 countries.</p>
+        </div>
+      </div>
+
+      <!-- Products -->
+      <div class="port-section">
+        <h2>Products &amp; Services</h2>
+        <ul style="font-size:0.93rem;line-height:1.8;padding-left:22px;color:#444;">
+          <li style="margin-bottom:8px;">In-Studio Classes — yoga, pilates, meditation; drop-in €18, monthly €120</li>
+          <li style="margin-bottom:8px;">Online Subscription Platform — live + on-demand classes, €29.99/month</li>
+          <li style="margin-bottom:8px;">Corporate Wellness Packages — bespoke programs for company teams, from
+            €500/month</li>
+          <li style="margin-bottom:8px;">Retreats — seasonal 3-day wellness weekends at partner venues (sold out, 2 per
+            year)</li>
+          <li style="margin-bottom:8px;">Teacher Training Programme — 200-hour yoga teacher certification (annual
+            intake, 12 students)</li>
+        </ul>
+      </div>
+
+      <!-- Market -->
+      <div class="port-section">
+        <h2>Market &amp; Competitive Landscape</h2>
+        <p style="font-size:0.95rem;line-height:1.75;color:#444;margin-bottom:16px;">The global wellness market is
+          valued at €80 billion and growing at 12% annually. Post-pandemic demand for mental health and fitness
+          solutions has accelerated. Online fitness platforms (Peloton, Alo Moves) set the digital benchmark.</p>
+        <table class="port-table">
+          <thead>
+            <tr>
+              <th style="width:30%;">Competitor</th>
+              <th>Position</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td style="padding:8px 12px;font-weight:600;border-bottom:1px solid #e0e0e0;">Peloton / Alo Moves</td>
+              <td style="padding:8px 12px;color:#555;border-bottom:1px solid #e0e0e0;">Digital-first platforms, large
+                content libraries</td>
+            </tr>
+            <tr>
+              <td style="padding:8px 12px;font-weight:600;border-bottom:1px solid #e0e0e0;">Urban Sports Club</td>
+              <td style="padding:8px 12px;color:#555;border-bottom:1px solid #e0e0e0;">Aggregator, captures Zenith's
+                in-studio customers</td>
+            </tr>
+            <tr>
+              <td style="padding:8px 12px;font-weight:600;border-bottom:1px solid #e0e0e0;">Local Munich studios</td>
+              <td style="padding:8px 12px;color:#555;border-bottom:1px solid #e0e0e0;">Atmago, Yobe, Yoga Vidya</td>
+            </tr>
+            <tr>
+              <td style="padding:8px 12px;font-weight:600;border-bottom:1px solid #e0e0e0;">Corporate wellness
+                aggregators</td>
+              <td style="padding:8px 12px;color:#555;border-bottom:1px solid #e0e0e0;">Wellpass, EGYM</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Team -->
+      <div class="port-section">
+        <h2>The Team</h2>
+        <table class="port-table">
+          <thead>
+            <tr>
+              <th style="width:22%;">Name</th>
+              <th style="width:26%;">Role</th>
+              <th>Background</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="background:#fff;">
+              <td style="padding:10px 14px;font-weight:700;border-bottom:1px solid #e0e0e0;">Ananya Sharma</td>
+              <td style="padding:10px 14px;color:#4A148C;font-weight:600;border-bottom:1px solid #e0e0e0;">Co-Founder
+                &amp; Head of Instruction</td>
+              <td style="padding:10px 14px;color:#555;font-size:0.9rem;border-bottom:1px solid #e0e0e0;">15 years yoga
+                teaching; 500-hour YTT certified; Iyengar lineage</td>
+            </tr>
+            <tr style="background:#F3E5F5;">
+              <td style="padding:10px 14px;font-weight:700;border-bottom:1px solid #e0e0e0;">Marcus Weber</td>
+              <td style="padding:10px 14px;color:#4A148C;font-weight:600;border-bottom:1px solid #e0e0e0;">Co-Founder
+                &amp; CEO</td>
+              <td style="padding:10px 14px;color:#555;font-size:0.9rem;border-bottom:1px solid #e0e0e0;">Product
+                management background; ex-Freeletics tech lead</td>
+            </tr>
+            <tr style="background:#fff;">
+              <td style="padding:10px 14px;font-weight:700;border-bottom:1px solid #e0e0e0;">Björn Kjeldsen</td>
+              <td style="padding:10px 14px;color:#4A148C;font-weight:600;border-bottom:1px solid #e0e0e0;">Lead
+                Instructor — Pilates</td>
+              <td style="padding:10px 14px;color:#555;font-size:0.9rem;border-bottom:1px solid #e0e0e0;">Danish Pilates
+                Institute certified; 8 years teaching</td>
+            </tr>
+            <tr style="background:#F3E5F5;">
+              <td style="padding:10px 14px;font-weight:700;border-bottom:1px solid #e0e0e0;">Nora Al-Amri</td>
+              <td style="padding:10px 14px;color:#4A148C;font-weight:600;border-bottom:1px solid #e0e0e0;">Instructor —
+                Yoga &amp; Meditation</td>
+              <td style="padding:10px 14px;color:#555;font-size:0.9rem;border-bottom:1px solid #e0e0e0;">Integrative
+                yoga &amp; MBSR mindfulness certified</td>
+            </tr>
+            <tr style="background:#fff;">
+              <td style="padding:10px 14px;font-weight:700;border-bottom:1px solid #e0e0e0;">Leila Fassaert</td>
+              <td style="padding:10px 14px;color:#4A148C;font-weight:600;border-bottom:1px solid #e0e0e0;">Customer
+                Success</td>
+              <td style="padding:10px 14px;color:#555;font-size:0.9rem;border-bottom:1px solid #e0e0e0;">Member
+                onboarding, scheduling, and retention management</td>
+            </tr>
+            <tr style="background:#F3E5F5;">
+              <td style="padding:10px 14px;font-weight:700;border-bottom:1px solid #e0e0e0;">Takeshi Mori</td>
+              <td style="padding:10px 14px;color:#4A148C;font-weight:600;border-bottom:1px solid #e0e0e0;">Online
+                Platform &amp; Tech</td>
+              <td style="padding:10px 14px;color:#555;font-size:0.9rem;border-bottom:1px solid #e0e0e0;">Part-time;
+                WordPress + Vimeo integration; app management</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Financials -->
+      <div class="port-section">
+        <h2>Financial Snapshot (FY 2024)</h2>
+        <table class="port-table" style="max-width:520px;">
+          <thead>
+            <tr>
+              <th>Metric</th>
+              <th style="width:36%;">Value</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="background:#fff;">
+              <td style="padding:9px 14px;border-bottom:1px solid #e0e0e0;">Annual Revenue (2024)</td>
+              <td style="padding:9px 14px;font-weight:700;color:#4A148C;border-bottom:1px solid #e0e0e0;">€ 285,000</td>
+            </tr>
+            <tr style="background:#F3E5F5;">
+              <td style="padding:9px 14px;border-bottom:1px solid #e0e0e0;">Active Members</td>
+              <td style="padding:9px 14px;font-weight:700;color:#4A148C;border-bottom:1px solid #e0e0e0;">340</td>
+            </tr>
+            <tr style="background:#fff;">
+              <td style="padding:9px 14px;border-bottom:1px solid #e0e0e0;">In-Studio / Online Split</td>
+              <td style="padding:9px 14px;font-weight:700;color:#4A148C;border-bottom:1px solid #e0e0e0;">68% / 32%</td>
+            </tr>
+            <tr style="background:#F3E5F5;">
+              <td style="padding:9px 14px;border-bottom:1px solid #e0e0e0;">Average Revenue per Member</td>
+              <td style="padding:9px 14px;font-weight:700;color:#4A148C;border-bottom:1px solid #e0e0e0;">€ 839 / year
+              </td>
+            </tr>
+            <tr style="background:#fff;">
+              <td style="padding:9px 14px;border-bottom:1px solid #e0e0e0;">Gross Margin</td>
+              <td style="padding:9px 14px;font-weight:700;color:#4A148C;border-bottom:1px solid #e0e0e0;">58%</td>
+            </tr>
+            <tr style="background:#F3E5F5;">
+              <td style="padding:9px 14px;border-bottom:1px solid #e0e0e0;">Class Utilisation Rate</td>
+              <td style="padding:9px 14px;font-weight:700;color:#4A148C;border-bottom:1px solid #e0e0e0;">74%</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Challenge -->
+      <div class="port-section">
+        <h2>Business Challenge</h2>
+        <div class="challenge-box">
+          <div class="ch-label">⚠️ Current Challenge</div>
+          <p style="margin:0;font-size:0.95rem;">Zenith Wellness currently manages all studio bookings via a WhatsApp
+            group. This has caused 11 double-bookings this quarter, three instructor scheduling conflicts, and at least
+            one membership cancellation due to the confusion. Marcus wants a proper tracker and a financial projection
+            for opening a second studio location in Schwabing.</p>
+        </div>
+      </div>
+
+      <!-- Project Brief -->
+      <div class="port-section">
+        <h2>Your Project Brief</h2>
+        <p style="font-size:0.93rem;color:#555;margin-bottom:16px;">As a team, you will work with this company
+          throughout the 6-day course. Each day builds on the last. Below is a summary of the four deliverables that
+          form your final submission on Day 7.</p>
+        <table class="port-table">
+          <thead>
+            <tr>
+              <th style="width:30%;">Task</th>
+              <th>Deliverable / Description</th>
+              <th style="width:16%;">Tool</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="background:#fff;">
+              <td style="padding:10px 14px;font-weight:600;border-bottom:1px solid #e0e0e0;">Build a booking &amp;
+                capacity tracker</td>
+              <td style="padding:10px 14px;color:#555;font-size:0.9rem;border-bottom:1px solid #e0e0e0;">Daily class
+                schedule, member bookings, waitlist, instructor assignment</td>
+              <td style="padding:10px 14px;border-bottom:1px solid #e0e0e0;"><span
+                  style="display:inline-block;background:#107C41;color:#fff;font-size:0.72rem;font-weight:700;padding:2px 9px;border-radius:10px;letter-spacing:0.04em;">Excel</span>
+              </td>
+            </tr>
+            <tr style="background:#F3E5F5;">
+              <td style="padding:10px 14px;font-weight:600;border-bottom:1px solid #e0e0e0;">Set up Teams for instructor
+                coordination</td>
+              <td style="padding:10px 14px;color:#555;font-size:0.9rem;border-bottom:1px solid #e0e0e0;">Channels:
+                Schedule, Client Notes, Studio Ops, Feedback</td>
+              <td style="padding:10px 14px;border-bottom:1px solid #e0e0e0;"><span
+                  style="display:inline-block;background:#6264A7;color:#fff;font-size:0.72rem;font-weight:700;padding:2px 9px;border-radius:10px;letter-spacing:0.04em;">MS
+                  Teams</span></td>
+            </tr>
+            <tr style="background:#fff;">
+              <td style="padding:10px 14px;font-weight:600;border-bottom:1px solid #e0e0e0;">Build a 3-year expansion
+                financial model</td>
+              <td style="padding:10px 14px;color:#555;font-size:0.9rem;border-bottom:1px solid #e0e0e0;">Revenue, costs,
+                break-even for second studio opening</td>
+              <td style="padding:10px 14px;border-bottom:1px solid #e0e0e0;"><span
+                  style="display:inline-block;background:#107C41;color:#fff;font-size:0.72rem;font-weight:700;padding:2px 9px;border-radius:10px;letter-spacing:0.04em;">Excel</span>
+              </td>
+            </tr>
+            <tr style="background:#F3E5F5;">
+              <td style="padding:10px 14px;font-weight:600;border-bottom:1px solid #e0e0e0;">Clean and analyse the
+                membership data</td>
+              <td style="padding:10px 14px;color:#555;font-size:0.9rem;border-bottom:1px solid #e0e0e0;">Fix export
+                errors, calculate churn, segment by plan type</td>
+              <td style="padding:10px 14px;border-bottom:1px solid #e0e0e0;"><span
+                  style="display:inline-block;background:#107C41;color:#fff;font-size:0.72rem;font-weight:700;padding:2px 9px;border-radius:10px;letter-spacing:0.04em;">Excel</span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Data Download -->
+      <div class="port-section">
+        <h2>Your Datasets</h2>
+        <p style="font-size:0.93rem;color:#555;margin-bottom:16px;">Two files for your coursework. Download both and
+          keep the originals untouched — always work on a copy.</p>
+
+        <p
+          style="font-size:0.82rem;font-weight:700;letter-spacing:0.05em;color:#888;margin-bottom:8px;text-transform:uppercase;">
+          Day 4 — Data Cleaning &amp; Visualisation</p>
+        <a href="../data/zenith_wellness_visualization.xlsx" class="data-download" download>
+          <span class="dl-icon">📊</span>
+          <div>
+            <div>zenith_wellness_visualization.xlsx</div>
+            <div class="dl-meta">Operations data — class bookings, membership records</div>
+          </div>
+          <span style="margin-left:auto;font-size:1.1rem;">⬇</span>
+        </a>
+
+        <p
+          style="font-size:0.82rem;font-weight:700;letter-spacing:0.05em;color:#888;margin:16px 0 8px;text-transform:uppercase;">
+          Day 3 — Financial Modelling</p>
+        <a href="../data/zenith_wellness_financial.xlsx" class="data-download" download>
+          <span class="dl-icon">💰</span>
+          <div>
+            <div>zenith_wellness_financial.xlsx</div>
+            <div class="dl-meta">P&L template — fill in the revenue &amp; cost formulas</div>
+          </div>
+          <span style="margin-left:auto;font-size:1.1rem;">⬇</span>
+        </a>
+      </div>
+
+      <!-- Back link -->
+      <a href="../index.html" class="back-link" style="margin-top:16px;display:inline-flex;">← Back to Company
+        Selection</a>
+
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-nav">
+      <a href="../index.html">Home</a>
+      <a href="../content/day1.html">Day 1</a>
+      <a href="../content/day2.html">Day 2</a>
+      <a href="../content/day3.html">Day 3</a>
+      <a href="../content/day4.html">Day 4</a>
+      <a href="../content/day5.html">Day 5</a>
+      <a href="../content/day6.html">Day 6</a>
+      <a href="../content/day7.html">Day 7</a>
+    </div>
+    <div>Zenith Wellness · Company Portfolio · Business Software Course · SRH Hochschule</div>
+  </footer>
+
+</body>
+
+</html>

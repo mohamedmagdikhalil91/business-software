@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WordWise Global — Company Portfolio | Business Software</title>
+  <link href="../style.css" rel="stylesheet" />
+  <style>
+    /* Portfolio-specific overrides */
+    .port-meta {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 0;
+      border: 1px solid #e0e0e0;
+      border-radius: var(--radius);
+      overflow: hidden;
+      margin-bottom: 28px;
+    }
+
+    .port-meta-cell {
+      padding: 14px 18px;
+      background: #E3F2FD;
+      border-right: 1px solid #e0e0e0;
+    }
+
+    .port-meta-cell:last-child {
+      border-right: none;
+    }
+
+    .port-meta-label {
+      font-size: 0.68rem;
+      font-weight: 800;
+      letter-spacing: 0.10em;
+      text-transform: uppercase;
+      color: #888;
+      margin-bottom: 4px;
+    }
+
+    .port-meta-value {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: #0D47A1;
+    }
+
+    .port-section {
+      margin-bottom: 36px;
+    }
+
+    .port-section h2 {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: #0D47A1;
+      border-bottom: 3px solid #0D47A1;
+      padding-bottom: 6px;
+      margin-bottom: 16px;
+    }
+
+    .port-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.9rem;
+    }
+
+    .port-table th {
+      background: #0D47A1;
+      color: #fff;
+      padding: 10px 14px;
+      text-align: left;
+      font-size: 0.82rem;
+      letter-spacing: 0.04em;
+    }
+
+    .challenge-box {
+      background: #fffde7;
+      border-top: 4px solid #0D47A1;
+      border-bottom: 4px solid #0D47A1;
+      border-radius: var(--radius);
+      padding: 20px 24px;
+      font-size: 0.95rem;
+      line-height: 1.7;
+    }
+
+    .challenge-box .ch-label {
+      font-size: 0.72rem;
+      font-weight: 800;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #0D47A1;
+      margin-bottom: 8px;
+    }
+
+    .data-download {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      background: #E3F2FD;
+      border: 2px solid #0D47A1;
+      border-radius: var(--radius);
+      padding: 16px 22px;
+      text-decoration: none;
+      color: #0D47A1;
+      font-weight: 700;
+      font-size: 0.95rem;
+      transition: all 0.2s;
+      margin-top: 8px;
+    }
+
+    .data-download:hover {
+      background: #0D47A1;
+      color: #fff;
+    }
+
+    .data-download .dl-icon {
+      font-size: 1.5rem;
+      flex-shrink: 0;
+    }
+
+    .data-download .dl-meta {
+      font-size: 0.8rem;
+      font-weight: 400;
+      opacity: 0.8;
+    }
+
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      color: #0D47A1;
+      font-size: 0.88rem;
+      font-weight: 600;
+      text-decoration: none;
+      margin-bottom: 24px;
+    }
+
+    .back-link:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      .port-meta {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAV -->
+  <nav class="site-nav">
+    <div class="nav-brand">
+      <div class="brand-dot"></div>Business Software · IBA
+    </div>
+    <ul class="nav-days">
+      <li><a class="home-link" href="../index.html">🏠</a></li>
+      <li><a href="../content/day1.html">Day 1</a></li>
+      <li><a href="../content/day2.html">Day 2</a></li>
+      <li><a href="../content/day3.html">Day 3</a></li>
+      <li><a href="../content/day4.html">Day 4</a></li>
+      <li><a href="../content/day5.html">Day 5</a></li>
+      <li><a href="../content/day6.html">Day 6</a></li>
+      <li><a href="../content/day7.html">Day 7 🎤</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <header class="page-hero" style="background: linear-gradient(135deg, #0D47A1 0%, #0D47A1cc 100%);">
+    <div class="day-label">Company Portfolio</div>
+    <h1>🌍 WordWise Global</h1>
+    <p class="hero-sub">Content that converts — in any language</p>
+    <div class="hero-meta">
+      <span><span class="icon">🏭</span> Content Marketing · Agency</span>
+      <span><span class="icon">📍</span> Vienna, Austria</span>
+      <span><span class="icon">🌐</span> wordwiseglobal.com</span>
+    </div>
+  </header>
+
+  <!-- CONTENT -->
+  <main>
+    <div class="container" style="padding-top: 36px; padding-bottom: 48px;">
+
+      <a href="../index.html" class="back-link">← Back to Company Selection</a>
+
+      <!-- Meta strip -->
+      <div class="port-meta">
+        <div class="port-meta-cell">
+          <div class="port-meta-label">Founded</div>
+          <div class="port-meta-value">2019</div>
+        </div>
+        <div class="port-meta-cell">
+          <div class="port-meta-label">Location</div>
+          <div class="port-meta-value">Vienna, Austria</div>
+        </div>
+        <div class="port-meta-cell">
+          <div class="port-meta-label">Industry</div>
+          <div class="port-meta-value" style="font-size:0.85rem;">Content Marketing · Agency</div>
+        </div>
+        <div class="port-meta-cell">
+          <div class="port-meta-label">Website</div>
+          <div class="port-meta-value">wordwiseglobal.com</div>
+        </div>
+      </div>
+
+      <!-- Overview -->
+      <div class="port-section">
+        <h2>Company Overview</h2>
+        <p style="font-size:0.95rem;line-height:1.75;color:#444;">WordWise Global is a multilingual content marketing
+          agency specialising in SEO-driven content, brand storytelling, and social media strategy. They serve 24
+          retainer clients across Austria, Germany, and Switzerland, producing long-form articles, email newsletters,
+          LinkedIn content, and brand voice documentation in up to six languages.</p>
+      </div>
+
+      <!-- Founding Story -->
+      <div class="port-section">
+        <h2>Founding Story</h2>
+        <div class="story-block">
+          <span class="story-label">Origin</span>
+          <p style="margin:0;font-size:0.95rem;">Elena Rodriguez had been a tech journalist and SEO writer for eight
+            years before realising that the clients paying agencies €80,000 a year for content were getting generic copy
+            written by junior staff. Kai Hoffmann had just left Google Vienna after six years managing advertiser
+            accounts. They founded WordWise Global in 2019 with one rule: every piece of content must measurably serve
+            the client's business goal — or they would rewrite it for free.</p>
+        </div>
+      </div>
+
+      <!-- Products -->
+      <div class="port-section">
+        <h2>Products &amp; Services</h2>
+        <ul style="font-size:0.93rem;line-height:1.8;padding-left:22px;color:#444;">
+          <li style="margin-bottom:8px;">SEO Content Packages — keyword research, monthly articles, performance tracking
+          </li>
+          <li style="margin-bottom:8px;">Social Media Management — LinkedIn, Instagram, XING; strategy + production +
+            scheduling</li>
+          <li style="margin-bottom:8px;">Newsletter Production — design, copy, send, A/B testing, analytics report</li>
+          <li style="margin-bottom:8px;">Brand Voice Documentation — tone of voice guide, messaging frameworks,
+            editorial guidelines</li>
+          <li style="margin-bottom:8px;">Translation &amp; Localisation — content adaptation for DE/AT/CH/FR/ES/EN
+            markets</li>
+        </ul>
+      </div>
+
+      <!-- Market -->
+      <div class="port-section">
+        <h2>Market &amp; Competitive Landscape</h2>
+        <p style="font-size:0.95rem;line-height:1.75;color:#444;margin-bottom:16px;">The global digital marketing and
+          content industry is valued at over €400 billion. Within the DACH region, content marketing spend by SMEs and
+          scale-ups is growing at 14% annually as organic search becomes increasingly competitive.</p>
+        <table class="port-table">
+          <thead>
+            <tr>
+              <th style="width:30%;">Competitor</th>
+              <th>Position</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td style="padding:8px 12px;font-weight:600;border-bottom:1px solid #e0e0e0;">Textbroker / Scribbr</td>
+              <td style="padding:8px 12px;color:#555;border-bottom:1px solid #e0e0e0;">Content marketplaces, lower
+                quality</td>
+            </tr>
+            <tr>
+              <td style="padding:8px 12px;font-weight:600;border-bottom:1px solid #e0e0e0;">Large agencies (BBDO,
+                Ogilvy)</td>
+              <td style="padding:8px 12px;color:#555;border-bottom:1px solid #e0e0e0;">Out of budget for SME clients
+              </td>
+            </tr>
+            <tr>
+              <td style="padding:8px 12px;font-weight:600;border-bottom:1px solid #e0e0e0;">In-house content teams</td>
+              <td style="padding:8px 12px;color:#555;border-bottom:1px solid #e0e0e0;">Growing trend, threat to retainer
+                model</td>
+            </tr>
+            <tr>
+              <td style="padding:8px 12px;font-weight:600;border-bottom:1px solid #e0e0e0;">Hubspot-certified inbound
+                agencies</td>
+              <td style="padding:8px 12px;color:#555;border-bottom:1px solid #e0e0e0;">Direct competitors</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Team -->
+      <div class="port-section">
+        <h2>The Team</h2>
+        <table class="port-table">
+          <thead>
+            <tr>
+              <th style="width:22%;">Name</th>
+              <th style="width:26%;">Role</th>
+              <th>Background</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="background:#fff;">
+              <td style="padding:10px 14px;font-weight:700;border-bottom:1px solid #e0e0e0;">Elena Rodriguez</td>
+              <td style="padding:10px 14px;color:#0D47A1;font-weight:600;border-bottom:1px solid #e0e0e0;">Co-Founder
+                &amp; Creative Director</td>
+              <td style="padding:10px 14px;color:#555;font-size:0.9rem;border-bottom:1px solid #e0e0e0;">8 years tech
+                journalism + SEO writing; multilingual (ES/EN/DE)</td>
+            </tr>
+            <tr style="background:#E3F2FD;">
+              <td style="padding:10px 14px;font-weight:700;border-bottom:1px solid #e0e0e0;">Kai Hoffmann</td>
+              <td style="padding:10px 14px;color:#0D47A1;font-weight:600;border-bottom:1px solid #e0e0e0;">Co-Founder
+                &amp; Strategy Director</td>
+              <td style="padding:10px 14px;color:#555;font-size:0.9rem;border-bottom:1px solid #e0e0e0;">6 years Google
+                Vienna; PPC, SEO strategy, analytics</td>
+            </tr>
+            <tr style="background:#fff;">
+              <td style="padding:10px 14px;font-weight:700;border-bottom:1px solid #e0e0e0;">Julia Bergmann</td>
+              <td style="padding:10px 14px;color:#0D47A1;font-weight:600;border-bottom:1px solid #e0e0e0;">Senior
+                Content Manager</td>
+              <td style="padding:10px 14px;color:#555;font-size:0.9rem;border-bottom:1px solid #e0e0e0;">Specialises in
+                B2B tech content; SaaS industry expert</td>
+            </tr>
+            <tr style="background:#E3F2FD;">
+              <td style="padding:10px 14px;font-weight:700;border-bottom:1px solid #e0e0e0;">Ahmed El-Sayed</td>
+              <td style="padding:10px 14px;color:#0D47A1;font-weight:600;border-bottom:1px solid #e0e0e0;">SEO Analyst
+              </td>
+              <td style="padding:10px 14px;color:#555;font-size:0.9rem;border-bottom:1px solid #e0e0e0;">Technical SEO,
+                Google Search Console, keyword research</td>
+            </tr>
+            <tr style="background:#fff;">
+              <td style="padding:10px 14px;font-weight:700;border-bottom:1px solid #e0e0e0;">Sophie Leclair</td>
+              <td style="padding:10px 14px;color:#0D47A1;font-weight:600;border-bottom:1px solid #e0e0e0;">Content
+                Writer (FR/EN)</td>
+              <td style="padding:10px 14px;color:#555;font-size:0.9rem;border-bottom:1px solid #e0e0e0;">Francophone
+                market specialist; ex-French Embassy communications</td>
+            </tr>
+            <tr style="background:#E3F2FD;">
+              <td style="padding:10px 14px;font-weight:700;border-bottom:1px solid #e0e0e0;">Tariq Hussain</td>
+              <td style="padding:10px 14px;color:#0D47A1;font-weight:600;border-bottom:1px solid #e0e0e0;">Account
+                Manager</td>
+              <td style="padding:10px 14px;color:#555;font-size:0.9rem;border-bottom:1px solid #e0e0e0;">Client
+                relationship management; coordinates delivery across writers</td>
+            </tr>
+            <tr style="background:#fff;">
+              <td style="padding:10px 14px;font-weight:700;border-bottom:1px solid #e0e0e0;">Nadia Kovacs</td>
+              <td style="padding:10px 14px;color:#0D47A1;font-weight:600;border-bottom:1px solid #e0e0e0;">Junior
+                Designer</td>
+              <td style="padding:10px 14px;color:#555;font-size:0.9rem;border-bottom:1px solid #e0e0e0;">Visual content,
+                email templates, social media graphics</td>
+            </tr>
+            <tr style="background:#E3F2FD;">
+              <td style="padding:10px 14px;font-weight:700;border-bottom:1px solid #e0e0e0;">Paul Winter</td>
+              <td style="padding:10px 14px;color:#0D47A1;font-weight:600;border-bottom:1px solid #e0e0e0;">Finance &amp;
+                Operations</td>
+              <td style="padding:10px 14px;color:#555;font-size:0.9rem;border-bottom:1px solid #e0e0e0;">Invoicing,
+                contractor payments, office management</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Financials -->
+      <div class="port-section">
+        <h2>Financial Snapshot (FY 2024)</h2>
+        <table class="port-table" style="max-width:520px;">
+          <thead>
+            <tr>
+              <th>Metric</th>
+              <th style="width:36%;">Value</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="background:#fff;">
+              <td style="padding:9px 14px;border-bottom:1px solid #e0e0e0;">Annual Revenue (2024)</td>
+              <td style="padding:9px 14px;font-weight:700;color:#0D47A1;border-bottom:1px solid #e0e0e0;">€ 680,000</td>
+            </tr>
+            <tr style="background:#E3F2FD;">
+              <td style="padding:9px 14px;border-bottom:1px solid #e0e0e0;">Active Retainer Clients</td>
+              <td style="padding:9px 14px;font-weight:700;color:#0D47A1;border-bottom:1px solid #e0e0e0;">24</td>
+            </tr>
+            <tr style="background:#fff;">
+              <td style="padding:9px 14px;border-bottom:1px solid #e0e0e0;">Average Monthly Retainer</td>
+              <td style="padding:9px 14px;font-weight:700;color:#0D47A1;border-bottom:1px solid #e0e0e0;">€ 2,800</td>
+            </tr>
+            <tr style="background:#E3F2FD;">
+              <td style="padding:9px 14px;border-bottom:1px solid #e0e0e0;">Client Retention Rate (2024)</td>
+              <td style="padding:9px 14px;font-weight:700;color:#0D47A1;border-bottom:1px solid #e0e0e0;">87%</td>
+            </tr>
+            <tr style="background:#fff;">
+              <td style="padding:9px 14px;border-bottom:1px solid #e0e0e0;">Gross Margin</td>
+              <td style="padding:9px 14px;font-weight:700;color:#0D47A1;border-bottom:1px solid #e0e0e0;">60%</td>
+            </tr>
+            <tr style="background:#E3F2FD;">
+              <td style="padding:9px 14px;border-bottom:1px solid #e0e0e0;">Content Pieces / Month (all clients)</td>
+              <td style="padding:9px 14px;font-weight:700;color:#0D47A1;border-bottom:1px solid #e0e0e0;">96</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Challenge -->
+      <div class="port-section">
+        <h2>Business Challenge</h2>
+        <div class="challenge-box">
+          <div class="ch-label">⚠️ Current Challenge</div>
+          <p style="margin:0;font-size:0.95rem;">WordWise Global has eight people producing content for 24 clients —
+            with no standardised reporting template. Every account manager builds their monthly performance report from
+            scratch in a different format. Clients are complaining about inconsistent reporting, and new-client
+            onboarding takes 3 weeks because there are no templates.</p>
+        </div>
+      </div>
+
+      <!-- Project Brief -->
+      <div class="port-section">
+        <h2>Your Project Brief</h2>
+        <p style="font-size:0.93rem;color:#555;margin-bottom:16px;">As a team, you will work with this company
+          throughout the 6-day course. Each day builds on the last. Below is a summary of the four deliverables that
+          form your final submission on Day 7.</p>
+        <table class="port-table">
+          <thead>
+            <tr>
+              <th style="width:30%;">Task</th>
+              <th>Deliverable / Description</th>
+              <th style="width:16%;">Tool</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="background:#fff;">
+              <td style="padding:10px 14px;font-weight:600;border-bottom:1px solid #e0e0e0;">Build a standardised client
+                report template</td>
+              <td style="padding:10px 14px;color:#555;font-size:0.9rem;border-bottom:1px solid #e0e0e0;">Monthly
+                performance report: branded Word document, 4 sections (summary, SEO, social, newsletter)</td>
+              <td style="padding:10px 14px;border-bottom:1px solid #e0e0e0;"><span
+                  style="display:inline-block;background:#185ABD;color:#fff;font-size:0.72rem;font-weight:700;padding:2px 9px;border-radius:10px;letter-spacing:0.04em;">Word</span>
+              </td>
+            </tr>
+            <tr style="background:#E3F2FD;">
+              <td style="padding:10px 14px;font-weight:600;border-bottom:1px solid #e0e0e0;">Create a client KPI
+                tracking dashboard</td>
+              <td style="padding:10px 14px;color:#555;font-size:0.9rem;border-bottom:1px solid #e0e0e0;">Traffic,
+                rankings, engagement, revenue attribution — Excel, one sheet per client</td>
+              <td style="padding:10px 14px;border-bottom:1px solid #e0e0e0;"><span
+                  style="display:inline-block;background:#107C41;color:#fff;font-size:0.72rem;font-weight:700;padding:2px 9px;border-radius:10px;letter-spacing:0.04em;">Excel</span>
+              </td>
+            </tr>
+            <tr style="background:#fff;">
+              <td style="padding:10px 14px;font-weight:600;border-bottom:1px solid #e0e0e0;">Build a pitch deck for new
+                clients</td>
+              <td style="padding:10px 14px;color:#555;font-size:0.9rem;border-bottom:1px solid #e0e0e0;">6-slide deck:
+                Agency intro, services, case studies, process, pricing, next steps</td>
+              <td style="padding:10px 14px;border-bottom:1px solid #e0e0e0;"><span
+                  style="display:inline-block;background:#C43E1C;color:#fff;font-size:0.72rem;font-weight:700;padding:2px 9px;border-radius:10px;letter-spacing:0.04em;">PowerPoint</span>
+              </td>
+            </tr>
+            <tr style="background:#E3F2FD;">
+              <td style="padding:10px 14px;font-weight:600;border-bottom:1px solid #e0e0e0;">Clean and analyse the
+                campaign performance data</td>
+              <td style="padding:10px 14px;color:#555;font-size:0.9rem;border-bottom:1px solid #e0e0e0;">Fix raw data,
+                compute avg traffic lift, rank clients by performance</td>
+              <td style="padding:10px 14px;border-bottom:1px solid #e0e0e0;"><span
+                  style="display:inline-block;background:#107C41;color:#fff;font-size:0.72rem;font-weight:700;padding:2px 9px;border-radius:10px;letter-spacing:0.04em;">Excel</span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Data Download -->
+      <div class="port-section">
+        <h2>Your Datasets</h2>
+        <p style="font-size:0.93rem;color:#555;margin-bottom:16px;">Two files for your coursework. Download both and
+          keep the originals untouched — always work on a copy.</p>
+
+        <p
+          style="font-size:0.82rem;font-weight:700;letter-spacing:0.05em;color:#888;margin-bottom:8px;text-transform:uppercase;">
+          Day 4 — Data Cleaning &amp; Visualisation</p>
+        <a href="../data/wordwise_global_visualization.xlsx" class="data-download" download>
+          <span class="dl-icon">📊</span>
+          <div>
+            <div>wordwise_global_visualization.xlsx</div>
+            <div class="dl-meta">Operations data — campaign tracker, client performance</div>
+          </div>
+          <span style="margin-left:auto;font-size:1.1rem;">⬇</span>
+        </a>
+
+        <p
+          style="font-size:0.82rem;font-weight:700;letter-spacing:0.05em;color:#888;margin:16px 0 8px;text-transform:uppercase;">
+          Day 3 — Financial Modelling</p>
+        <a href="../data/wordwise_global_financial.xlsx" class="data-download" download>
+          <span class="dl-icon">💰</span>
+          <div>
+            <div>wordwise_global_financial.xlsx</div>
+            <div class="dl-meta">P&L template — fill in the revenue &amp; cost formulas</div>
+          </div>
+          <span style="margin-left:auto;font-size:1.1rem;">⬇</span>
+        </a>
+      </div>
+
+      <!-- Back link -->
+      <a href="../index.html" class="back-link" style="margin-top:16px;display:inline-flex;">← Back to Company
+        Selection</a>
+
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-nav">
+      <a href="../index.html">Home</a>
+      <a href="../content/day1.html">Day 1</a>
+      <a href="../content/day2.html">Day 2</a>
+      <a href="../content/day3.html">Day 3</a>
+      <a href="../content/day4.html">Day 4</a>
+      <a href="../content/day5.html">Day 5</a>
+      <a href="../content/day6.html">Day 6</a>
+      <a href="../content/day7.html">Day 7</a>
+    </div>
+    <div>WordWise Global · Company Portfolio · Business Software Course · SRH Hochschule</div>
+  </footer>
+
+</body>
+
+</html>

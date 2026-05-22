@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Green Threads — Company Portfolio | Business Software</title>
+  <link href="../style.css" rel="stylesheet" />
+  <style>
+    /* Portfolio-specific overrides */
+    .port-meta {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 0;
+      border: 1px solid #e0e0e0;
+      border-radius: var(--radius);
+      overflow: hidden;
+      margin-bottom: 28px;
+    }
+
+    .port-meta-cell {
+      padding: 14px 18px;
+      background: #E8F5E9;
+      border-right: 1px solid #e0e0e0;
+    }
+
+    .port-meta-cell:last-child {
+      border-right: none;
+    }
+
+    .port-meta-label {
+      font-size: 0.68rem;
+      font-weight: 800;
+      letter-spacing: 0.10em;
+      text-transform: uppercase;
+      color: #888;
+      margin-bottom: 4px;
+    }
+
+    .port-meta-value {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: #1B5E20;
+    }
+
+    .port-section {
+      margin-bottom: 36px;
+    }
+
+    .port-section h2 {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: #1B5E20;
+      border-bottom: 3px solid #1B5E20;
+      padding-bottom: 6px;
+      margin-bottom: 16px;
+    }
+
+    .port-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.9rem;
+    }
+
+    .port-table th {
+      background: #1B5E20;
+      color: #fff;
+      padding: 10px 14px;
+      text-align: left;
+      font-size: 0.82rem;
+      letter-spacing: 0.04em;
+    }
+
+    .challenge-box {
+      background: #fffde7;
+      border-top: 4px solid #1B5E20;
+      border-bottom: 4px solid #1B5E20;
+      border-radius: var(--radius);
+      padding: 20px 24px;
+      font-size: 0.95rem;
+      line-height: 1.7;
+    }
+
+    .challenge-box .ch-label {
+      font-size: 0.72rem;
+      font-weight: 800;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #1B5E20;
+      margin-bottom: 8px;
+    }
+
+    .data-download {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      background: #E8F5E9;
+      border: 2px solid #1B5E20;
+      border-radius: var(--radius);
+      padding: 16px 22px;
+      text-decoration: none;
+      color: #1B5E20;
+      font-weight: 700;
+      font-size: 0.95rem;
+      transition: all 0.2s;
+      margin-top: 8px;
+    }
+
+    .data-download:hover {
+      background: #1B5E20;
+      color: #fff;
+    }
+
+    .data-download .dl-icon {
+      font-size: 1.5rem;
+      flex-shrink: 0;
+    }
+
+    .data-download .dl-meta {
+      font-size: 0.8rem;
+      font-weight: 400;
+      opacity: 0.8;
+    }
+
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      color: #1B5E20;
+      font-size: 0.88rem;
+      font-weight: 600;
+      text-decoration: none;
+      margin-bottom: 24px;
+    }
+
+    .back-link:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      .port-meta {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAV -->
+  <nav class="site-nav">
+    <div class="nav-brand">
+      <div class="brand-dot"></div>Business Software · IBA
+    </div>
+    <ul class="nav-days">
+      <li><a class="home-link" href="../index.html">🏠</a></li>
+      <li><a href="../content/day1.html">Day 1</a></li>
+      <li><a href="../content/day2.html">Day 2</a></li>
+      <li><a href="../content/day3.html">Day 3</a></li>
+      <li><a href="../content/day4.html">Day 4</a></li>
+      <li><a href="../content/day5.html">Day 5</a></li>
+      <li><a href="../content/day6.html">Day 6</a></li>
+      <li><a href="../content/day7.html">Day 7 🎤</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <header class="page-hero" style="background: linear-gradient(135deg, #1B5E20 0%, #1B5E20cc 100%);">
+    <div class="day-label">Company Portfolio</div>
+    <h1>👕 Green Threads</h1>
+    <p class="hero-sub">Streetwear that wears its values on its sleeve</p>
+    <div class="hero-meta">
+      <span><span class="icon">🏭</span> Sustainable Fashion · D2C Retail</span>
+      <span><span class="icon">📍</span> Amsterdam, Netherlands</span>
+      <span><span class="icon">🌐</span> greenthreads.eu</span>
+    </div>
+  </header>
+
+  <!-- CONTENT -->
+  <main>
+    <div class="container" style="padding-top: 36px; padding-bottom: 48px;">
+
+      <a href="../index.html" class="back-link">← Back to Company Selection</a>
+
+      <!-- Meta strip -->
+      <div class="port-meta">
+        <div class="port-meta-cell">
+          <div class="port-meta-label">Founded</div>
+          <div class="port-meta-value">2020</div>
+        </div>
+        <div class="port-meta-cell">
+          <div class="port-meta-label">Location</div>
+          <div class="port-meta-value">Amsterdam, Netherlands</div>
+        </div>
+        <div class="port-meta-cell">
+          <div class="port-meta-label">Industry</div>
+          <div class="port-meta-value" style="font-size:0.85rem;">Sustainable Fashion · D2C Retail</div>
+        </div>
+        <div class="port-meta-cell">
+          <div class="port-meta-label">Website</div>
+          <div class="port-meta-value">greenthreads.eu</div>
+        </div>
+      </div>
+
+      <!-- Overview -->
+      <div class="port-section">
+        <h2>Company Overview</h2>
+        <p style="font-size:0.95rem;line-height:1.75;color:#444;">Green Threads designs and sells GOTS-certified organic
+          streetwear: hoodies, T-shirts, and caps made from upcycled and certified-organic materials. Every product
+          carries a QR code linking to its supply chain — from cotton farm to finished garment. The brand sells directly
+          to consumers online and through four retail partners.</p>
+      </div>
+
+      <!-- Founding Story -->
+      <div class="port-section">
+        <h2>Founding Story</h2>
+        <div class="story-block">
+          <span class="story-label">Origin</span>
+          <p style="margin:0;font-size:0.95rem;">Arjun Mehta graduated from ArtEZ Fashion Design in 2019 with a deep
+            frustration: the fashion industry he loved was one of the world's most polluting. Lena Baumann had been
+            consulting for sustainability certification bodies and knew exactly how to navigate organic supply chains.
+            Together they decided to build a brand that proved sustainable fashion could be profitable — and genuinely
+            cool. Their first viral TikTok generated 2,400 orders in 48 hours.</p>
+        </div>
+      </div>
+
+      <!-- Products -->
+      <div class="port-section">
+        <h2>Products &amp; Services</h2>
+        <ul style="font-size:0.93rem;line-height:1.8;padding-left:22px;color:#444;">
+          <li style="margin-bottom:8px;">Organic Cotton T-Shirts — 190g GOTS-certified, 8 colourways, unisex sizes
+            XS–3XL</li>
+          <li style="margin-bottom:8px;">Upcycled Hoodies — made from post-consumer textile waste, limited seasonal
+            drops</li>
+          <li style="margin-bottom:8px;">Organic Caps — 5-panel + dad cap styles, embroidered logo</li>
+          <li style="margin-bottom:8px;">Bundle Packs — T-shirt + Hoodie + tote bag (seasonal, limited edition)</li>
+          <li style="margin-bottom:8px;">B2B Branded Merchandise — corporate clients wanting sustainable branded apparel
+          </li>
+        </ul>
+      </div>
+
+      <!-- Market -->
+      <div class="port-section">
+        <h2>Market &amp; Competitive Landscape</h2>
+        <p style="font-size:0.95rem;line-height:1.75;color:#444;margin-bottom:16px;">The sustainable fashion market is
+          growing at 9.7% annually and is projected to reach €65 billion by 2030. Gen Z and Millennial consumers are
+          increasingly willing to pay a premium for traceable, ethical products.</p>
+        <table class="port-table">
+          <thead>
+            <tr>
+              <th style="width:30%;">Competitor</th>
+              <th>Position</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td style="padding:8px 12px;font-weight:600;border-bottom:1px solid #e0e0e0;">Patagonia</td>
+              <td style="padding:8px 12px;color:#555;border-bottom:1px solid #e0e0e0;">Strong sustainability brand,
+                higher price point</td>
+            </tr>
+            <tr>
+              <td style="padding:8px 12px;font-weight:600;border-bottom:1px solid #e0e0e0;">Pangaia</td>
+              <td style="padding:8px 12px;color:#555;border-bottom:1px solid #e0e0e0;">Cutting-edge materials science,
+                premium positioning</td>
+            </tr>
+            <tr>
+              <td style="padding:8px 12px;font-weight:600;border-bottom:1px solid #e0e0e0;">Armedangels (DE)</td>
+              <td style="padding:8px 12px;color:#555;border-bottom:1px solid #e0e0e0;">Certified sustainable, similar
+                price range</td>
+            </tr>
+            <tr>
+              <td style="padding:8px 12px;font-weight:600;border-bottom:1px solid #e0e0e0;">H&amp;M Conscious</td>
+              <td style="padding:8px 12px;color:#555;border-bottom:1px solid #e0e0e0;">Mass-market greenwashing risk
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Team -->
+      <div class="port-section">
+        <h2>The Team</h2>
+        <table class="port-table">
+          <thead>
+            <tr>
+              <th style="width:22%;">Name</th>
+              <th style="width:26%;">Role</th>
+              <th>Background</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="background:#fff;">
+              <td style="padding:10px 14px;font-weight:700;border-bottom:1px solid #e0e0e0;">Arjun Mehta</td>
+              <td style="padding:10px 14px;color:#1B5E20;font-weight:600;border-bottom:1px solid #e0e0e0;">Co-Founder
+                &amp; Creative Director</td>
+              <td style="padding:10px 14px;color:#555;font-size:0.9rem;border-bottom:1px solid #e0e0e0;">ArtEZ Fashion
+                Design graduate; product design &amp; brand strategy</td>
+            </tr>
+            <tr style="background:#E8F5E9;">
+              <td style="padding:10px 14px;font-weight:700;border-bottom:1px solid #e0e0e0;">Lena Baumann</td>
+              <td style="padding:10px 14px;color:#1B5E20;font-weight:600;border-bottom:1px solid #e0e0e0;">Co-Founder
+                &amp; Operations</td>
+              <td style="padding:10px 14px;color:#555;font-size:0.9rem;border-bottom:1px solid #e0e0e0;">Sustainability
+                certification consultant; supply chain management</td>
+            </tr>
+            <tr style="background:#fff;">
+              <td style="padding:10px 14px;font-weight:700;border-bottom:1px solid #e0e0e0;">Niamh O'Brien</td>
+              <td style="padding:10px 14px;color:#1B5E20;font-weight:600;border-bottom:1px solid #e0e0e0;">Production
+                Manager</td>
+              <td style="padding:10px 14px;color:#555;font-size:0.9rem;border-bottom:1px solid #e0e0e0;">3 years garment
+                production coordination; based in Amsterdam</td>
+            </tr>
+            <tr style="background:#E8F5E9;">
+              <td style="padding:10px 14px;font-weight:700;border-bottom:1px solid #e0e0e0;">Diego Vega</td>
+              <td style="padding:10px 14px;color:#1B5E20;font-weight:600;border-bottom:1px solid #e0e0e0;">E-commerce
+                &amp; Marketing</td>
+              <td style="padding:10px 14px;color:#555;font-size:0.9rem;border-bottom:1px solid #e0e0e0;">Shopify &amp;
+                Facebook Ads specialist; DTC growth background</td>
+            </tr>
+            <tr style="background:#fff;">
+              <td style="padding:10px 14px;font-weight:700;border-bottom:1px solid #e0e0e0;">Fatima Al-Rashidi</td>
+              <td style="padding:10px 14px;color:#1B5E20;font-weight:600;border-bottom:1px solid #e0e0e0;">Customer
+                Experience</td>
+              <td style="padding:10px 14px;color:#555;font-size:0.9rem;border-bottom:1px solid #e0e0e0;">Part-time;
+                customer service &amp; community management</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Financials -->
+      <div class="port-section">
+        <h2>Financial Snapshot (FY 2024)</h2>
+        <table class="port-table" style="max-width:520px;">
+          <thead>
+            <tr>
+              <th>Metric</th>
+              <th style="width:36%;">Value</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="background:#fff;">
+              <td style="padding:9px 14px;border-bottom:1px solid #e0e0e0;">Annual Revenue (2024)</td>
+              <td style="padding:9px 14px;font-weight:700;color:#1B5E20;border-bottom:1px solid #e0e0e0;">€ 320,000</td>
+            </tr>
+            <tr style="background:#E8F5E9;">
+              <td style="padding:9px 14px;border-bottom:1px solid #e0e0e0;">Orders Per Year</td>
+              <td style="padding:9px 14px;font-weight:700;color:#1B5E20;border-bottom:1px solid #e0e0e0;">1,200</td>
+            </tr>
+            <tr style="background:#fff;">
+              <td style="padding:9px 14px;border-bottom:1px solid #e0e0e0;">Average Basket Value</td>
+              <td style="padding:9px 14px;font-weight:700;color:#1B5E20;border-bottom:1px solid #e0e0e0;">€ 78</td>
+            </tr>
+            <tr style="background:#E8F5E9;">
+              <td style="padding:9px 14px;border-bottom:1px solid #e0e0e0;">Gross Margin</td>
+              <td style="padding:9px 14px;font-weight:700;color:#1B5E20;border-bottom:1px solid #e0e0e0;">42%</td>
+            </tr>
+            <tr style="background:#fff;">
+              <td style="padding:9px 14px;border-bottom:1px solid #e0e0e0;">Return Rate</td>
+              <td style="padding:9px 14px;font-weight:700;color:#1B5E20;border-bottom:1px solid #e0e0e0;">6%</td>
+            </tr>
+            <tr style="background:#E8F5E9;">
+              <td style="padding:9px 14px;border-bottom:1px solid #e0e0e0;">Stock-Out Incidents (2024)</td>
+              <td style="padding:9px 14px;font-weight:700;color:#1B5E20;border-bottom:1px solid #e0e0e0;">23</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Challenge -->
+      <div class="port-section">
+        <h2>Business Challenge</h2>
+        <div class="challenge-box">
+          <div class="ch-label">⚠️ Current Challenge</div>
+          <p style="margin:0;font-size:0.95rem;">Green Threads manages inventory across three spreadsheets that were
+            never designed to talk to each other. Bestselling hoodies sell out regularly, while slow-moving T-shirt
+            colourways tie up capital in the warehouse. Last quarter, 23 stock-out incidents led to an estimated €18,000
+            in lost sales.</p>
+        </div>
+      </div>
+
+      <!-- Project Brief -->
+      <div class="port-section">
+        <h2>Your Project Brief</h2>
+        <p style="font-size:0.93rem;color:#555;margin-bottom:16px;">As a team, you will work with this company
+          throughout the 6-day course. Each day builds on the last. Below is a summary of the four deliverables that
+          form your final submission on Day 7.</p>
+        <table class="port-table">
+          <thead>
+            <tr>
+              <th style="width:30%;">Task</th>
+              <th>Deliverable / Description</th>
+              <th style="width:16%;">Tool</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="background:#fff;">
+              <td style="padding:10px 14px;font-weight:600;border-bottom:1px solid #e0e0e0;">Build a consolidated
+                inventory model</td>
+              <td style="padding:10px 14px;color:#555;font-size:0.9rem;border-bottom:1px solid #e0e0e0;">Stock levels,
+                reorder points, turnover rate per SKU</td>
+              <td style="padding:10px 14px;border-bottom:1px solid #e0e0e0;"><span
+                  style="display:inline-block;background:#107C41;color:#fff;font-size:0.72rem;font-weight:700;padding:2px 9px;border-radius:10px;letter-spacing:0.04em;">Excel</span>
+              </td>
+            </tr>
+            <tr style="background:#E8F5E9;">
+              <td style="padding:10px 14px;font-weight:600;border-bottom:1px solid #e0e0e0;">Create a sales performance
+                dashboard</td>
+              <td style="padding:10px 14px;color:#555;font-size:0.9rem;border-bottom:1px solid #e0e0e0;">Revenue by
+                product, monthly trend, top 10 SKUs</td>
+              <td style="padding:10px 14px;border-bottom:1px solid #e0e0e0;"><span
+                  style="display:inline-block;background:#107C41;color:#fff;font-size:0.72rem;font-weight:700;padding:2px 9px;border-radius:10px;letter-spacing:0.04em;">Excel</span>
+              </td>
+            </tr>
+            <tr style="background:#fff;">
+              <td style="padding:10px 14px;font-weight:600;border-bottom:1px solid #e0e0e0;">Write a B2B supplier/client
+                proposal</td>
+              <td style="padding:10px 14px;color:#555;font-size:0.9rem;border-bottom:1px solid #e0e0e0;">Green Threads ×
+                [Corporate Client] sustainable merchandise offer</td>
+              <td style="padding:10px 14px;border-bottom:1px solid #e0e0e0;"><span
+                  style="display:inline-block;background:#185ABD;color:#fff;font-size:0.72rem;font-weight:700;padding:2px 9px;border-radius:10px;letter-spacing:0.04em;">Word</span>
+              </td>
+            </tr>
+            <tr style="background:#E8F5E9;">
+              <td style="padding:10px 14px;font-weight:600;border-bottom:1px solid #e0e0e0;">Clean the raw
+                inventory/sales data</td>
+              <td style="padding:10px 14px;color:#555;font-size:0.9rem;border-bottom:1px solid #e0e0e0;">Fix messy
+                export, standardise SKU codes and date formats</td>
+              <td style="padding:10px 14px;border-bottom:1px solid #e0e0e0;"><span
+                  style="display:inline-block;background:#107C41;color:#fff;font-size:0.72rem;font-weight:700;padding:2px 9px;border-radius:10px;letter-spacing:0.04em;">Excel</span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Data Download -->
+      <div class="port-section">
+        <h2>Your Datasets</h2>
+        <p style="font-size:0.93rem;color:#555;margin-bottom:16px;">Two files for your coursework. Download both and
+          keep the originals untouched — always work on a copy.</p>
+
+        <p
+          style="font-size:0.82rem;font-weight:700;letter-spacing:0.05em;color:#888;margin-bottom:8px;text-transform:uppercase;">
+          Day 4 — Data Cleaning &amp; Visualisation</p>
+        <a href="../data/green_threads_visualization.xlsx" class="data-download" download>
+          <span class="dl-icon">📊</span>
+          <div>
+            <div>green_threads_visualization.xlsx</div>
+            <div class="dl-meta">Operations data — sales records, product lines</div>
+          </div>
+          <span style="margin-left:auto;font-size:1.1rem;">⬇</span>
+        </a>
+
+        <p
+          style="font-size:0.82rem;font-weight:700;letter-spacing:0.05em;color:#888;margin:16px 0 8px;text-transform:uppercase;">
+          Day 3 — Financial Modelling</p>
+        <a href="../data/green_threads_financial.xlsx" class="data-download" download>
+          <span class="dl-icon">💰</span>
+          <div>
+            <div>green_threads_financial.xlsx</div>
+            <div class="dl-meta">P&L template — fill in the revenue &amp; cost formulas</div>
+          </div>
+          <span style="margin-left:auto;font-size:1.1rem;">⬇</span>
+        </a>
+      </div>
+
+      <!-- Back link -->
+      <a href="../index.html" class="back-link" style="margin-top:16px;display:inline-flex;">← Back to Company
+        Selection</a>
+
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-nav">
+      <a href="../index.html">Home</a>
+      <a href="../content/day1.html">Day 1</a>
+      <a href="../content/day2.html">Day 2</a>
+      <a href="../content/day3.html">Day 3</a>
+      <a href="../content/day4.html">Day 4</a>
+      <a href="../content/day5.html">Day 5</a>
+      <a href="../content/day6.html">Day 6</a>
+      <a href="../content/day7.html">Day 7</a>
+    </div>
+    <div>Green Threads · Company Portfolio · Business Software Course · SRH Hochschule</div>
+  </footer>
+
+</body>
+
+</html>
