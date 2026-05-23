@@ -157,35 +157,36 @@
                                         <div class="card card-orange">
                                                 <h3>🧹 The 5 Most Common Dirty Data Problems</h3>
                                                 <ol style="padding-left:18px; font-size:0.93rem;">
-                                                        <li style="margin-bottom:8px;"><strong>Numbers stored as
-                                                                        text</strong> — SUM returns 0. Fix: Data → Text
+                                                        <li style="margin-bottom:8px;"><b>Numbers stored as
+                                                                        text</b> — SUM returns 0. Fix: Data → Text
                                                                 to Columns, or VALUE() function.</li>
-                                                        <li style="margin-bottom:8px;"><strong>Inconsistent date
-                                                                        formats</strong> — sorting fails. Fix:
+                                                        <li style="margin-bottom:8px;"><b>Inconsistent date
+                                                                        formats</b> — sorting fails. Fix:
                                                                 DATEVALUE(), or reformat all as DD/MM/YYYY.</li>
-                                                        <li style="margin-bottom:8px;"><strong>Leading/trailing
-                                                                        spaces</strong> — lookups fail silently. Fix:
+                                                        <li style="margin-bottom:8px;"><b>Leading/trailing
+                                                                        spaces</b> — lookups fail silently. Fix:
                                                                 =TRIM(A2)</li>
-                                                        <li style="margin-bottom:8px;"><strong>Mixed case text</strong>
-                                                                — "COFFEE" ≠ "coffee". Fix: =PROPER(A2) or =UPPER(A2)
+                                                        <li style="margin-bottom:8px;"><b>Mixed case text</b>
+                                                                — "COFFEE" ≠ "coffee". Fix: =PROPER(A2) or
+                                                                =UPPER(A2)
                                                         </li>
-                                                        <li style="margin-bottom:8px;"><strong>Blank rows &amp; merged
-                                                                        cells</strong> — pivot tables break. Fix: Find
+                                                        <li style="margin-bottom:8px;"><b>Blank rows &amp; merged
+                                                                        cells</b> — pivot tables break. Fix: Find
                                                                 &amp; Select → Go To Special → Blanks.</li>
                                                 </ol>
                                         </div>
                                         <div class="card card-green">
                                                 <h3>📊 Chart Types — Pick the Right One</h3>
                                                 <ul>
-                                                        <li><strong>Column / Bar Chart</strong> — compare categories
+                                                        <li><b>Column / Bar Chart</b> — compare categories
                                                                 (sales by product)</li>
-                                                        <li><strong>Line Chart</strong> — show trends over time (monthly
+                                                        <li><b>Line Chart</b> — show trends over time (monthly
                                                                 revenue)</li>
-                                                        <li><strong>Pie / Doughnut</strong> — show parts of a whole (%
+                                                        <li><b>Pie / Doughnut</b> — show parts of a whole (%
                                                                 of revenue by service) — use sparingly</li>
-                                                        <li><strong>Scatter Plot</strong> — show correlation (hours
+                                                        <li><b>Scatter Plot</b> — show correlation (hours
                                                                 worked vs. revenue)</li>
-                                                        <li><strong>Combo Chart</strong> — two metrics on one chart
+                                                        <li><b>Combo Chart</b> — two metrics on one chart
                                                                 (revenue bars + margin % line)</li>
                                                 </ul>
                                         </div>
@@ -239,9 +240,11 @@
                                 <div class="callout callout-orange">
                                         <span class="callout-icon">🤖</span>
                                         <div class="callout-body">
-                                                <strong>Gemini Co-pilot for Cleaning</strong>
-                                                If you find a cleaning problem you don't know how to solve, describe it
-                                                to Gemini: <em>"In Excel, column B has dates in mixed formats like
+                                                <b>Gemini Co-pilot for Cleaning</b>
+                                                If you find a cleaning problem you don't know how to solve,
+                                                describe it
+                                                to Gemini: <em>"In Excel, column B has dates in mixed formats
+                                                        like
                                                         '15-Jan-24', '01/15/2024', and 'January 15'. How do I
                                                         standardise them all to DD/MM/YYYY?"</em>
                                         </div>
@@ -387,9 +390,11 @@
                                 </div>
                                 <p
                                         style="margin-top:18px;font-size:0.85rem;background:#fff8ee;padding:10px 14px;border-left:3px solid var(--srh-orange);border-radius:4px;">
-                                        <strong>Takeaway:</strong> A dirty dataset makes every downstream formula,
-                                        chart, and pivot table wrong — silently. Clean first, analyse second. In Excel:
-                                        <em>Text to Columns</em>, <em>Find &amp; Replace</em>, and <em>TRIM / PROPER /
+                                        <b>Takeaway:</b> A dirty dataset makes every downstream formula,
+                                        chart, and pivot table wrong — silently. Clean first, analyse second. In
+                                        Excel:
+                                        <em>Text to Columns</em>, <em>Find &amp; Replace</em>, and <em>TRIM /
+                                                PROPER /
                                                 VALUE</em> functions handle 90% of this.
                                 </p>
                         </div>
@@ -462,8 +467,9 @@
                                                         </svg>
                                                 </div>
                                                 <p style="font-size:0.82rem;margin-top:8px;color:#555;">The upward slope
-                                                        is <strong>instantly readable</strong>. Investors, managers, and
-                                                        customers all understand "growth over time" from this shape in
+                                                        is <b>instantly readable</b>. Investors, managers, and
+                                                        customers all understand "growth over time" from this
+                                                        shape in
                                                         under 1 second.</p>
                                         </div>
                                         <div class="ex-bad">
@@ -521,51 +527,52 @@
                                                 </div>
                                                 <p style="font-size:0.82rem;margin-top:8px;color:#555;">Can you see that
                                                         revenue <em>grew</em>? No — all you see is that June was the
-                                                        biggest month. The trend is <strong>completely
-                                                                invisible</strong>. Pie charts show part-of-whole, not
+                                                        biggest month. The trend is <b>completely
+                                                                invisible</b>. Pie charts show part-of-whole, not
                                                         change over time.</p>
                                         </div>
                                 </div>
                                 <div
                                         style="margin-top:20px;background:#fff;border:1px solid #e0e0e0;border-radius:8px;padding:14px;font-size:0.85rem;">
                                         <strong style="color:var(--srh-orange);">Quick Reference: Which Chart for Which
-                                                Question?</strong>
-                                        <table class="ex-table" style="margin-top:8px;">
-                                                <thead>
-                                                        <tr>
-                                                                <th>Question</th>
-                                                                <th>Use This Chart</th>
-                                                                <th>Not This</th>
-                                                        </tr>
-                                                </thead>
-                                                <tbody>
-                                                        <tr>
-                                                                <td>How did X change over time?</td>
-                                                                <td class="cell-good">Line / Area</td>
-                                                                <td class="cell-bad">Pie</td>
-                                                        </tr>
-                                                        <tr>
-                                                                <td>What share does each part hold?</td>
-                                                                <td class="cell-good">Pie / Donut</td>
-                                                                <td class="cell-bad">Line</td>
-                                                        </tr>
-                                                        <tr>
-                                                                <td>Compare categories side by side</td>
-                                                                <td class="cell-good">Bar (clustered)</td>
-                                                                <td class="cell-bad">Pie</td>
-                                                        </tr>
-                                                        <tr>
-                                                                <td>Rank items from most to least</td>
-                                                                <td class="cell-good">Bar (sorted)</td>
-                                                                <td class="cell-bad">Scatter</td>
-                                                        </tr>
-                                                </tbody>
-                                        </table>
+                                                Question?</b>
+                                                <table class="ex-table" style="margin-top:8px;">
+                                                        <thead>
+                                                                <tr>
+                                                                        <th>Question</th>
+                                                                        <th>Use This Chart</th>
+                                                                        <th>Not This</th>
+                                                                </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                                <tr>
+                                                                        <td>How did X change over time?</td>
+                                                                        <td class="cell-good">Line / Area</td>
+                                                                        <td class="cell-bad">Pie</td>
+                                                                </tr>
+                                                                <tr>
+                                                                        <td>What share does each part hold?</td>
+                                                                        <td class="cell-good">Pie / Donut</td>
+                                                                        <td class="cell-bad">Line</td>
+                                                                </tr>
+                                                                <tr>
+                                                                        <td>Compare categories side by side</td>
+                                                                        <td class="cell-good">Bar (clustered)</td>
+                                                                        <td class="cell-bad">Pie</td>
+                                                                </tr>
+                                                                <tr>
+                                                                        <td>Rank items from most to least</td>
+                                                                        <td class="cell-good">Bar (sorted)</td>
+                                                                        <td class="cell-bad">Scatter</td>
+                                                                </tr>
+                                                        </tbody>
+                                                </table>
                                 </div>
                                 <p
                                         style="margin-top:18px;font-size:0.85rem;background:#fff8ee;padding:10px 14px;border-left:3px solid var(--srh-orange);border-radius:4px;">
-                                        <strong>Takeaway:</strong> Before inserting a chart in Excel, ask yourself:
-                                        <em>"What question am I answering?"</em> The answer tells you the chart type.
+                                        <b>Takeaway:</b> Before inserting a chart in Excel, ask yourself:
+                                        <em>"What question am I answering?"</em> The answer tells you the chart
+                                        type.
                                         Picking the wrong type doesn't just look bad — it tells a false story.
                                 </p>
                         </div>
@@ -585,11 +592,14 @@
                                 <div class="callout callout-blue" style="margin-bottom:20px;">
                                         <span class="callout-icon">📁</span>
                                         <div class="callout-body">
-                                                <strong>Your File: <code>[company_slug]_visualization.xlsx</code></strong>
+                                                <b>Your File: <code>[company_slug]_visualization.xlsx</code></b>
                                                 Open your company's operations dataset (e.g.
-                                                <code>bytebite_visualization.xlsx</code>). This file contains real-looking
-                                                but fictional operational data — orders, bookings, surveys, or project
-                                                records depending on your company. It is intentionally messy: your job
+                                                <code>bytebite_visualization.xlsx</code>). This file contains
+                                                real-looking
+                                                but fictional operational data — orders, bookings, surveys, or
+                                                project
+                                                records depending on your company. It is intentionally messy:
+                                                your job
                                                 today is to clean it and then visualise it.
                                         </div>
                                 </div>
@@ -638,10 +648,13 @@
                                 <div class="callout callout-green">
                                         <span class="callout-icon">✅</span>
                                         <div class="callout-body">
-                                                <strong>Quality Check</strong>
-                                                Change one data value in your cleaned dataset. Both charts should update
-                                                automatically. If they do — your charts are linked to the live data. If
-                                                not — you may have pasted values instead of using cell references.
+                                                <b>Quality Check</b>
+                                                Change one data value in your cleaned dataset. Both charts
+                                                should update
+                                                automatically. If they do — your charts are linked to the live
+                                                data. If
+                                                not — you may have pasted values instead of using cell
+                                                references.
                                         </div>
                                 </div>
                         </div>
@@ -664,31 +677,32 @@
                                                 dashboard that tells the story of your company's performance.</p>
                                         <ul class="deliverable-list">
                                                 <li>
-                                                        <div class="check"></div><strong>Sheet 1 "Raw Data"</strong> —
+                                                        <div class="check"></div><b>Sheet 1 "Raw Data"</b> —
                                                         original untouched data (never edit this)
                                                 </li>
                                                 <li>
-                                                        <div class="check"></div><strong>Sheet 2 "Clean Data"</strong> —
+                                                        <div class="check"></div><b>Sheet 2 "Clean Data"</b> —
                                                         documented cleaning steps in a notes column
                                                 </li>
                                                 <li>
-                                                        <div class="check"></div><strong>Sheet 3 "Dashboard"</strong> —
+                                                        <div class="check"></div><b>Sheet 3 "Dashboard"</b> —
                                                         2 charts, branded colours, axis labels, chart titles
                                                 </li>
                                                 <li>
-                                                        <div class="check"></div><strong>Key Insight
-                                                                annotations</strong> — 1 sentence per chart explaining
+                                                        <div class="check"></div><b>Key Insight
+                                                                annotations</b> — 1 sentence per chart explaining
                                                         what it means
                                                 </li>
                                                 <li>
-                                                        <div class="check"></div><strong>No manual value-typing</strong>
+                                                        <div class="check"></div><b>No manual value-typing</b>
                                                         in dashboard — all values sourced from Clean Data sheet
                                                 </li>
                                         </ul>
                                         <div
                                                 style="margin-top:20px; padding:14px 16px; background:rgba(243,146,0,0.15); border-radius:var(--radius); font-size:0.85rem; color:#ffcc80;">
-                                                <strong>⭐ Bonus:</strong> Add Conditional Formatting to your Clean Data
-                                                sheet — highlight the top 3 values in green and the bottom 3 in red for
+                                                <b>⭐ Bonus:</b> Add Conditional Formatting to your Clean Data
+                                                sheet — highlight the top 3 values in green and the bottom 3 in
+                                                red for
                                                 your key metric column.
                                         </div>
                                 </div>

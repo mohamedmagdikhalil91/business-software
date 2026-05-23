@@ -175,13 +175,13 @@
                                                 <p>Unit economics asks: <em>what does it cost to deliver one unit of
                                                                 value, and what do we earn from it?</em></p>
                                                 <ul>
-                                                        <li><strong>Unit</strong> = 1 cup of coffee / 1 video / 1 hoodie
+                                                        <li><b>Unit</b> = 1 cup of coffee / 1 video / 1 hoodie
                                                                 / 1 class</li>
-                                                        <li><strong>Unit Revenue</strong> = selling price per unit</li>
-                                                        <li><strong>Unit Cost (COGS)</strong> = what it costs to produce
+                                                        <li><b>Unit Revenue</b> = selling price per unit</li>
+                                                        <li><b>Unit Cost (COGS)</b> = what it costs to produce
                                                                 one unit</li>
-                                                        <li><strong>Unit Margin</strong> = Revenue − COGS per unit</li>
-                                                        <li><strong>Margin %</strong> = (Unit Margin ÷ Unit Revenue) ×
+                                                        <li><b>Unit Margin</b> = Revenue − COGS per unit</li>
+                                                        <li><b>Margin %</b> = (Unit Margin ÷ Unit Revenue) ×
                                                                 100</li>
                                                 </ul>
                                                 <div class="formula-block" style="font-size:0.82rem; margin-top:12px;">
@@ -210,48 +210,137 @@
                                                 <h4>IF</h4>
                                                 <p>=IF(C5&gt;0,"Profit","Loss") — conditional logic</p>
                                         </div>
+                                        <div class="concept-card">
+                                                <div class="concept-icon">📊</div>
+                                                <h4>AVERAGE</h4>
+                                                <p>=AVERAGE(B2:B12) — mean of a range. Use for avg. order value, avg.
+                                                        unit cost, avg. margin.</p>
+                                        </div>
+                                        <div class="concept-card">
+                                                <div class="concept-icon">🔢</div>
+                                                <h4>COUNT / COUNTA</h4>
+                                                <p>=COUNT(B2:B12) — count numeric cells. =COUNTA counts any non-empty
+                                                        cells. Useful for number of orders, customers, etc.</p>
+                                        </div>
+                                        <div class="concept-card">
+                                                <div class="concept-icon">🛡️</div>
+                                                <h4>IFERROR</h4>
+                                                <p>=IFERROR(B2/C2, 0) — catches errors (e.g. divide-by-zero) and
+                                                        replaces them with a fallback value instead of showing #DIV/0!
+                                                </p>
+                                        </div>
+                                        <div class="concept-card">
+                                                <div class="concept-icon">🎨</div>
+                                                <h4>Cell Formatting</h4>
+                                                <p>Ctrl+1 opens Format Cells. Set: Currency (€), Percentage (%), decimal
+                                                        places, date format. Apply Cell Styles from Home for quick
+                                                        consistent formatting.</p>
+                                        </div>
+                                </div>
+
+                                <div class="card card-blue">
+                                        <h3>🎨 Cell Formatting — Making Numbers Readable</h3>
+                                        <p style="margin-bottom:12px; font-size:0.9rem;">A financial model with
+                                                unformatted numbers is hard to read and looks unprofessional. These
+                                                three formatting habits take 30 seconds and transform your spreadsheet:
+                                        </p>
+                                        <div class="formula-block" style="font-size:0.83rem;">
+                                                <span class="f-comment"># Format a cell as currency (€)</span><br />
+                                                Select cells → Home → Number format dropdown → <span
+                                                        class="f-func">Currency</span><br />
+                                                <span class="f-comment"> — or — </span> Ctrl+1 → Number → Currency →
+                                                Symbol: € → 2 decimal places<br /><br />
+                                                <span class="f-comment"># Format a cell as percentage</span><br />
+                                                Select cells → Home → <span class="f-func">%</span> button &nbsp;<span
+                                                        class="f-comment">← one click</span><br />
+                                                Increase / decrease decimals with the <span class="f-func">.00→.0</span>
+                                                buttons next to it<br /><br />
+                                                <span class="f-comment"># Apply a Cell Style (pre-built colour + font
+                                                        combinations)</span><br />
+                                                Home → <span class="f-func">Cell Styles</span> gallery → pick "Good",
+                                                "Bad", "Heading 1", "Total", etc.<br /><br />
+                                                <span class="f-comment"># Freeze the top row so headers stay visible
+                                                        while scrolling</span><br />
+                                                View → Freeze Panes → <span class="f-func">Freeze Top Row</span>
+                                        </div>
+                                        <div class="callout callout-orange" style="margin-top:14px; padding:10px 12px;">
+                                                <span class="callout-icon" style="font-size:1rem;">💡</span>
+                                                <div class="callout-body" style="font-size:0.83rem;">
+                                                        <b>Keyboard shortcut cheat sheet:</b> &nbsp;
+                                                        <code>Ctrl+Shift+$</code> = Currency &nbsp;·&nbsp;
+                                                        <code>Ctrl+Shift+%</code> = Percentage &nbsp;·&nbsp;
+                                                        <code>Ctrl+B</code> = Bold &nbsp;·&nbsp;
+                                                        <code>Alt+H+H</code> = Fill Color
+                                                </div>
+                                        </div>
                                 </div>
                                 <div class="card card-light">
                                         <h3>📊 Core Excel Concepts — Before You Touch a Formula</h3>
-                                        <p style="margin-bottom:14px; font-size:0.9rem;">Three ideas that separate a working model from a broken one:</p>
+                                        <p style="margin-bottom:14px; font-size:0.9rem;">Three ideas that separate a
+                                                working model from a broken one:</p>
 
                                         <p style="font-weight:700; margin-bottom:4px;">1 · Formulas vs. Manual Entry</p>
-                                        <p style="font-size:0.88rem; margin-bottom:10px;">Never type a calculated number directly into a cell. Type the
-                                                formula instead. When your inputs change, every result updates automatically — no re-typing, no errors from forgetting to update a cell.
+                                        <p style="font-size:0.88rem; margin-bottom:10px;">Never type a calculated number
+                                                directly into a cell. Type the
+                                                formula instead. When your inputs change, every result updates
+                                                automatically — no re-typing, no errors from forgetting to update a
+                                                cell.
                                         </p>
                                         <div class="formula-block" style="margin-bottom:16px; font-size:0.83rem;">
-                                                <span class="f-comment"># ❌ Manual — breaks every time you change the price</span><br />
-                                                D4 = 1497 &nbsp;&nbsp;&nbsp;&nbsp;<span class="f-comment">← someone typed this by hand</span><br /><br />
-                                                <span class="f-comment"># ✅ Formula — always correct, zero maintenance</span><br />
-                                                D4 = <span class="f-func">=B4*C4</span> &nbsp;<span class="f-comment">← units × price, auto-updates</span>
+                                                <span class="f-comment"># ❌ Manual — breaks every time you change the
+                                                        price</span><br />
+                                                D4 = 1497 &nbsp;&nbsp;&nbsp;&nbsp;<span class="f-comment">← someone
+                                                        typed this by hand</span><br /><br />
+                                                <span class="f-comment"># ✅ Formula — always correct, zero
+                                                        maintenance</span><br />
+                                                D4 = <span class="f-func">=B4*C4</span> &nbsp;<span class="f-comment">←
+                                                        units × price, auto-updates</span>
                                         </div>
 
-                                        <p style="font-weight:700; margin-bottom:4px;">2 · Relative vs. Absolute References</p>
-                                        <p style="font-size:0.88rem; margin-bottom:10px;">When you drag a formula down, Excel adjusts the row numbers automatically (relative). Sometimes you want one cell to stay fixed — lock it with <code>$</code> signs (absolute).</p>
+                                        <p style="font-weight:700; margin-bottom:4px;">2 · Relative vs. Absolute
+                                                References</p>
+                                        <p style="font-size:0.88rem; margin-bottom:10px;">When you drag a formula down,
+                                                Excel adjusts the row numbers automatically (relative). Sometimes you
+                                                want one cell to stay fixed — lock it with <code>$</code> signs
+                                                (absolute).</p>
                                         <div class="formula-block" style="margin-bottom:16px; font-size:0.83rem;">
-                                                <span class="f-comment"># Relative — row changes as you drag down</span><br />
-                                                =B4*C4 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="f-comment">← B5*C5, B6*C6 …</span><br /><br />
-                                                <span class="f-comment"># Absolute — cell stays fixed (e.g. a VAT rate in C1)</span><br />
-                                                =B4*<span class="f-func">$C$1</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="f-comment">← always multiplies by C1, no matter where you drag</span><br /><br />
-                                                <span class="f-comment"># Shortcut: press F4 after clicking a cell to cycle through $-modes</span>
+                                                <span class="f-comment"># Relative — row changes as you drag
+                                                        down</span><br />
+                                                =B4*C4
+                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                                                        class="f-comment">← B5*C5, B6*C6 …</span><br /><br />
+                                                <span class="f-comment"># Absolute — cell stays fixed (e.g. a VAT rate
+                                                        in C1)</span><br />
+                                                =B4*<span class="f-func">$C$1</span>
+                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                                                        class="f-comment">← always multiplies by C1, no matter where you
+                                                        drag</span><br /><br />
+                                                <span class="f-comment"># Shortcut: press F4 after clicking a cell to
+                                                        cycle through $-modes</span>
                                         </div>
 
-                                        <p style="font-weight:700; margin-bottom:4px;">3 · Cell Naming for Readable Formulas</p>
-                                        <p style="font-size:0.88rem; margin-bottom:10px;">Give important cells a name (Formulas → Define Name). Your formulas become self-documenting — no more guessing what <code>$B$2</code> means.</p>
+                                        <p style="font-weight:700; margin-bottom:4px;">3 · Cell Naming for Readable
+                                                Formulas</p>
+                                        <p style="font-size:0.88rem; margin-bottom:10px;">Give important cells a name
+                                                (Formulas → Define Name). Your formulas become self-documenting — no
+                                                more guessing what <code>$B$2</code> means.</p>
                                         <div class="formula-block" style="font-size:0.83rem;">
                                                 <span class="f-comment"># ❌ Hard to read — what is B2?</span><br />
                                                 =D4 / <span class="f-func">$B$2</span><br /><br />
-                                                <span class="f-comment"># ✅ Self-documenting — name B2 as "BoxPrice"</span><br />
+                                                <span class="f-comment"># ✅ Self-documenting — name B2 as
+                                                        "BoxPrice"</span><br />
                                                 =D4 / <span class="f-func">BoxPrice</span>
                                         </div>
                                 </div>
                                 <div class="callout callout-orange">
                                         <span class="callout-icon">⚡</span>
                                         <div class="callout-body">
-                                                <strong>Manual First, AI Second</strong>
-                                                Try to write every formula yourself today. If you get stuck, ask Gemini:
+                                                <b>Manual First, AI Second</b>
+                                                Try to write every formula yourself today. If you get stuck, ask
+                                                Gemini:
                                                 <em>"I'm filling in an Excel P&amp;L template. Cell D7 should be
-                                                        Gross Profit = Revenue − COGS. Revenue is in D5, COGS is in D6.
+                                                        Gross Profit = Revenue − COGS. Revenue is in D5, COGS is
+                                                        in D6.
                                                         What formula do I write?"</em>
                                         </div>
                                 </div>
@@ -300,8 +389,8 @@
                                                                         <td>17%</td>
                                                                 </tr>
                                                                 <tr>
-                                                                        <td><strong>Variable Cost Total</strong></td>
-                                                                        <td><strong>7.50</strong></td>
+                                                                        <td><b>Variable Cost Total</b></td>
+                                                                        <td><b>7.50</b></td>
                                                                         <td>50%</td>
                                                                 </tr>
                                                                 <tr>
@@ -315,7 +404,7 @@
                                                 <p style="font-size:0.8rem;margin-top:10px;color:#555;">At €14.99,
                                                         ByteBite covers all variable costs and has €7.49 left per box to
                                                         cover fixed costs (rent, salaries, software). This is
-                                                        <strong>healthy</strong> for a D2C food business.
+                                                        <b>healthy</b> for a D2C food business.
                                                 </p>
                                         </div>
                                         <div class="ex-bad">
@@ -351,8 +440,8 @@
                                                                         <td>25%</td>
                                                                 </tr>
                                                                 <tr>
-                                                                        <td><strong>Variable Cost Total</strong></td>
-                                                                        <td><strong>7.50</strong></td>
+                                                                        <td><b>Variable Cost Total</b></td>
+                                                                        <td><b>7.50</b></td>
                                                                         <td>75%</td>
                                                                 </tr>
                                                                 <tr>
@@ -389,14 +478,15 @@
                                                         style="color:#6a9955">← Contribution margin (%)</span>
                                         </div>
                                         <p style="font-size:0.82rem;margin-top:10px;color:#555;">Change
-                                                <strong>B2</strong> from 14.99 → 9.99 and every derived cell updates
+                                                <b>B2</b> from 14.99 → 9.99 and every derived cell updates
                                                 instantly. This is why formulas beat manual calculation.
                                         </p>
                                 </div>
                                 <p
                                         style="margin-top:18px;font-size:0.85rem;background:#fff8ee;padding:10px 14px;border-left:3px solid var(--srh-orange);border-radius:4px;">
-                                        <strong>Takeaway:</strong> Build your financial model so that changing one input
-                                        (price) flows through the entire sheet automatically. No copy-pasting. No
+                                        <b>Takeaway:</b> Build your financial model so that changing one input
+                                        (price) flows through the entire sheet automatically. No copy-pasting.
+                                        No
                                         recalculating. That's the power of cell references.
                                 </p>
                         </div>
@@ -415,13 +505,15 @@
                                 <div class="callout callout-blue">
                                         <span class="callout-icon">📁</span>
                                         <div class="callout-body">
-                                                <strong>Your File: <code>[company_slug]_financial.xlsx</code></strong>
+                                                <b>Your File: <code>[company_slug]_financial.xlsx</code></b>
                                                 Open your company's financial model template (e.g.
-                                                <code>bytebite_financial.xlsx</code>). The structure is already built —
+                                                <code>bytebite_financial.xlsx</code>). The structure is already
+                                                built —
                                                 your only job is to fill in the <strong style="color:#e65c00;">yellow
-                                                        cells</strong> with the correct formulas. Blue cells are
-                                                pre-filled inputs; green cells will auto-calculate once your formulas
-                                                are correct. Read the <b>Instructions</b> sheet first!
+                                                        cells</b> with the correct formulas. Blue cells are
+                                                        pre-filled inputs; green cells will auto-calculate once your
+                                                        formulas
+                                                        are correct. Read the <b>Instructions</b> sheet first!
                                         </div>
                                 </div>
                                 <div class="card">
@@ -429,7 +521,8 @@
                                         <ol class="steps">
                                                 <li>Open <b>[company_slug]_financial.xlsx</b>. Read the
                                                         <b>Instructions</b> sheet — it explains the colour coding and
-                                                        what each section means.</li>
+                                                        what each section means.
+                                                </li>
                                                 <li>Switch to the <b>Financial Model</b> sheet. Read through it top to
                                                         bottom before writing any formula.</li>
                                                 <li><b>Section 1 — Revenue:</b> For each yellow cell in the Amount
@@ -440,7 +533,8 @@
                                                 <li><b>Section 2 — COGS:</b> Repeat the same pattern — Qty × Rate for
                                                         each cost line, then a SUM for Total COGS.</li>
                                                 <li><b>Section 3 — Gross Profit:</b> Write <code>=Total Revenue −
-                                                                Total COGS</code>. Then write the Gross Margin % formula:
+                                                                Total COGS</code>. Then write the Gross Margin %
+                                                        formula:
                                                         <code>=Gross Profit / Total Revenue</code>. Format as %.
                                                 </li>
                                                 <li><b>Section 4 — Fixed Costs:</b> SUM all fixed cost lines.</li>
@@ -456,10 +550,13 @@
                                 <div class="callout callout-green">
                                         <span class="callout-icon">✅</span>
                                         <div class="callout-body">
-                                                <strong>Quality Check</strong>
-                                                Change one "Unit Price" in column C. Watch: Revenue, Gross Profit,
-                                                Margin %, and Net Profit should all update automatically. If they do —
-                                                your formulas are linked correctly. If they don't — check your cell
+                                                <b>Quality Check</b>
+                                                Change one "Unit Price" in column C. Watch: Revenue, Gross
+                                                Profit,
+                                                Margin %, and Net Profit should all update automatically. If
+                                                they do —
+                                                your formulas are linked correctly. If they don't — check your
+                                                cell
                                                 references.
                                         </div>
                                 </div>
@@ -483,37 +580,39 @@
                                                 should cascade through every calculated result automatically.</p>
                                         <ul class="deliverable-list">
                                                 <li>
-                                                        <div class="check"></div><strong>Revenue formulas</strong> —
-                                                        all Amount cells use <code>=Qty × Rate</code>, Total Revenue
+                                                        <div class="check"></div><b>Revenue formulas</b> —
+                                                        all Amount cells use <code>=Qty × Rate</code>, Total
+                                                        Revenue
                                                         uses <code>=SUM(…)</code>
                                                 </li>
                                                 <li>
-                                                        <div class="check"></div><strong>COGS formulas</strong> —
+                                                        <div class="check"></div><b>COGS formulas</b> —
                                                         same pattern, all linked to the given inputs
                                                 </li>
                                                 <li>
-                                                        <div class="check"></div><strong>Gross Profit &amp; Gross
-                                                                Margin %</strong> — correctly calculated, Margin %
+                                                        <div class="check"></div><b>Gross Profit &amp; Gross
+                                                                Margin %</b> — correctly calculated, Margin %
                                                         formatted as percentage
                                                 </li>
                                                 <li>
-                                                        <div class="check"></div><strong>Fixed Costs total &amp;
-                                                                EBIT</strong> — formula-driven, no manually typed totals
+                                                        <div class="check"></div><b>Fixed Costs total &amp;
+                                                                EBIT</b> — formula-driven, no manually typed totals
                                                 </li>
                                                 <li>
-                                                        <div class="check"></div><strong>Break-Even formula</strong>
+                                                        <div class="check"></div><b>Break-Even formula</b>
                                                         — Fixed Costs ÷ (Price − Variable Cost per Unit)
                                                 </li>
                                                 <li>
-                                                        <div class="check"></div><strong>IF status indicator</strong>
+                                                        <div class="check"></div><b>IF status indicator</b>
                                                         — "✅ Profitable" or "⚠️ Loss" based on EBIT
                                                 </li>
                                         </ul>
                                         <div
                                                 style="margin-top:20px; padding:14px 16px; background:rgba(243,146,0,0.15); border-radius:var(--radius); font-size:0.85rem; color:#ffcc80;">
-                                                <strong>⭐ Bonus:</strong> Add a new sheet called "Scenarios" with 3
+                                                <b>⭐ Bonus:</b> Add a new sheet called "Scenarios" with 3
                                                 columns (Pessimistic / Base / Optimistic). Change the key input
-                                                assumptions (e.g. units sold at 50% / 100% / 150% of forecast) and
+                                                assumptions (e.g. units sold at 50% / 100% / 150% of forecast)
+                                                and
                                                 show how EBIT and Break-Even shift across each scenario.
                                         </div>
                                 </div>
