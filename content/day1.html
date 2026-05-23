@@ -236,66 +236,62 @@
                                 <div class="grid-2">
                                         <div class="card card-blue">
                                                 <h3>🎨 Colour Representation</h3>
-                                                <p>Every colour on screen is defined by numbers. PowerPoint uses three
-                                                        systems — knowing them lets you set brand colours precisely:</p>
-                                                <ul>
-                                                        <li><b>Hex code</b> — e.g. <code>#F39200</code>. The format
-                                                                designers use. 6 digits: first 2 = Red, middle 2
-                                                                = Green, last 2 = Blue. Paste directly into
-                                                                PowerPoint's colour picker.</li>
-                                                        <li><b>RGB</b> — e.g. <code>R 243 · G 146 · B 0</code>.
-                                                                Same information as hex, shown as three 0–255
-                                                                numbers. Both refer to the same colour.</li>
-                                                        <li><b>Theme colour grid</b> — PowerPoint's 10-colour
-                                                                palette: 2 Text/Background shades + 6 Accent
-                                                                colours + 2 Hyperlink colours. Always set brand
-                                                                colours here (not as direct/manual colours) —
-                                                                then every chart, shape, and SmartArt will
-                                                                automatically use your brand palette.</li>
+                                                <p style="font-size:0.88rem; margin-bottom:14px;">Every colour on screen is defined by numbers. Three systems — all describing the <em>same</em> colour:</p>
+
+                                                <!-- Live colour swatch -->
+                                                <div style="background:#F39200; border-radius:8px; padding:14px 16px; margin-bottom:14px; display:flex; align-items:center; gap:14px;">
+                                                        <div style="width:48px; height:48px; border-radius:6px; background:#F39200; border:3px solid rgba(255,255,255,0.5); flex-shrink:0;"></div>
+                                                        <div style="font-size:0.82rem; color:#fff; line-height:1.9;">
+                                                                <div><strong style="letter-spacing:0.04em;">HEX</strong> &nbsp;<code style="background:rgba(0,0,0,0.25); padding:2px 7px; border-radius:4px; font-size:0.9em;">#F39200</code></div>
+                                                                <div><strong style="letter-spacing:0.04em;">RGB</strong> &nbsp;<code style="background:rgba(0,0,0,0.25); padding:2px 7px; border-radius:4px; font-size:0.9em;">R 243 · G 146 · B 0</code></div>
+                                                                <div style="font-size:0.78rem; opacity:0.85; margin-top:2px;">← three ways to write the same orange</div>
+                                                        </div>
+                                                </div>
+
+                                                <ul style="font-size:0.88rem; line-height:1.7;">
+                                                        <li><strong>Hex</strong> — 6-digit code (<code>#RRGGBB</code>). First 2 = Red, middle 2 = Green, last 2 = Blue. The format designers and developers use — paste it directly into PowerPoint's colour picker.</li>
+                                                        <li><strong>RGB</strong> — same colour as three 0–255 numbers. Both formats are interchangeable; use whichever the tool accepts.</li>
+                                                        <li><strong>Theme colour grid</strong> — PowerPoint's 10-slot palette (2 Text/BG + 6 Accents + 2 Hyperlinks). <em>Always</em> set your brand colours here — every chart, shape, and SmartArt then uses your palette automatically.</li>
                                                 </ul>
                                                 <div class="formula-block" style="font-size:0.82rem; margin-top:10px;">
-                                                        <span class="f-comment"># Set a theme colour in
-                                                                PowerPoint</span><br />
-                                                        Slide Master → Colors → <span class="f-func">Customize
-                                                                Colors</span><br />
-                                                        → Click Accent 1 → More Colors → <span
-                                                                class="f-func">Custom</span> tab → enter hex code
+                                                        <span class="f-comment"># Set a theme colour in PowerPoint</span><br />
+                                                        Slide Master → Colors → <span class="f-func">Customize Colors</span><br />
+                                                        → Click Accent 1 → More Colors → <span class="f-func">Custom</span> tab → paste hex code
                                                 </div>
                                         </div>
+
                                         <div class="card card-orange">
                                                 <h3>🔤 Typography</h3>
-                                                <p>Typography is the single biggest visual signal of professionalism.
-                                                        Two decisions matter most:</p>
-                                                <ul>
-                                                        <li><b>Serif vs. Sans-serif</b> — Serif fonts (Times New
-                                                                Roman, Georgia) have small decorative strokes —
-                                                                they feel traditional, authoritative. Sans-serif
-                                                                fonts (Calibri, Montserrat, Inter) have clean
-                                                                lines — they feel modern, minimal. For slides:
-                                                                sans-serif almost always wins.</li>
-                                                        <li><b>Font pairing</b> — Use exactly 2 fonts: one for
-                                                                headings (heavier, more distinctive), one for
-                                                                body text (highly readable). A classic pair:
-                                                                Montserrat (heading) + Open Sans (body). Never
-                                                                use more than 2 fonts in a single deck.</li>
-                                                        <li><b>Font weight &amp; style</b> — Bold signals
-                                                                importance. Italic signals emphasis or a quote.
-                                                                ALL CAPS signals formality. Use each sparingly —
-                                                                if everything is bold, nothing is.</li>
-                                                        <li><b>Size hierarchy</b> — Title: 36–44pt · Section
-                                                                heading: 24–28pt · Body: 18–20pt ·
-                                                                Caption/footnote: 12–14pt. Stay consistent
-                                                                across all slides.</li>
+                                                <p style="font-size:0.88rem; margin-bottom:14px;">Typography is the single biggest visual signal of professionalism. Four rules:</p>
+                                                <ul style="font-size:0.88rem; line-height:1.8;">
+                                                        <li>
+                                                                <strong>Serif vs. Sans-serif</strong><br />
+                                                                <span style="font-family:Georgia,serif; font-size:0.95em;">Serif</span> (Georgia, Times) → traditional, authoritative &nbsp;·&nbsp;
+                                                                <span style="font-family:Calibri,Arial,sans-serif; font-size:0.95em;">Sans-serif</span> (Calibri, Montserrat) → modern, clean.<br />
+                                                                For slides: sans-serif almost always wins.
+                                                        </li>
+                                                        <li>
+                                                                <strong>Font pairing</strong> — use exactly <strong>2 fonts</strong>: one for headings, one for body. Never more.
+                                                        </li>
+                                                        <li>
+                                                                <strong>Weight &amp; style</strong> — each tool has a job:<br />
+                                                                <strong>Bold</strong> signals importance &nbsp;·&nbsp;
+                                                                <em>Italic</em> signals emphasis &nbsp;·&nbsp;
+                                                                <span style="text-transform:uppercase; letter-spacing:0.08em; font-size:0.85em;">All Caps</span> signals formality.<br />
+                                                                <span style="font-size:0.82rem; opacity:0.8;">Use each sparingly — if everything is bold, nothing is.</span>
+                                                        </li>
+                                                        <li>
+                                                                <strong>Size hierarchy</strong><br />
+                                                                <span style="font-size:1.1em; font-weight:700;">Title 40pt</span> &nbsp;›&nbsp;
+                                                                <span style="font-size:0.95em; font-weight:600;">Section 26pt</span> &nbsp;›&nbsp;
+                                                                <span style="font-size:0.85em;">Body 18pt</span> &nbsp;›&nbsp;
+                                                                <span style="font-size:0.75em; opacity:0.7;">Caption 12pt</span>
+                                                        </li>
                                                 </ul>
-                                                <div class="callout callout-orange"
-                                                        style="margin-top:12px; padding:10px 12px;">
+                                                <div class="callout callout-orange" style="margin-top:12px; padding:10px 12px;">
                                                         <span class="callout-icon" style="font-size:1rem;">💡</span>
                                                         <div class="callout-body" style="font-size:0.82rem;">
-                                                                <b>Free brand fonts:</b> Google Fonts
-                                                                (fonts.google.com) — search by "personality"
-                                                                (e.g. "modern", "elegant"). Download the .ttf
-                                                                file and install it on Windows. It will appear
-                                                                in PowerPoint immediately.
+                                                                <strong>Free brand fonts:</strong> <a href="https://fonts.google.com" target="_blank" style="color:inherit;">fonts.google.com</a> — search by personality (e.g. "modern", "elegant"). Download the .ttf → install on Windows → appears in PowerPoint immediately.
                                                         </div>
                                                 </div>
                                         </div>
@@ -593,45 +589,15 @@
                                         </p>
                                         <ul class="deliverable-list">
                                                 <li>
-                                                        <div class="check"></div><b>Slide 1 — Title Slide:</b>
-                                                        Company name, tagline, and founding year. Uses your
-                                                        Title
-                                                        layout.
-                                                </li>
+                                                        <div class="check"></div><span><strong>Slide 1 — Title Slide:</strong> Company name, tagline, and founding year. Uses your Title layout.</span></li>
                                                 <li>
-                                                        <div class="check"></div><b>Slide 2 — Our Colour
-                                                                Palette:</b> Show your 3 brand colours with their
-                                                        hex codes and names. Add 1–2 sentences explaining
-                                                        <em>why</em> you chose these colours — what feeling or
-                                                        value do they communicate for your company?
-                                                </li>
+                                                        <div class="check"></div><span><strong>Slide 2 — Our Colour Palette:</strong> Show your 3 brand colours with their hex codes and names. Add 1–2 sentences explaining <em>why</em> you chose these colours — what feeling or value do they communicate for your company?</span></li>
                                                 <li>
-                                                        <div class="check"></div><b>Slide 3 — Typography
-                                                                Guide:</b> Show your heading font and body font
-                                                        with example text and sizes. Explain in 1 sentence
-                                                        <em>why</em> this font combination fits your brand (e.g.
-                                                        "We chose Inter for its clean readability — it reflects
-                                                        our
-                                                        no-nonsense, data-driven approach").
-                                                </li>
+                                                        <div class="check"></div><span><strong>Slide 3 — Typography Guide:</strong> Show your heading font and body font with example text and sizes. Explain in 1 sentence <em>why</em> this font combination fits your brand (e.g. "We chose Inter for its clean readability — it reflects our no-nonsense, data-driven approach").</span></li>
                                                 <li>
-                                                        <div class="check"></div><b>Slide 4 — Brand Voice:</b>
-                                                        3 adjectives that describe your brand, with a short
-                                                        example
-                                                        sentence in your brand's tone.
-                                                </li>
+                                                        <div class="check"></div><span><strong>Slide 4 — Brand Voice:</strong> 3 adjectives that describe your brand, with a short example sentence in your brand's tone.</span></li>
                                                 <li>
-                                                        <div class="check"></div><b>Slide 5 — Visual Rules:</b>
-                                                        Define at least <b>2 rules your brand always
-                                                                follows</b>
-                                                        and at least <b>2 rules it never breaks</b>
-                                                        (e.g.
-                                                        "We never use more than 2 fonts on one
-                                                        slide", "We never use
-                                                        bright neon colours"). These rules
-                                                        should be grounded in the
-                                                        rationale you wrote on Slides 2–3.
-                                                </li>
+                                                        <div class="check"></div><span><strong>Slide 5 — Visual Rules:</strong> Define at least <strong>2 rules your brand always follows</strong> and at least <strong>2 rules it never breaks</strong> (e.g. "We never use more than 2 fonts on one slide", "We never use bright neon colours"). These rules should be grounded in the rationale you wrote on Slides 2–3.</span></li>
                                         </ul>
                                         <div
                                                 style="margin-top:20px; padding:14px 16px; background:rgba(243,146,0,0.15); border-radius:var(--radius); font-size:0.85rem; color:#ffcc80;">

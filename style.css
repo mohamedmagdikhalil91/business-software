@@ -707,12 +707,16 @@ h4 {
 
 .deliverable-list li {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 10px;
   padding: 8px 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
   font-size: 0.9rem;
   color: #ddd;
+}
+
+.deliverable-list li .check {
+  margin-top: 2px; /* optical alignment with first line of text */
 }
 
 .deliverable-list li:last-child {
