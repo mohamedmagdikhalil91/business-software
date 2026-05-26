@@ -72,6 +72,13 @@ h3,
 h4 {
   line-height: 1.25;
   font-weight: 700;
+  margin-bottom: 0.65rem; /* fallback — specific contexts override below */
+}
+
+/* Headings that appear after content within the same container need top spacing */
+h3:not(:first-child),
+h4:not(:first-child) {
+  margin-top: 1.1rem;
 }
 
 /* --- Sticky Navigation ------------------------------------- */
@@ -496,6 +503,12 @@ h4 {
 .card ol {
   padding-left: 20px;
   font-size: 0.95rem;
+  margin-bottom: 0.75rem;
+}
+
+.card ul:last-child,
+.card ol:last-child {
+  margin-bottom: 0;
 }
 
 .card li {
