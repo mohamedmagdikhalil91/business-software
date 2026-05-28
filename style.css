@@ -72,7 +72,8 @@ h3,
 h4 {
   line-height: 1.25;
   font-weight: 700;
-  margin-bottom: 0.65rem; /* fallback — specific contexts override below */
+  margin-bottom: 0.65rem;
+  /* fallback — specific contexts override below */
 }
 
 /* Headings that appear after content within the same container need top spacing */
@@ -729,7 +730,8 @@ h4:not(:first-child) {
 }
 
 .deliverable-list li .check {
-  margin-top: 2px; /* optical alignment with first line of text */
+  margin-top: 2px;
+  /* optical alignment with first line of text */
 }
 
 .deliverable-list li:last-child {
