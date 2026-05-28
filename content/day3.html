@@ -5,7 +5,7 @@
 <head>
         <meta charset="utf-8" />
         <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-        <title>Day 3 — Business Math I | Business Software</title>
+        <title>Day 3 — From Raw Data to P&L | Business Software</title>
         <link href="../style.css" rel="stylesheet" />
 </head>
 
@@ -29,14 +29,15 @@
         <!-- HERO -->
         <header class="page-hero" style="background: linear-gradient(135deg, #1a3c1a 0%, #2e5c2e 100%);">
                 <div class="day-label">Day 3 of 6</div>
-                <h1>Business Math I</h1>
-                <p class="hero-sub">Numbers are not accounting — they're decisions. Today you'll build your first
-                        financial model and answer the most important question in business: are we actually making
-                        money?</p>
+                <h1>From Raw Data to P&amp;L</h1>
+                <p class="hero-sub">Real financial data doesn't arrive as a tidy summary. It arrives as hundreds of
+                        individual transactions. Today you'll learn the formulas that turn raw records into a
+                        Profit &amp; Loss statement — automatically.</p>
                 <div class="hero-meta">
                         <span><span class="icon">🕘</span> 09:30 – 17:00</span>
                         <span><span class="icon">🔧</span> Tool: MS Excel</span>
-                        <span><span class="icon">🎯</span> Outcome: P&amp;L Financial Model</span>
+                        <span><span class="icon">🎯</span> Outcome: P&amp;L built with SUMIF · VLOOKUP · IF ·
+                                Pivot</span>
                 </div>
         </header>
         <!-- AGENDA -->
@@ -52,19 +53,22 @@
                                         </tr>
                                         <tr>
                                                 <td class="ag-time">10:00</td>
-                                                <td class="ag-topic">What is a Business Model?</td>
+                                                <td class="ag-topic">How Real Financial Data Works — P&amp;L structure,
+                                                        Raw Data concept</td>
                                                 <td class="ag-tag"><span class="agenda-tag tag-theory">Theory</span>
                                                 </td>
                                         </tr>
                                         <tr>
                                                 <td class="ag-time">10:45</td>
-                                                <td class="ag-topic">Unit Economics + Excel Formulas</td>
+                                                <td class="ag-topic">SUMIF &amp; VLOOKUP — aggregation and lookup
+                                                        formulas</td>
                                                 <td class="ag-tag"><span class="agenda-tag tag-theory">Theory</span>
                                                 </td>
                                         </tr>
                                         <tr>
                                                 <td class="ag-time">11:30</td>
-                                                <td class="ag-topic">Build Your P&amp;L Skeleton</td>
+                                                <td class="ag-topic">Hands-On: Build Revenue &amp; COGS from Raw Data
+                                                </td>
                                                 <td class="ag-tag"><span class="agenda-tag tag-handson">Hands-On</span>
                                                 </td>
                                         </tr>
@@ -76,19 +80,26 @@
                                         </tr>
                                         <tr>
                                                 <td class="ag-time">14:00</td>
-                                                <td class="ag-topic">Enter Your Company's Real Data</td>
+                                                <td class="ag-topic">IF / IFS — logic flags and margin status</td>
+                                                <td class="ag-tag"><span class="agenda-tag tag-theory">Theory</span>
+                                                </td>
+                                        </tr>
+                                        <tr>
+                                                <td class="ag-time">14:30</td>
+                                                <td class="ag-topic">Pivot Tables — summarise Raw Data visually</td>
+                                                <td class="ag-tag"><span class="agenda-tag tag-theory">Theory</span>
+                                                </td>
+                                        </tr>
+                                        <tr>
+                                                <td class="ag-time">15:15</td>
+                                                <td class="ag-topic">Complete your company's P&amp;L — Pivot + IF flag
+                                                </td>
                                                 <td class="ag-tag"><span class="agenda-tag tag-handson">Hands-On</span>
                                                 </td>
                                         </tr>
                                         <tr>
-                                                <td class="ag-time">15:00</td>
-                                                <td class="ag-topic">Gemini: Troubleshoot Formulas</td>
-                                                <td class="ag-tag"><span class="agenda-tag tag-handson">Hands-On</span>
-                                                </td>
-                                        </tr>
-                                        <tr>
-                                                <td class="ag-time">15:30</td>
-                                                <td class="ag-topic">Assignment: Month 1 Model</td>
+                                                <td class="ag-time">16:00</td>
+                                                <td class="ag-topic">Assignment briefing + start</td>
                                                 <td class="ag-tag"><span class="agenda-tag tag-assign">Assignment</span>
                                                 </td>
                                         </tr>
@@ -111,25 +122,29 @@
                                 <div class="story-block">
                                         <div class="story-label">📍 Day 3 Context</div>
                                         <ul class="story-bullets">
-                                                <li><span class="story-tag sit">📍 Situation</span> <span>You and your
-                                                                co-founder just landed your first two clients. Revenue
-                                                                is coming in. But at the end of the month you look at
-                                                                the bank account and you're confused — sales happened,
-                                                                but little money remains.</span></li>
-                                                <li><span class="story-tag chal">⚠️ Challenge</span> <span>Revenue is
-                                                                not profit. Money coming in is not the same as money you
-                                                                keep. Without a clear view of what things cost versus
-                                                                what you earn, you can grow your way into
-                                                                bankruptcy.</span></li>
-                                                <li><span class="story-tag impact">📉 Business Impact</span> <span>82%
-                                                                of small businesses fail due to poor cash flow
-                                                                management — not lack of customers. The most common
-                                                                mistake: founders confuse <b>revenue</b> (money in) with
-                                                                <b>profit</b> (what's left after costs).</span></li>
-                                                <li><span class="story-tag sol">💡 Today's Focus</span> <span><b>Today
-                                                                        we build the spreadsheet that tells you the
-                                                                        truth about your business — automatically —
-                                                                        every time you update it.</b></span></li>
+                                                <li><span class="story-tag sit">📍 Situation</span> <span>Six months in,
+                                                                your company has made over 200 transactions — invoices,
+                                                                supplier payments, platform fees, delivery costs. All of
+                                                                it lives in one long sheet called Raw Data. Your CFO
+                                                                wants a P&amp;L summary by end of day.</span></li>
+                                                <li><span class="story-tag chal">⚠️ Challenge</span> <span>You can't
+                                                                summarise 200 rows by hand. But you also can't hand
+                                                                your CFO a wall of transactions. You need to
+                                                                <em>aggregate</em> — pull out totals by category,
+                                                                cross-reference your rate card, and flag whether the
+                                                                business is profitable.</span></li>
+                                                <li><span class="story-tag impact">📉 Business Impact</span> <span>This
+                                                                is not a theoretical exercise. Every finance team in
+                                                                every company does this workflow daily — from a startup
+                                                                spreadsheet to SAP at a Fortune 500. The formulas you
+                                                                learn today are the same ones used in real finance
+                                                                roles.</span></li>
+                                                <li><span class="story-tag sol">💡 Today's Focus</span> <span><b>You
+                                                                        will write the formulas that automatically
+                                                                        transform a table of raw transactions into a
+                                                                        complete P&amp;L — using SUMIF, VLOOKUP, IF,
+                                                                        and a Pivot Table to cross-check
+                                                                        everything.</b></span></li>
                                         </ul>
                                 </div>
 
@@ -141,13 +156,16 @@
                                 <div class="section-header">
                                         <div class="section-icon icon-theory">📚</div>
                                         <div class="section-header-text">
-                                                <h2>Theory: Unit Economics &amp; Excel Fundamentals</h2>
-                                                <p>The financial vocabulary every business professional needs</p>
+                                                <h2>Theory: How Real Financial Data Works</h2>
+                                                <p>The P&L structure, Raw Data concept, and the formulas that connect
+                                                        them</p>
                                         </div>
                                 </div>
+
+                                <!-- P&L Structure -->
                                 <div class="grid-2">
                                         <div class="card card-green">
-                                                <h3>💰 The Core Financial Equation</h3>
+                                                <h3>💰 The P&amp;L Structure</h3>
                                                 <div style="text-align:center; padding:16px 0;">
                                                         <div
                                                                 style="font-size:1.1rem; font-weight:700; color:var(--srh-dark);">
@@ -163,332 +181,405 @@
                                                         <div style="font-size:1.6rem; color:var(--srh-mid);">−</div>
                                                         <div
                                                                 style="font-size:1.1rem; font-weight:700; color:var(--srh-dark);">
-                                                                Operating Expenses</div>
+                                                                Fixed &amp; Operating Expenses</div>
                                                         <div style="font-size:1.6rem; color:var(--srh-mid);">=</div>
                                                         <div
                                                                 style="font-size:1.2rem; font-weight:800; color:#c0392b; padding:8px 16px; background:#fdecea; border-radius:var(--radius);">
-                                                                Net Profit (or Loss)</div>
+                                                                EBIT (Operating Profit)</div>
                                                 </div>
                                         </div>
                                         <div class="card card-orange">
-                                                <h3>📐 Unit Economics — The Per-Unit View</h3>
-                                                <p>Unit economics asks: <em>what does it cost to deliver one unit of
-                                                                value, and what do we earn from it?</em></p>
-                                                <ul>
-                                                        <li><b>Unit</b> = 1 cup of coffee / 1 video / 1 hoodie
-                                                                / 1 class</li>
-                                                        <li><b>Unit Revenue</b> = selling price per unit</li>
-                                                        <li><b>Unit Cost (COGS)</b> = what it costs to produce
-                                                                one unit</li>
-                                                        <li><b>Unit Margin</b> = Revenue − COGS per unit</li>
-                                                        <li><b>Margin %</b> = (Unit Margin ÷ Unit Revenue) ×
-                                                                100</li>
-                                                </ul>
-                                                <div class="formula-block" style="font-size:0.82rem; margin-top:12px;">
-                                                        Margin % = (20 − 8) ÷ 20 × 100 = <span class="f-num">60%</span>
+                                                <h3>🗂️ From Raw Data to P&amp;L — The Workflow</h3>
+                                                <p>In real companies, financial data doesn't start as a neat P&amp;L. It
+                                                        starts as a log of individual transactions — invoices, payments,
+                                                        fees — stored in a <b>Raw Data</b> sheet.</p>
+                                                <p style="margin-top:10px;">Your job as a business analyst is to
+                                                        <b>aggregate</b> that raw log into meaningful P&amp;L lines. The
+                                                        tool for that: <b>SUMIF</b>.
+                                                </p>
+                                                <div
+                                                        style="margin-top:14px; background:#fff8ee; border-left:3px solid var(--srh-orange); padding:10px 12px; border-radius:4px; font-size:0.85rem;">
+                                                        <b>Raw Data sheet</b> → 60 rows of transactions<br>
+                                                        <span style="color:#888; margin:0 6px;">→</span> <b>SUMIF</b> by
+                                                        category<br>
+                                                        <span style="color:#888; margin:0 6px;">→</span> <b>P&amp;L
+                                                                sheet</b> → 10 summary lines<br>
+                                                        <span style="color:#888; margin:0 6px;">→</span> <b>Pivot
+                                                                Table</b> → visual cross-check
                                                 </div>
                                         </div>
                                 </div>
+
+                                <!-- Concept cards: today's formulas -->
                                 <div class="concept-grid">
                                         <div class="concept-card">
                                                 <div class="concept-icon">➕</div>
-                                                <h4>SUM</h4>
-                                                <p>=SUM(B2:B12) — add up a range of cells</p>
+                                                <h4>SUM / AVERAGE</h4>
+                                                <p>=SUM(range) to total a column. =AVERAGE(range) for the mean. Used in
+                                                        P&L totals and for average order value or average unit cost.</p>
                                         </div>
                                         <div class="concept-card">
                                                 <div class="concept-icon">✖️</div>
-                                                <h4>Multiply</h4>
-                                                <p>=B2*C2 — units sold × price = revenue</p>
-                                        </div>
-                                        <div class="concept-card">
-                                                <div class="concept-icon">➗</div>
-                                                <h4>Division</h4>
-                                                <p>=B5/B2 — profit ÷ revenue = margin %</p>
+                                                <h4>Multiply &amp; Divide</h4>
+                                                <p>=B2*C2 for Qty × Price. =B5/B2 for Margin %. Already familiar — today
+                                                        these appear as helper formulas inside larger expressions.</p>
                                         </div>
                                         <div class="concept-card">
                                                 <div class="concept-icon">🔀</div>
-                                                <h4>IF</h4>
-                                                <p>=IF(C5&gt;0,"Profit","Loss") — conditional logic</p>
+                                                <h4>IF / IFS</h4>
+                                                <p>=IF(condition, value_if_true, value_if_false) — conditional logic.
+                                                        Use to flag whether a business is profitable, or classify margin
+                                                        levels.</p>
                                         </div>
                                         <div class="concept-card">
-                                                <div class="concept-icon">📊</div>
-                                                <h4>AVERAGE</h4>
-                                                <p>=AVERAGE(B2:B12) — mean of a range. Use for avg. order value, avg.
-                                                        unit cost, avg. margin.</p>
-                                        </div>
-                                        <div class="concept-card">
-                                                <div class="concept-icon">🔢</div>
-                                                <h4>COUNT / COUNTA</h4>
-                                                <p>=COUNT(B2:B12) — count numeric cells. =COUNTA counts any non-empty
-                                                        cells. Useful for number of orders, customers, etc.</p>
+                                                <div class="concept-icon">🔍</div>
+                                                <h4>SUMIF</h4>
+                                                <p>=SUMIF(range, criteria, sum_range) — sum only the rows that match a
+                                                        condition. Core formula for building a P&L from raw
+                                                        transactions.</p>
                                         </div>
                                         <div class="concept-card">
                                                 <div class="concept-icon">🛡️</div>
                                                 <h4>IFERROR</h4>
-                                                <p>=IFERROR(B2/C2, 0) — catches errors (e.g. divide-by-zero) and
-                                                        replaces them with a fallback value instead of showing #DIV/0!
+                                                <p>=IFERROR(formula, fallback) — wraps any formula and catches errors
+                                                        like #DIV/0! or #N/A. Keeps your model clean when data is
+                                                        missing.</p>
+                                        </div>
+                                        <div class="concept-card">
+                                                <div class="concept-icon">🏷️</div>
+                                                <h4>Cell Naming</h4>
+                                                <p>Click a cell → click the Name Box (top-left, shows the address) →
+                                                        type a name → Enter. Now use that name in any formula:
+                                                        "=Salaries_Mo*12" instead of
+                                                        "='Fixed Costs'!B5*12". Readable and error-resistant.
                                                 </p>
                                         </div>
                                         <div class="concept-card">
                                                 <div class="concept-icon">🎨</div>
                                                 <h4>Cell Formatting</h4>
-                                                <p>Ctrl+1 opens Format Cells. Set: Currency (€), Percentage (%), decimal
-                                                        places, date format. Apply Cell Styles from Home for quick
-                                                        consistent formatting.</p>
+                                                <p>Ctrl+Shift+$ = Currency (€). Ctrl+Shift+% = Percentage. Ctrl+1 for
+                                                        full Format Cells dialog. Freeze top row: View → Freeze Panes.
+                                                </p>
+                                        </div>
+                                        <div class="concept-card">
+                                                <div class="concept-icon">📖</div>
+                                                <h4>VLOOKUP</h4>
+                                                <p>=VLOOKUP(value, table, col, FALSE) — look up a value in a reference
+                                                        table and return a matching result. Used to cross-reference rate
+                                                        cards and price lists.</p>
+                                        </div>
+                                        <div class="concept-card">
+                                                <div class="concept-icon">📊</div>
+                                                <h4>Pivot Table</h4>
+                                                <p>Insert → PivotTable. Summarises and cross-tabulates raw data in
+                                                        seconds without any formulas. The fastest way to verify your
+                                                        SUMIF results.</p>
                                         </div>
                                 </div>
 
+                                <!-- SUMIF deep dive -->
                                 <div class="card card-blue">
-                                        <h3>🎨 Cell Formatting — Making Numbers Readable</h3>
-                                        <p style="margin-bottom:12px; font-size:0.9rem;">A financial model with
-                                                unformatted numbers is hard to read and looks unprofessional. These
-                                                three formatting habits take 30 seconds and transform your spreadsheet:
-                                        </p>
+                                        <h3>🔍 SUMIF — The Formula That Builds Your P&amp;L</h3>
+                                        <p style="font-size:0.9rem; margin-bottom:14px;">SUMIF scans a column for a
+                                                matching value and sums only the corresponding amounts. Think of it as a
+                                                filter + sum in one step.</p>
                                         <div class="formula-block" style="font-size:0.83rem;">
-                                                <span class="f-comment"># Format a cell as currency (€)</span><br />
-                                                Select cells → Home → Number format dropdown → <span
-                                                        class="f-func">Currency</span><br />
-                                                <span class="f-comment"> — or — </span> Ctrl+1 → Number → Currency →
-                                                Symbol: € → 2 decimal places<br /><br />
-                                                <span class="f-comment"># Format a cell as percentage</span><br />
-                                                Select cells → Home → <span class="f-func">%</span> button &nbsp;<span
-                                                        class="f-comment">← one click</span><br />
-                                                Increase / decrease decimals with the <span class="f-func">.00→.0</span>
-                                                buttons next to it<br /><br />
-                                                <span class="f-comment"># Apply a Cell Style (pre-built colour + font
-                                                        combinations)</span><br />
-                                                Home → <span class="f-func">Cell Styles</span> gallery → pick "Good",
-                                                "Bad", "Heading 1", "Total", etc.<br /><br />
-                                                <span class="f-comment"># Freeze the top row so headers stay visible
-                                                        while scrolling</span><br />
-                                                View → Freeze Panes → <span class="f-func">Freeze Top Row</span>
+                                                <span class="f-comment"># Syntax</span><br />
+                                                =<span class="f-func">SUMIF</span>(<span class="f-arg">range</span>,
+                                                <span class="f-arg">criteria</span>, <span
+                                                        class="f-arg">sum_range</span>)<br /><br />
+                                                <span class="f-comment"># Example: sum all Brand Animation revenue from
+                                                        Raw Data</span><br />
+                                                =<span class="f-func">SUMIF</span>(<span class="f-arg">'Raw
+                                                        Data'!D:D</span>, <span class="f-str">"Brand Animation"</span>,
+                                                <span class="f-arg">'Raw Data'!H:H</span>)<br /><br />
+                                                <span class="f-comment"># Reading it aloud:</span><br />
+                                                <span class="f-comment"> "In the Category column (D), find every row
+                                                        that says 'Brand Animation'</span><br />
+                                                <span class="f-comment"> and add up the corresponding Total (H)
+                                                        values."</span><br /><br />
+                                                <span class="f-comment"># SUMIFS — two conditions at once (Revenue
+                                                        only)</span><br />
+                                                =<span class="f-func">SUMIFS</span>(<span class="f-arg">'Raw
+                                                        Data'!H:H</span>, <span class="f-arg">'Raw Data'!C:C</span>,
+                                                <span class="f-str">"Revenue"</span>, <span class="f-arg">'Raw
+                                                        Data'!D:D</span>, <span class="f-str">"Brand Animation"</span>)
                                         </div>
-                                        <div class="callout callout-orange" style="margin-top:14px; padding:10px 12px;">
+                                        <div class="callout callout-green" style="margin-top:14px; padding:10px 12px;">
                                                 <span class="callout-icon" style="font-size:1rem;">💡</span>
                                                 <div class="callout-body" style="font-size:0.83rem;">
-                                                        <b>Keyboard shortcut cheat sheet:</b> &nbsp;
-                                                        <code>Ctrl+Shift+$</code> = Currency &nbsp;·&nbsp;
-                                                        <code>Ctrl+Shift+%</code> = Percentage &nbsp;·&nbsp;
-                                                        <code>Ctrl+B</code> = Bold &nbsp;·&nbsp;
-                                                        <code>Alt+H+H</code> = Fill Color
+                                                        The category name in your formula must <b>exactly match</b> the
+                                                        text in the Raw Data column — but capitalisation doesn't matter.
+                                                        "Brand Animation" = "brand animation" = "BRAND ANIMATION".
                                                 </div>
                                         </div>
                                 </div>
+
+                                <!-- VLOOKUP deep dive -->
                                 <div class="card card-light">
-                                        <h3>📊 Core Excel Concepts — Before You Touch a Formula</h3>
-                                        <p style="margin-bottom:14px; font-size:0.9rem;">Three ideas that separate a
-                                                working model from a broken one:</p>
-
-                                        <p style="font-weight:700; margin-bottom:4px;">1 · Formulas vs. Manual Entry</p>
-                                        <p style="font-size:0.88rem; margin-bottom:10px;">Never type a calculated number
-                                                directly into a cell. Type the
-                                                formula instead. When your inputs change, every result updates
-                                                automatically — no re-typing, no errors from forgetting to update a
-                                                cell.
+                                        <h3>📖 VLOOKUP — Looking Up Rates from a Reference Table</h3>
+                                        <p style="font-size:0.9rem; margin-bottom:14px;">Your workbook has a
+                                                <b>Reference</b> sheet with standard unit rates. VLOOKUP lets you pull
+                                                those rates into your P&amp;L automatically — no copy-pasting.
                                         </p>
-                                        <div class="formula-block" style="margin-bottom:16px; font-size:0.83rem;">
-                                                <span class="f-comment"># ❌ Manual — breaks every time you change the
-                                                        price</span><br />
-                                                D4 = 1497 &nbsp;&nbsp;&nbsp;&nbsp;<span class="f-comment">← someone
-                                                        typed this by hand</span><br /><br />
-                                                <span class="f-comment"># ✅ Formula — always correct, zero
-                                                        maintenance</span><br />
-                                                D4 = <span class="f-func">=B4*C4</span> &nbsp;<span class="f-comment">←
-                                                        units × price, auto-updates</span>
-                                        </div>
-
-                                        <p style="font-weight:700; margin-bottom:4px;">2 · Relative vs. Absolute
-                                                References</p>
-                                        <p style="font-size:0.88rem; margin-bottom:10px;">When you drag a formula down,
-                                                Excel adjusts the row numbers automatically (relative). Sometimes you
-                                                want one cell to stay fixed — lock it with <code>$</code> signs
-                                                (absolute).</p>
-                                        <div class="formula-block" style="margin-bottom:16px; font-size:0.83rem;">
-                                                <span class="f-comment"># Relative — row changes as you drag
-                                                        down</span><br />
-                                                =B4*C4
-                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
-                                                        class="f-comment">← B5*C5, B6*C6 …</span><br /><br />
-                                                <span class="f-comment"># Absolute — cell stays fixed (e.g. a VAT rate
-                                                        in C1)</span><br />
-                                                =B4*<span class="f-func">$C$1</span>
-                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
-                                                        class="f-comment">← always multiplies by C1, no matter where you
-                                                        drag</span><br /><br />
-                                                <span class="f-comment"># Shortcut: press F4 after clicking a cell to
-                                                        cycle through $-modes</span>
-                                        </div>
-
-                                        <p style="font-weight:700; margin-bottom:4px;">3 · Cell Naming for Readable
-                                                Formulas</p>
-                                        <p style="font-size:0.88rem; margin-bottom:10px;">Give important cells a name
-                                                (Formulas → Define Name). Your formulas become self-documenting — no
-                                                more guessing what <code>$B$2</code> means.</p>
                                         <div class="formula-block" style="font-size:0.83rem;">
-                                                <span class="f-comment"># ❌ Hard to read — what is B2?</span><br />
-                                                =D4 / <span class="f-func">$B$2</span><br /><br />
-                                                <span class="f-comment"># ✅ Self-documenting — name B2 as
-                                                        "BoxPrice"</span><br />
-                                                =D4 / <span class="f-func">BoxPrice</span>
+                                                <span class="f-comment"># Syntax</span><br />
+                                                =<span class="f-func">VLOOKUP</span>(<span
+                                                        class="f-arg">lookup_value</span>, <span
+                                                        class="f-arg">table_array</span>, <span
+                                                        class="f-arg">col_index</span>, <span
+                                                        class="f-arg">FALSE</span>)<br /><br />
+                                                <span class="f-comment"># Example: look up the standard rate for "Brand
+                                                        Animation"</span><br />
+                                                =<span class="f-func">VLOOKUP</span>(<span class="f-str">"Brand
+                                                        Animation"</span>, <span class="f-arg">Reference!A:C</span>,
+                                                <span class="f-num">2</span>, <span
+                                                        class="f-func">FALSE</span>)<br /><br />
+                                                <span class="f-comment"># Arguments explained:</span><br />
+                                                <span class="f-comment"> "Brand Animation" ← what to search for (lookup
+                                                        value)</span><br />
+                                                <span class="f-comment"> Reference!A:C ← where to search (the reference
+                                                        table)</span><br />
+                                                <span class="f-comment"> 2 ← return column 2 (Standard Rate) from the
+                                                        table</span><br />
+                                                <span class="f-comment"> FALSE ← exact match only (always use
+                                                        FALSE)</span><br /><br />
+                                                <span class="f-comment"># XLOOKUP — the modern replacement (Excel
+                                                        2019+)</span><br />
+                                                =<span class="f-func">XLOOKUP</span>(<span class="f-str">"Brand
+                                                        Animation"</span>, <span class="f-arg">Reference!A:A</span>,
+                                                <span class="f-arg">Reference!B:B</span>)
+                                        </div>
+                                        <div class="callout callout-orange" style="margin-top:14px; padding:10px 12px;">
+                                                <span class="callout-icon" style="font-size:1rem;">⚠️</span>
+                                                <div class="callout-body" style="font-size:0.83rem;">
+                                                        Always use "FALSE" as the last argument in VLOOKUP.
+                                                        Without it, Excel looks for an approximate match and can return
+                                                        wrong results — a common source of silent errors in financial
+                                                        models.
+                                                </div>
                                         </div>
                                 </div>
+
+                                <!-- IF / IFS -->
+                                <div class="card card-green">
+                                        <h3>🔀 IF / IFS — Flagging Business Outcomes</h3>
+                                        <p style="font-size:0.9rem; margin-bottom:14px;">Use IF to add logic to your
+                                                P&amp;L: is the business profitable? Is the margin healthy? These flags
+                                                turn a spreadsheet into a decision tool.</p>
+                                        <div class="formula-block" style="font-size:0.83rem;">
+                                                <span class="f-comment"># IF — one condition, two outcomes</span><br />
+                                                =<span class="f-func">IF</span>(<span class="f-arg">C27</span> &gt; 0,
+                                                <span class="f-str">"✅ Profitable"</span>, <span class="f-str">"❌
+                                                        Loss"</span>)<br /><br />
+                                                <span class="f-comment"># IFS — multiple conditions (Excel
+                                                        2019+)</span><br />
+                                                =<span class="f-func">IFS</span>(<span class="f-arg">C15/C8</span> &gt;
+                                                0.5, <span class="f-str">"High margin"</span>,<br />
+                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;C15/C8 &gt; 0.3, <span
+                                                        class="f-str">"Moderate"</span>,<br />
+                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="f-func">TRUE</span>, <span
+                                                        class="f-str">"Low margin"</span>)<br /><br />
+                                                <span class="f-comment"># Nested IF — if you don't have IFS
+                                                        available</span><br />
+                                                =<span class="f-func">IF</span>(<span class="f-arg">C15/C8</span> &gt;
+                                                0.5, <span class="f-str">"High"</span>, <span
+                                                        class="f-func">IF</span>(C15/C8 &gt; 0.3, <span
+                                                        class="f-str">"Moderate"</span>, <span
+                                                        class="f-str">"Low"</span>))
+                                        </div>
+                                </div>
+
+                                <!-- Pivot Table -->
+                                <div class="card card-orange">
+                                        <h3>📊 Pivot Tables — Your Cross-Check Tool</h3>
+                                        <p style="font-size:0.9rem; margin-bottom:14px;">Once your P&amp;L is built,
+                                                insert a Pivot Table from the Raw Data to verify every number
+                                                independently — without writing a single formula.</p>
+                                        <ol style="font-size:0.88rem; line-height:2;">
+                                                <li>Click any cell inside your <b>Raw Data</b> sheet.</li>
+                                                <li><b>Insert → PivotTable</b> → place it in a new sheet.</li>
+                                                <li>Drag <b>Category</b> to the Rows area.</li>
+                                                <li>Drag <b>Total (€)</b> to the Values area (it sums automatically).
+                                                </li>
+                                                <li>Drag <b>Type</b> to the Filters area → filter to "Revenue" only,
+                                                        then "Cost" only.</li>
+                                                <li>Compare the Pivot totals against your P&amp;L cells. They should
+                                                        match.</li>
+                                        </ol>
+                                        <div class="callout callout-blue" style="margin-top:14px; padding:10px 12px;">
+                                                <span class="callout-icon" style="font-size:1rem;">💡</span>
+                                                <div class="callout-body" style="font-size:0.83rem;">
+                                                        If a Pivot total differs from your SUMIF, the category name in
+                                                        one of your Raw Data rows likely has a typo or extra space.
+                                                        Pivot Tables make this kind of error immediately visible.
+                                                </div>
+                                        </div>
+                                </div>
+
+                                <!-- Relative/Absolute reference reminder -->
+                                <div class="card card-light">
+                                        <h3>📌 Quick Reminder: Relative vs. Absolute References</h3>
+                                        <p style="font-size:0.88rem; margin-bottom:10px;">When you copy a SUMIF formula
+                                                down the column, the criteria reference (e.g. the category cell in
+                                                column A) should update row by row — but the Raw Data range should stay
+                                                fixed.</p>
+                                        <div class="formula-block" style="font-size:0.83rem;">
+                                                <span class="f-comment"># Use $ to lock the Raw Data range so it doesn't
+                                                        shift when you copy down</span><br />
+                                                =<span class="f-func">SUMIF</span>(<span class="f-arg">'Raw
+                                                        Data'!$D:$D</span>, <span class="f-arg">A5</span>, <span
+                                                        class="f-arg">'Raw Data'!$H:$H</span>)<br /><br />
+                                                <span class="f-comment"># A5 is relative — it changes to A6, A7… as you
+                                                        drag down</span><br />
+                                                <span class="f-comment"># $D:$D and $H:$H are absolute — they always
+                                                        point to the same columns</span><br /><br />
+                                                <span class="f-comment"># Press F4 after clicking a cell reference to
+                                                        add/remove $ signs</span>
+                                        </div>
+                                </div>
+
                                 <div class="callout callout-orange">
                                         <span class="callout-icon">⚡</span>
                                         <div class="callout-body">
-                                                <b>Manual First, AI Second</b>
-                                                Try to write every formula yourself today. If you get stuck, ask
-                                                Gemini:
-                                                <em>"I'm filling in an Excel P&amp;L template. Cell D7 should be
-                                                        Gross Profit = Revenue − COGS. Revenue is in D5, COGS is
-                                                        in D6.
-                                                        What formula do I write?"</em>
+                                                <b>Manual First, AI Second.</b> Try to write every formula yourself
+                                                before asking for help. When you're stuck, give Gemini full context:
+                                                <em>"I'm writing a SUMIF formula in Excel. My Raw Data is on a sheet
+                                                        called 'Raw Data'. Category names are in column D, transaction
+                                                        totals are in column H. I want to sum all rows where category =
+                                                        'Brand Animation'. What's the formula?"</em>
                                         </div>
                                 </div>
                         </div>
                 </section>
 
-                <!-- EXAMPLE: Unit Margin Calculation -->
+                <!-- EXAMPLE: SUMIF walkthrough -->
                 <details class="example-block">
-                        <summary>👁️ See Example: Unit Economics — ByteBite Margin Walkthrough <span
+                        <summary>👁️ See Example: SUMIF Walkthrough — Nomad Bean Revenue Aggregation <span
                                         class="ex-label">Example</span></summary>
                         <div class="example-content">
-                                <p style="font-size:0.9rem;color:#666;margin-bottom:20px;">Let's trace through a real
-                                        unit margin calculation for ByteBite, the meal-prep company in your portfolio.
-                                        Watch how a single price change cascades through every number.</p>
+                                <p style="font-size:0.9rem;color:#666;margin-bottom:20px;">Nomad Bean ☕ has 16 revenue
+                                        transactions spread across the year — four billing batches for each of their
+                                        four subscription plans. Here's how SUMIF collapses those 16 rows into 4 clean
+                                        P&L lines.</p>
                                 <div class="example-cols">
                                         <div class="ex-good">
-                                                <span class="ex-verdict">✅ Healthy Unit Economics</span>
-                                                <h4>ByteBite: Premium Tier — €14.99 / box</h4>
-                                                <table class="ex-table" style="margin-top:8px;">
+                                                <span class="ex-verdict">Raw Data sheet — 16 rows (sample)</span>
+                                                <table class="ex-table" style="margin-top:8px; font-size:0.78rem;">
                                                         <thead>
                                                                 <tr>
-                                                                        <th>Line Item</th>
-                                                                        <th>Per Box (€)</th>
-                                                                        <th>% of Revenue</th>
+                                                                        <th>TxID</th>
+                                                                        <th>Type</th>
+                                                                        <th>Category</th>
+                                                                        <th>Qty</th>
+                                                                        <th>Total (€)</th>
                                                                 </tr>
                                                         </thead>
                                                         <tbody>
                                                                 <tr>
-                                                                        <td>Selling Price</td>
-                                                                        <td class="cell-good">14.99</td>
-                                                                        <td>100%</td>
+                                                                        <td>INV-001</td>
+                                                                        <td>Revenue</td>
+                                                                        <td>Explorer Subscription</td>
+                                                                        <td>45</td>
+                                                                        <td class="cell-good">674.55</td>
                                                                 </tr>
                                                                 <tr>
-                                                                        <td>— Ingredients</td>
-                                                                        <td>4.20</td>
-                                                                        <td>28%</td>
+                                                                        <td>INV-002</td>
+                                                                        <td>Revenue</td>
+                                                                        <td>Connoisseur Subscription</td>
+                                                                        <td>40</td>
+                                                                        <td class="cell-good">919.60</td>
                                                                 </tr>
                                                                 <tr>
-                                                                        <td>— Packaging</td>
-                                                                        <td>0.80</td>
-                                                                        <td>5%</td>
+                                                                        <td>INV-003</td>
+                                                                        <td>Revenue</td>
+                                                                        <td>Roasters Choice</td>
+                                                                        <td>20</td>
+                                                                        <td class="cell-good">699.80</td>
                                                                 </tr>
                                                                 <tr>
-                                                                        <td>— Delivery</td>
-                                                                        <td>2.50</td>
-                                                                        <td>17%</td>
+                                                                        <td>INV-004</td>
+                                                                        <td>Revenue</td>
+                                                                        <td>B2B Corporate Orders</td>
+                                                                        <td>1</td>
+                                                                        <td class="cell-good">850.00</td>
                                                                 </tr>
                                                                 <tr>
-                                                                        <td><b>Variable Cost Total</b></td>
-                                                                        <td><b>7.50</b></td>
-                                                                        <td>50%</td>
-                                                                </tr>
-                                                                <tr>
-                                                                        <td style="color:#1b7a3e;font-weight:700;">
-                                                                                Contribution Margin</td>
-                                                                        <td class="cell-good">7.49</td>
-                                                                        <td class="cell-good">50%</td>
+                                                                        <td style="color:#aaa;" colspan="5">… 12 more
+                                                                                rows across Q2–Q4 …</td>
                                                                 </tr>
                                                         </tbody>
                                                 </table>
-                                                <p style="font-size:0.8rem;margin-top:10px;color:#555;">At €14.99,
-                                                        ByteBite covers all variable costs and has €7.49 left per box to
-                                                        cover fixed costs (rent, salaries, software). This is
-                                                        <b>healthy</b> for a D2C food business.
-                                                </p>
                                         </div>
-                                        <div class="ex-bad">
-                                                <span class="ex-verdict">❌ Margin Squeeze — Price War Risk</span>
-                                                <h4>ByteBite: Budget Tier — €9.99 / box</h4>
-                                                <table class="ex-table" style="margin-top:8px;">
+                                        <div class="ex-bad" style="border-color:#1b7a3e; background:#f0faf5;">
+                                                <span class="ex-verdict" style="background:#1b7a3e; color:#fff;">✅ P&L
+                                                        sheet — SUMIF formulas</span>
+                                                <table class="ex-table" style="margin-top:8px; font-size:0.78rem;">
                                                         <thead>
                                                                 <tr>
                                                                         <th>Line Item</th>
-                                                                        <th>Per Box (€)</th>
-                                                                        <th>% of Revenue</th>
+                                                                        <th>Formula (you write this)</th>
+                                                                        <th>Result</th>
                                                                 </tr>
                                                         </thead>
                                                         <tbody>
                                                                 <tr>
-                                                                        <td>Selling Price</td>
-                                                                        <td>9.99</td>
-                                                                        <td>100%</td>
+                                                                        <td>Explorer Subscription</td>
+                                                                        <td
+                                                                                style="font-family:monospace; font-size:0.72rem;">
+                                                                                =SUMIF('Raw Data'!D:D,"Explorer
+                                                                                Subscription",'Raw Data'!H:H)</td>
+                                                                        <td class="cell-good">2,698.20</td>
                                                                 </tr>
                                                                 <tr>
-                                                                        <td>— Ingredients</td>
-                                                                        <td>4.20</td>
-                                                                        <td>42%</td>
+                                                                        <td>Connoisseur Subscription</td>
+                                                                        <td
+                                                                                style="font-family:monospace; font-size:0.72rem;">
+                                                                                =SUMIF('Raw Data'!D:D,"Connoisseur
+                                                                                Subscription",'Raw Data'!H:H)</td>
+                                                                        <td class="cell-good">3,678.40</td>
                                                                 </tr>
                                                                 <tr>
-                                                                        <td>— Packaging</td>
-                                                                        <td>0.80</td>
-                                                                        <td>8%</td>
+                                                                        <td>Roasters Choice</td>
+                                                                        <td
+                                                                                style="font-family:monospace; font-size:0.72rem;">
+                                                                                =SUMIF('Raw Data'!D:D,"Roasters
+                                                                                Choice",'Raw Data'!H:H)</td>
+                                                                        <td class="cell-good">2,799.20</td>
                                                                 </tr>
                                                                 <tr>
-                                                                        <td>— Delivery</td>
-                                                                        <td>2.50</td>
-                                                                        <td>25%</td>
-                                                                </tr>
-                                                                <tr>
-                                                                        <td><b>Variable Cost Total</b></td>
-                                                                        <td><b>7.50</b></td>
-                                                                        <td>75%</td>
-                                                                </tr>
-                                                                <tr>
-                                                                        <td style="color:#c62828;font-weight:700;">
-                                                                                Contribution Margin</td>
-                                                                        <td class="cell-bad">2.49</td>
-                                                                        <td class="cell-bad">25%</td>
+                                                                        <td>B2B Corporate Orders</td>
+                                                                        <td
+                                                                                style="font-family:monospace; font-size:0.72rem;">
+                                                                                =SUMIF('Raw Data'!D:D,"B2B Corporate
+                                                                                Orders",'Raw Data'!H:H)</td>
+                                                                        <td class="cell-good">10,200.00</td>
                                                                 </tr>
                                                         </tbody>
                                                 </table>
-                                                <p style="font-size:0.8rem;margin-top:10px;color:#555;">Same cost base,
-                                                        €5 lower price. Now only €2.49 remains. If delivery costs rise
-                                                        by €0.50 (very common), margin drops to 20%. One bad quarter and
-                                                        fixed costs aren't covered.</p>
+                                                <p style="font-size:0.78rem;margin-top:10px;color:#555;">One formula per
+                                                        line. Each one scans all 60+ rows in Raw Data and pulls only the
+                                                        matching transactions. Update any raw transaction — the P&L
+                                                        updates instantly.</p>
                                         </div>
                                 </div>
                                 <div
                                         style="margin-top:20px;background:#fff;border:1px solid #e0e0e0;border-radius:8px;padding:16px;">
                                         <div
                                                 style="font-size:0.78rem;font-weight:700;letter-spacing:0.06em;color:var(--srh-orange);margin-bottom:8px;">
-                                                THE EXCEL FORMULA CHAIN</div>
+                                                VLOOKUP CROSS-CHECK</div>
                                         <div
                                                 style="font-family:'Courier New',monospace;font-size:0.82rem;line-height:1.9;color:#1e1e1e;background:#f5f5f5;padding:12px;border-radius:6px;">
-                                                B2 = 14.99
-                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
-                                                        style="color:#6a9955">← Selling price (input — change this
-                                                        cell)</span><br>
-                                                B6 = B3+B4+B5 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
-                                                        style="color:#6a9955">← Variable cost total (auto-sums rows
-                                                        3–5)</span><br>
-                                                B7 = B2-B6 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
-                                                        style="color:#6a9955">← Contribution margin (€)</span><br>
-                                                C7 = B7/B2 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
-                                                        style="color:#6a9955">← Contribution margin (%)</span>
+                                                <span style="color:#6a9955;">← Reference sheet has: "Explorer
+                                                        Subscription" | 14.99 | "per box / month"</span><br>
+                                                =VLOOKUP("Explorer Subscription", Reference!A:C, 2, FALSE)<br>
+                                                <span style="color:#6a9955;">→ Returns: 14.99</span><br><br>
+                                                <span style="color:#6a9955;">← Divide SUMIF result by standard rate to
+                                                        verify row count</span><br>
+                                                = 2698.20 / 14.99 = 180 boxes &nbsp;<span style="color:#6a9955;">✅
+                                                        matches Raw Data (45 × 4 quarters)</span>
                                         </div>
-                                        <p style="font-size:0.82rem;margin-top:10px;color:#555;">Change
-                                                <b>B2</b> from 14.99 → 9.99 and every derived cell updates
-                                                instantly. This is why formulas beat manual calculation.
-                                        </p>
                                 </div>
-                                <p
-                                        style="margin-top:18px;font-size:0.85rem;background:#fff8ee;padding:10px 14px;border-left:3px solid var(--srh-orange);border-radius:4px;">
-                                        <b>Takeaway:</b> Build your financial model so that changing one input
-                                        (price) flows through the entire sheet automatically. No copy-pasting.
-                                        No
-                                        recalculating. That's the power of cell references.
-                                </p>
                         </div>
                 </details>
 
@@ -498,66 +589,125 @@
                                 <div class="section-header">
                                         <div class="section-icon icon-hands">🛠️</div>
                                         <div class="section-header-text">
-                                                <h2>Hands-On: Build Your P&amp;L Skeleton</h2>
-                                                <p>~60 minutes · Use the provided company dataset</p>
+                                                <h2>Hands-On: Build Your P&amp;L from Raw Data</h2>
+                                                <p>~90 minutes · Your company's financial model has 4 sheets — work
+                                                        through them in order</p>
                                         </div>
                                 </div>
                                 <div class="callout callout-blue">
                                         <span class="callout-icon">📁</span>
                                         <div class="callout-body">
-                                                <b>Your File: <code>[company_slug]_financial.xlsx</code></b>
-                                                Open your company's financial model template (e.g.
-                                                <code>bytebite_financial.xlsx</code>). The structure is already
-                                                built —
-                                                your only job is to fill in the <strong style="color:#e65c00;">yellow
-                                                        cells</strong> with the correct formulas. Blue cells are
-                                                        pre-filled inputs; green cells will auto-calculate once your
-                                                        formulas
-                                                        are correct. Read the <b>Instructions</b> sheet first!
+                                                <b>Your File: "[company_slug]_financial.xlsx"</b>
+                                                Your workbook has five sheets: <b>Instructions → Raw Data → Reference →
+                                                        Fixed Costs → P&amp;L</b>.
+                                                Raw Data contains all FY 2025 transactions. Fixed Costs holds the
+                                                monthly unit values you'll name and reference. Your job is to fill every
+                                                <b style="color:#e65c00;">yellow cell</b> in the P&amp;L with
+                                                the correct formula — each cell has a plain-English hint telling
+                                                you
+                                                what the formula should do. Read the Instructions sheet first.
                                         </div>
                                 </div>
+
+                                <!-- Part 1 -->
                                 <div class="card">
-                                        <h3>Fill In the Financial Model</h3>
+                                        <h3>Part 1 — Explore the Data (10 min)</h3>
                                         <ol class="steps">
-                                                <li>Open <b>[company_slug]_financial.xlsx</b>. Read the
-                                                        <b>Instructions</b> sheet — it explains the colour coding and
-                                                        what each section means.
+                                                <li>Read the Instructions sheet top to bottom. Note the colour
+                                                        legend: 🟦 Blue = given, 🟨 Yellow = write formula, 🟩 Green =
+                                                        auto-calculated.</li>
+                                                <li>Open the Raw Data sheet. Scroll through it. Notice: each row
+                                                        is one transaction with a Date, TxID, Type (Revenue/Cost),
+                                                        Category, Description, Qty, Unit Price, and Total.</li>
+                                                <li>Open the Reference sheet. This is your rate card — standard
+                                                        unit prices for every category. You will use this for VLOOKUP.
                                                 </li>
-                                                <li>Switch to the <b>Financial Model</b> sheet. Read through it top to
-                                                        bottom before writing any formula.</li>
-                                                <li><b>Section 1 — Revenue:</b> For each yellow cell in the Amount
-                                                        column, write a formula multiplying the Quantity (blue) by the
-                                                        Unit Rate (blue). Example: <code>=B6*C6</code></li>
-                                                <li>In the <b>Total Revenue</b> row, write a SUM formula over all your
-                                                        revenue lines.</li>
-                                                <li><b>Section 2 — COGS:</b> Repeat the same pattern — Qty × Rate for
-                                                        each cost line, then a SUM for Total COGS.</li>
-                                                <li><b>Section 3 — Gross Profit:</b> Write <code>=Total Revenue −
-                                                                Total COGS</code>. Then write the Gross Margin %
-                                                        formula:
-                                                        <code>=Gross Profit / Total Revenue</code>. Format as %.
-                                                </li>
-                                                <li><b>Section 4 — Fixed Costs:</b> SUM all fixed cost lines.</li>
-                                                <li><b>Section 5 — EBIT:</b> Write <code>=Gross Profit − Total Fixed
-                                                                Costs</code>.</li>
-                                                <li><b>Section 6 — Break-Even:</b> Write the formula shown in the hint
-                                                        cell: <code>=Fixed Costs / (Price per Unit − Variable Cost per
-                                                                Unit)</code>.</li>
-                                                <li>Add an <b>IF formula</b> below EBIT: <code>=IF(EBIT &gt; 0, "✅
-                                                                Profitable", "⚠️ Loss")</code>.</li>
+                                                <li>Count how many distinct revenue categories your company has. These
+                                                        become the revenue lines in your P&amp;L.</li>
                                         </ol>
                                 </div>
+
+                                <!-- Part 2 -->
+                                <div class="card">
+                                        <h3>Part 2 — Build Revenue &amp; COGS with SUMIF (30 min)</h3>
+                                        <ol class="steps">
+                                                <li>Go to the P&amp;L sheet. Read the formula hint in column B
+                                                        next to the first Revenue line — it tells you exactly which
+                                                        SUMIF to write.</li>
+                                                <li>Click the yellow cell in the "Your Formula" column (column C) next
+                                                        to the first revenue line. Type the SUMIF formula using the
+                                                        category name shown in column A.
+                                                        Example:
+                                                        <br>"=SUMIF('Raw Data'!D:D,"Brand Animation",'Raw Data'!H:H)"
+                                                </li>
+                                                <li>Repeat for every revenue line. Each line has a different category
+                                                        name.</li>
+                                                <li>The TOTAL REVENUE cell is already written (green). Verify it
+                                                        auto-sums your revenue lines correctly.</li>
+                                                <li>Repeat the same SUMIF process for every COGS line (Section
+                                                        2). Cost transactions also live in Raw Data — SUMIF finds them
+                                                        by category.</li>
+                                        </ol>
+                                </div>
+
+                                <!-- Part 3 -->
+                                <div class="card">
+                                        <h3>Part 3 — VLOOKUP, Gross Profit &amp; Cell Naming (30 min)</h3>
+                                        <ol class="steps">
+                                                <li>Fill in the Gross Profit cell (Section 3) — the hint says
+                                                        "Subtract Total COGS from Total Revenue". Write that as an Excel
+                                                        formula referencing the two total cells above.</li>
+                                                <li>Fill the Gross Margin % cell — divide Gross Profit by Total
+                                                        Revenue. Then format the cell as a percentage (Ctrl+Shift+%).
+                                                </li>
+                                                <li>Find the VLOOKUP Check section. Read the hint for each cell —
+                                                        it describes what to look up and where. Write both VLOOKUP
+                                                        formulas using the Reference sheet.</li>
+                                                <li>Now go to the Fixed Costs sheet. Read the instructions at the
+                                                        top. For each monthly cost cell, follow the 4-step naming guide
+                                                        to assign the suggested cell name (e.g.
+                                                        "Salaries_Mo").
+                                                </li>
+                                                <li>Return to the P&amp;L sheet, Section 4. The hint for each
+                                                        fixed cost says which named cell to reference — write the
+                                                        formula as "=CellName * 12". After naming the cell on
+                                                        the Fixed Costs sheet, Excel will recognise the name anywhere in
+                                                        the workbook.</li>
+                                                <li>Section 5 — EBIT: the hint says "Subtract Total Fixed Costs
+                                                        from Gross Profit". Write it.</li>
+                                        </ol>
+                                </div>
+
+                                <!-- Part 4 -->
+                                <div class="card">
+                                        <h3>Part 4 — IF Flags &amp; Pivot Table (30 min)</h3>
+                                        <ol class="steps">
+                                                <li>Section 6 — Business Status (IF): write
+                                                        "=IF(EBIT_cell &gt; 0, "✅ Profitable", "❌ Loss")".
+                                                </li>
+                                                <li>Next cell — Margin Status (IFS): write an IFS formula that
+                                                        returns "High margin" if gross margin &gt; 50%, "Moderate" if
+                                                        &gt; 30%, and "Low margin" otherwise.</li>
+                                                <li>Now go back to the Raw Data sheet. Click any cell inside the
+                                                        data. Go to Insert → PivotTable → place it in a new sheet
+                                                        called "Pivot Check".</li>
+                                                <li>In the Pivot: Rows = Category, Values = Sum of Total, Filters =
+                                                        Type. Filter to "Revenue" — do the category totals match your
+                                                        P&amp;L revenue lines? Then filter to "Cost" — do your COGS
+                                                        values match?</li>
+                                                <li>If any number is off by more than €1, trace back: check the category
+                                                        name spelling in Raw Data and in your SUMIF formula.</li>
+                                        </ol>
+                                </div>
+
                                 <div class="callout callout-green">
                                         <span class="callout-icon">✅</span>
                                         <div class="callout-body">
-                                                <b>Quality Check</b>
-                                                Change one "Unit Price" in column C. Watch: Revenue, Gross
-                                                Profit,
-                                                Margin %, and Net Profit should all update automatically. If
-                                                they do —
-                                                your formulas are linked correctly. If they don't — check your
-                                                cell
-                                                references.
+                                                <b>Quality Check</b> — your model is correct when: (1) every yellow cell
+                                                has a formula, not a typed number; (2) the Pivot Table totals match your
+                                                P&amp;L; (3) the Business Status cell shows the right flag based on your
+                                                EBIT. If the Pivot differs from your SUMIF — check for a typo in the
+                                                category name.
                                         </div>
                                 </div>
                         </div>
@@ -569,36 +719,69 @@
                                         <div class="section-icon icon-assign">📋</div>
                                         <div class="section-header-text">
                                                 <h2>Assignment</h2>
-                                                <p>Due: End of Day 3 · Submit as .xlsx file</p>
+                                                <p>Due: Before Day 4 · Submit as .xlsx file · Use the weekend to finish
+                                                        if needed</p>
                                         </div>
                                 </div>
                                 <div class="assignment-box">
-                                        <div class="assign-label">📌 Day 3 Deliverable</div>
-                                        <h3>Completed Financial Model — <code>[company_slug]_financial.xlsx</code></h3>
-                                        <p>Submit your completed template with all yellow cells filled in with working
-                                                formulas. The model must be fully dynamic — changing any blue input cell
-                                                should cascade through every calculated result automatically.</p>
+                                        <div class="assign-label">📌 Day 3 Deliverable — due before Day 4</div>
+                                        <h3>Completed P&amp;L Model — "[company_slug]_financial.xlsx"</h3>
+                                        <p>Submit your completed workbook. All yellow cells must contain working
+                                                formulas that pull from Raw Data or Reference — no manually typed
+                                                numbers. The P&amp;L must update automatically if any Raw Data
+                                                transaction is changed.</p>
                                         <ul class="deliverable-list">
                                                 <li>
-                                                        <div class="check"></div><span><strong>Revenue formulas</strong> — all Amount cells use <code>=Qty × Rate</code>, Total Revenue uses <code>=SUM(…)</code></span></li>
+                                                        <div class="check"></div><span><strong>SUMIF — Revenue
+                                                                        lines</strong> — every revenue category cell
+                                                                uses
+                                                                "=SUMIF('Raw Data'!D:D, "category", 'Raw
+                                                                Data'!H:H)"</span>
+                                                </li>
                                                 <li>
-                                                        <div class="check"></div><span><strong>COGS formulas</strong> — same pattern, all linked to the given inputs</span></li>
+                                                        <div class="check"></div><span><strong>SUMIF — COGS
+                                                                        lines</strong> — same pattern for every cost
+                                                                category</span>
+                                                </li>
                                                 <li>
-                                                        <div class="check"></div><span><strong>Gross Profit &amp; Gross Margin %</strong> — correctly calculated, Margin % formatted as percentage</span></li>
+                                                        <div class="check"></div><span><strong>VLOOKUP — Rate
+                                                                        check</strong> — both VLOOKUP cells filled,
+                                                                returning correct rates from the Reference sheet</span>
+                                                </li>
                                                 <li>
-                                                        <div class="check"></div><span><strong>Fixed Costs total &amp; EBIT</strong> — formula-driven, no manually typed totals</span></li>
+                                                        <div class="check"></div><span><strong>Gross Profit &amp; Gross
+                                                                        Margin %</strong> — formula-driven, Margin %
+                                                                formatted as percentage</span>
+                                                </li>
                                                 <li>
-                                                        <div class="check"></div><span><strong>Break-Even formula</strong> — Fixed Costs ÷ (Price − Variable Cost per Unit)</span></li>
+                                                        <div class="check"></div><span><strong>Cell naming</strong> —
+                                                                all four fixed cost cells on the Fixed Costs sheet are
+                                                                named; P&amp;L formulas reference them by name (e.g.
+                                                                "=Salaries_Mo*12"), verified under Formulas →
+                                                                Name Manager</span>
+                                                </li>
                                                 <li>
-                                                        <div class="check"></div><span><strong>IF status indicator</strong> — "✅ Profitable" or "⚠️ Loss" based on EBIT</span></li>
+                                                        <div class="check"></div><span><strong>EBIT</strong> — Gross
+                                                                Profit minus Total Fixed Costs, no manually typed
+                                                                values</span>
+                                                </li>
+                                                <li>
+                                                        <div class="check"></div><span><strong>IF / IFS flags</strong> —
+                                                                Business Status and Margin Status cells both
+                                                                working</span>
+                                                </li>
+                                                <li>
+                                                        <div class="check"></div><span><strong>Pivot Table</strong> — in
+                                                                a "Pivot Check" sheet, Category vs. Sum of Total,
+                                                                filtered by Type, matching P&amp;L totals</span>
+                                                </li>
                                         </ul>
                                         <div
                                                 style="margin-top:20px; padding:14px 16px; background:rgba(243,146,0,0.15); border-radius:var(--radius); font-size:0.85rem; color:#ffcc80;">
-                                                <b>⭐ Bonus:</b> Add a new sheet called "Scenarios" with 3
-                                                columns (Pessimistic / Base / Optimistic). Change the key input
-                                                assumptions (e.g. units sold at 50% / 100% / 150% of forecast)
-                                                and
-                                                show how EBIT and Break-Even shift across each scenario.
+                                                <b>⭐ Bonus:</b> Add a "Scenarios" sheet. Copy your key P&amp;L outputs
+                                                (Revenue, COGS, EBIT) into three columns: Pessimistic (−20% revenue),
+                                                Base (as-is), and Optimistic (+20% revenue). Write IF formulas that show
+                                                whether each scenario is profitable.
                                         </div>
                                 </div>
                         </div>
