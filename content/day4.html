@@ -57,6 +57,12 @@
                                         </tr>
                                         <tr>
                                                 <td class="ag-time">10:45</td>
+                                                <td class="ag-topic">Importing Data — From Text/CSV</td>
+                                                <td class="ag-tag"><span class="agenda-tag tag-theory">Theory</span>
+                                                </td>
+                                        </tr>
+                                        <tr>
+                                                <td class="ag-time">11:15</td>
                                                 <td class="ag-topic">Cleaning Techniques — Live Demo</td>
                                                 <td class="ag-tag"><span class="agenda-tag tag-theory">Theory</span>
                                                 </td>
@@ -158,21 +164,22 @@
                                                 <h3>🧹 The 5 Most Common Dirty Data Problems</h3>
                                                 <ol style="padding-left:18px; font-size:0.93rem;">
                                                         <li style="margin-bottom:8px;"><b>Numbers stored as
-                                                                        text</b> — SUM returns 0. Fix: Data → Text
-                                                                to Columns, or VALUE() function.</li>
+                                                                        text</b> — SUM returns 0.<br>
+                                                                Fix: Data → VALUE()
+                                                                function.</li>
                                                         <li style="margin-bottom:8px;"><b>Inconsistent date
-                                                                        formats</b> — sorting fails. Fix:
-                                                                DATEVALUE(), or reformat all as DD/MM/YYYY.</li>
+                                                                        formats</b> — sorting fails.<br>
+                                                                Fix: DATEVALUE(), or reformat all as DD/MM/YYYY.</li>
                                                         <li style="margin-bottom:8px;"><b>Leading/trailing
-                                                                        spaces</b> — lookups fail silently. Fix:
-                                                                =TRIM(A2)</li>
+                                                                        spaces</b> — lookups fail silently.<br>
+                                                                Fix: TRIM(A2)</li>
                                                         <li style="margin-bottom:8px;"><b>Mixed case text</b>
-                                                                — "COFFEE" ≠ "coffee". Fix: =PROPER(A2) or
-                                                                =UPPER(A2)
+                                                                — "COFFEE" ≠ "coffee".<br>
+                                                                Fix: =PROPER(A2) or =UPPER(A2)
                                                         </li>
                                                         <li style="margin-bottom:8px;"><b>Blank rows &amp; merged
-                                                                        cells</b> — pivot tables break. Fix: Find
-                                                                &amp; Select → Go To Special → Blanks.</li>
+                                                                        cells</b> — pivot tables break.<br>
+                                                                Fix: Find &amp; Select → Go To Special → Blanks.</li>
                                                 </ol>
                                         </div>
                                         <div class="card card-green">
@@ -223,6 +230,12 @@
                                                 <h4>Text to Columns</h4>
                                                 <p>Data → Text to Columns — split "First Last" into two cells, or force
                                                         numeric conversion</p>
+                                        </div>
+                                        <div class="concept-card">
+                                                <div class="concept-icon">📥</div>
+                                                <h4>Get Data → From Text/CSV</h4>
+                                                <p>Data → Get Data → From File → From Text/CSV — import raw exports
+                                                        with full control over encoding, delimiters, and data types</p>
                                         </div>
                                         <div class="concept-card">
                                                 <div class="concept-icon">📌</div>
@@ -534,38 +547,39 @@
                                 </div>
                                 <div
                                         style="margin-top:20px;background:#fff;border:1px solid #e0e0e0;border-radius:8px;padding:14px;font-size:0.85rem;">
-                                        <div style="color:var(--srh-orange); font-weight:700; margin-bottom:8px;">Quick Reference: Which Chart for Which Question?</div>
-                                                <table class="ex-table">
-                                                        <thead>
-                                                                <tr>
-                                                                        <th>Question</th>
-                                                                        <th>Use This Chart</th>
-                                                                        <th>Not This</th>
-                                                                </tr>
-                                                        </thead>
-                                                        <tbody>
-                                                                <tr>
-                                                                        <td>How did X change over time?</td>
-                                                                        <td class="cell-good">Line / Area</td>
-                                                                        <td class="cell-bad">Pie</td>
-                                                                </tr>
-                                                                <tr>
-                                                                        <td>What share does each part hold?</td>
-                                                                        <td class="cell-good">Pie / Donut</td>
-                                                                        <td class="cell-bad">Line</td>
-                                                                </tr>
-                                                                <tr>
-                                                                        <td>Compare categories side by side</td>
-                                                                        <td class="cell-good">Bar (clustered)</td>
-                                                                        <td class="cell-bad">Pie</td>
-                                                                </tr>
-                                                                <tr>
-                                                                        <td>Rank items from most to least</td>
-                                                                        <td class="cell-good">Bar (sorted)</td>
-                                                                        <td class="cell-bad">Scatter</td>
-                                                                </tr>
-                                                        </tbody>
-                                                </table>
+                                        <div style="color:var(--srh-orange); font-weight:700; margin-bottom:8px;">Quick
+                                                Reference: Which Chart for Which Question?</div>
+                                        <table class="ex-table">
+                                                <thead>
+                                                        <tr>
+                                                                <th>Question</th>
+                                                                <th>Use This Chart</th>
+                                                                <th>Not This</th>
+                                                        </tr>
+                                                </thead>
+                                                <tbody>
+                                                        <tr>
+                                                                <td>How did X change over time?</td>
+                                                                <td class="cell-good">Line / Area</td>
+                                                                <td class="cell-bad">Pie</td>
+                                                        </tr>
+                                                        <tr>
+                                                                <td>What share does each part hold?</td>
+                                                                <td class="cell-good">Pie / Donut</td>
+                                                                <td class="cell-bad">Line</td>
+                                                        </tr>
+                                                        <tr>
+                                                                <td>Compare categories side by side</td>
+                                                                <td class="cell-good">Bar (clustered)</td>
+                                                                <td class="cell-bad">Pie</td>
+                                                        </tr>
+                                                        <tr>
+                                                                <td>Rank items from most to least</td>
+                                                                <td class="cell-good">Bar (sorted)</td>
+                                                                <td class="cell-bad">Scatter</td>
+                                                        </tr>
+                                                </tbody>
+                                        </table>
                                 </div>
                                 <p
                                         style="margin-top:18px;font-size:0.85rem;background:#fff8ee;padding:10px 14px;border-left:3px solid var(--srh-orange);border-radius:4px;">
@@ -573,6 +587,127 @@
                                         <em>"What question am I answering?"</em> The answer tells you the chart
                                         type.
                                         Picking the wrong type doesn't just look bad — it tells a false story.
+                                </p>
+                        </div>
+                </details>
+
+                <!-- IMPORTING DATA -->
+                <details class="example-block">
+                        <summary>📥 ADVANCED: Import Data with Data → Get Data → From Text/CSV <span
+                                        class="ex-label">How
+                                        To</span></summary>
+                        <div class="example-content">
+                                <p style="font-size:0.9rem;color:#666;margin-bottom:20px;">Before you can clean data,
+                                        you need to get it into Excel. Raw exports often arrive as <code>.csv</code> or
+                                        <code>.txt</code> files. Excel's built-in import wizard gives you full control
+                                        over how the file is read — so dates, numbers, and text all land in the right
+                                        columns from the start.
+                                </p>
+
+                                <div class="grid-2" style="margin-bottom:20px;">
+                                        <div class="card card-light" style="padding:16px 20px;">
+                                                <h4 style="margin-top:0;">📋 Step-by-Step: Import a CSV</h4>
+                                                <ol class="steps" style="margin-bottom:0;">
+                                                        <li>Open Excel → Data tab → Get Data →
+                                                                From File → From Text/CSV
+                                                        </li>
+                                                        <li>Browse to your file and click Import. A preview
+                                                                window opens.</li>
+                                                        <li>Check the File Origin (encoding) — use
+                                                                65001: Unicode (UTF-8) for files with
+                                                                umlauts or accents (e.g., ü, é).
+                                                        </li>
+                                                        <li>Check the Delimiter — usually
+                                                                Comma for .csv or
+                                                                Tab or Whitespace for .txt exports.
+                                                        </li>
+                                                        <li>Click Transform Data to open Power Query Editor
+                                                                — or click Load to import directly.</li>
+                                                        <li>In Power Query: right-click any column header to
+                                                                Change Type (e.g., force a column to
+                                                                Date or Whole Number).
+                                                        </li>
+                                                        <li>Click Close &amp; Load — data lands in a new
+                                                                sheet as a structured Table.</li>
+                                                </ol>
+                                        </div>
+                                        <div class="card card-light" style="padding:16px 20px;">
+                                                <h4 style="margin-top:0;">⚠️ Common Import Pitfalls</h4>
+                                                <ul style="font-size:0.9rem; padding-left:18px;">
+                                                        <li style="margin-bottom:8px;"><b>Wrong encoding</b> —
+                                                                if you see <em>Ã¼</em> instead of <em>ü</em>,
+                                                                change File Origin to UTF-8 in step 3.</li>
+                                                        <li style="margin-bottom:8px;"><b>Dates imported as
+                                                                        text</b> — if the date column stays as
+                                                                text after import, use Power Query →
+                                                                Change Type → Date.</li>
+                                                        <li style="margin-bottom:8px;"><b>Numbers with commas
+                                                                        as decimals</b> (e.g., 14,99) — Excel may
+                                                                read them as text. Fix with
+                                                                <code>VALUE(SUBSTITUTE(A2,",","."))</code> after
+                                                                import.
+                                                        </li>
+                                                        <li style="margin-bottom:8px;"><b>Extra header
+                                                                        rows</b> — if the file has a banner row
+                                                                (like "Export: 01-07-2025") before the real
+                                                                headers, remove it in Power Query: <em>Home →
+                                                                        Remove Rows → Remove Top Rows</em>.</li>
+                                                        <li style="margin-bottom:8px;"><b>All columns merged
+                                                                        into one</b> — wrong delimiter selected.
+                                                                Go back and try Comma, Semicolon, or Tab.</li>
+                                                </ul>
+                                        </div>
+                                </div>
+
+                                <div
+                                        style="background:#fff;border:1px solid #e0e0e0;border-radius:8px;padding:14px 18px;font-size:0.85rem;margin-bottom:12px;">
+                                        <div style="font-weight:700;color:var(--srh-orange);margin-bottom:8px;">🆚
+                                                Direct Open vs. Import Wizard — When to Use Which</div>
+                                        <table class="ex-table">
+                                                <thead>
+                                                        <tr>
+                                                                <th>Situation</th>
+                                                                <th>Approach</th>
+                                                        </tr>
+                                                </thead>
+                                                <tbody>
+                                                        <tr>
+                                                                <td>Quick look at a clean, simple CSV</td>
+                                                                <td class="cell-good">Double-click to open directly</td>
+                                                        </tr>
+                                                        <tr>
+                                                                <td>File has special characters (ü, ñ, ç)</td>
+                                                                <td class="cell-good">Data → From Text/CSV (set UTF-8)
+                                                                </td>
+                                                        </tr>
+                                                        <tr>
+                                                                <td>Dates or numbers landing as text</td>
+                                                                <td class="cell-good">Data → From Text/CSV → Transform
+                                                                        Data</td>
+                                                        </tr>
+                                                        <tr>
+                                                                <td>File has extra header/banner rows</td>
+                                                                <td class="cell-good">Data → From Text/CSV → Remove Top
+                                                                        Rows</td>
+                                                        </tr>
+                                                        <tr>
+                                                                <td>Source file updates regularly</td>
+                                                                <td class="cell-good">Import → creates a refreshable
+                                                                        connection</td>
+                                                        </tr>
+                                                </tbody>
+                                        </table>
+                                </div>
+
+                                <p
+                                        style="margin-top:14px;font-size:0.85rem;background:#fff8ee;padding:10px 14px;border-left:3px solid var(--srh-orange);border-radius:4px;">
+                                        <b>Takeaway:</b> Double-clicking a CSV is fast — but it lets Excel
+                                        guess the format, which causes silent errors with dates and special
+                                        characters. Use <em>Data → Get Data → From Text/CSV</em> for any file
+                                        you plan to clean or analyse. Your company's export file
+                                        (<code>[company]_visualization.xlsx</code>) was already imported for
+                                        you — but in real business life, you'll often start with a raw
+                                        <code>.csv</code>.
                                 </p>
                         </div>
                 </details>
@@ -591,7 +726,7 @@
                                 <div class="callout callout-blue" style="margin-bottom:20px;">
                                         <span class="callout-icon">📁</span>
                                         <div class="callout-body">
-                                                <b>Your File: <code>[company_slug]_visualization.xlsx</code></b>
+                                                <b>Your File: <code>[company_name]_visualization.xlsx</code></b>
                                                 Open your company's operations dataset (e.g.
                                                 <code>bytebite_visualization.xlsx</code>). This file contains
                                                 real-looking
@@ -606,29 +741,38 @@
                                         <div class="card">
                                                 <h3>Part 1: Clean Your Dataset</h3>
                                                 <ol class="steps">
-                                                        <li>Open [company_slug]_visualization.xlsx. Make a
+                                                        <li>Open [company_name]_visualization.xlsx. Make a
                                                                 copy of the raw data sheet (right-click tab →
                                                                 Move or Copy) — never clean the original!
                                                         </li>
+                                                        <li>Rename the copy to "Clean Data". </li>
+                                                        <li>Format the data as Table -- Choose one of the predefined
+                                                                Light Table Styles.</li>
+                                                        <li>Insert a new column called "Notes" to document any issues
+                                                                you find.</li>
                                                         <li>Scan each column: identify all inconsistencies. Write them
                                                                 down in a notes cell.</li>
-                                                        <li>Fix blank rows: Home → Find &amp; Select → Go to
-                                                                Special → Blanks → Delete rows.</li>
                                                         <li>Fix number-as-text columns: Use VALUE() or Text to
                                                                 Columns method.</li>
+                                                        <li>Add two columns "First Name" and "Last Name" and use
+                                                                "Text-to-Columns" to split full names. Make sure to set
+                                                                the destination cell correctly.</li>
                                                         <li>Fix date inconsistencies: Standardise to one format
                                                                 using DATEVALUE() or manual Find &amp; Replace.</li>
                                                         <li>Fix text inconsistencies: Apply TRIM() and PROPER()
                                                                 where needed.</li>
                                                         <li>Add a column called "Data Quality Check": use
                                                                 ISBLANK() or IF() to flag any remaining issues.</li>
+                                                        <li>Use Conditional Formatting to highlight any rows with issues
+                                                                in red
+                                                                (e.g., if "Data Quality Check" = "Issue").</li>
                                                 </ol>
                                         </div>
                                         <div class="card">
                                                 <h3>Part 2: Build Your Charts</h3>
                                                 <ol class="steps">
                                                         <li>Select your clean data. Go to Insert → Recommended
-                                                                        Charts — see what Excel suggests.</li>
+                                                                Charts — see what Excel suggests.</li>
                                                         <li>Build a Column Chart showing your primary metric over
                                                                 time (e.g., revenue by month, units by product).</li>
                                                         <li>Click the chart → Chart Design → Change Colors →
@@ -642,6 +786,19 @@
                                                         <li>Add a text box with a 1-sentence key insight for each
                                                                 chart. What is the data telling you?</li>
                                                 </ol>
+                                        </div>
+                                </div>
+                                <div class="callout callout-orange">
+                                        <span class="callout-icon">🤖</span>
+                                        <div class="callout-body">
+                                                <b>Gemini Co-pilot for Plotting</b>
+                                                If you find it challenging to identify your metrics or insights,
+                                                describe it to Gemini. Upload your company profile HTML as well
+                                                as
+                                                your data file and ask for help: <em>
+                                                        "Gemini, based on the data I have, what are
+                                                        some interesting trends or insights I could visualise?"
+                                                </em>
                                         </div>
                                 </div>
                                 <div class="callout callout-green">
@@ -676,15 +833,30 @@
                                                 dashboard that tells the story of your company's performance.</p>
                                         <ul class="deliverable-list">
                                                 <li>
-                                                        <div class="check"></div><span><strong>Sheet 1 "Raw Data"</strong> — original untouched data (never edit this)</span></li>
+                                                        <div class="check"></div><span><strong>Sheet 1 "Raw
+                                                                        Data"</strong> — original untouched data (never
+                                                                edit this)</span>
+                                                </li>
                                                 <li>
-                                                        <div class="check"></div><span><strong>Sheet 2 "Clean Data"</strong> — documented cleaning steps in a notes column</span></li>
+                                                        <div class="check"></div><span><strong>Sheet 2 "Clean
+                                                                        Data"</strong> — documented cleaning steps in a
+                                                                notes column</span>
+                                                </li>
                                                 <li>
-                                                        <div class="check"></div><span><strong>Sheet 3 "Dashboard"</strong> — 2 charts, branded colours, axis labels, chart titles</span></li>
+                                                        <div class="check"></div><span><strong>Sheet 3
+                                                                        "Dashboard"</strong> — 2 charts, branded
+                                                                colours, axis labels, chart titles</span>
+                                                </li>
                                                 <li>
-                                                        <div class="check"></div><span><strong>Key Insight annotations</strong> — 1 sentence per chart explaining what it means</span></li>
+                                                        <div class="check"></div><span><strong>Key Insight
+                                                                        annotations</strong> — 1 sentence per chart
+                                                                explaining what it means</span>
+                                                </li>
                                                 <li>
-                                                        <div class="check"></div><span><strong>No manual value-typing</strong> in dashboard — all values sourced from Clean Data sheet</span></li>
+                                                        <div class="check"></div><span><strong>No manual
+                                                                        value-typing</strong> in dashboard — all values
+                                                                sourced from Clean Data sheet</span>
+                                                </li>
                                         </ul>
                                         <div
                                                 style="margin-top:20px; padding:14px 16px; background:rgba(243,146,0,0.15); border-radius:var(--radius); font-size:0.85rem; color:#ffcc80;">

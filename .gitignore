@@ -3,3 +3,4 @@ Thumbs.db
 *.tmp
 _notes.md
 deploy_to_github.sh
+~$*
